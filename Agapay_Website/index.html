@@ -11,6 +11,8 @@
 <body style="display:flex; flex-direction:column; margin:0; font-family: Arial, sans-serif; background-color:#EAF4FF; font-size:16px;">
 
     <header class="site-header">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+
         <div class="header-inner">
 
             <a href="#home" class="logo-link">
@@ -24,6 +26,7 @@
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About Us</a></li>
                     <li><a href="#donation" class="nav-link nav-donate">Donation</a></li>
+
                     <!-- Volunteer dropdown -->
                     <li class="nav-item has-dropdown">
                         <a href="#volunteer" class="nav-link">
@@ -56,7 +59,7 @@
 
                     <!-- Awareness dropdown -->
                     <li class="nav-item has-dropdown">
-                        <a href="#awareness" class="nav-link">
+                        <a href="#news" class="nav-link">
                             Awareness
                             <svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M7 10l5 5 5-5z"/>
@@ -93,8 +96,467 @@
                 </ul>
             </div>
 
+            <!-- Hamburger button (only visible on small screens) -->
+            <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
         </div>
     </header>
+
+    <!-- ========== AWARENESS MODULE ========== -->
+
+    <!-- ========== News & Updates ========== -->
+    <main id="news" class="page awareness-page-inline">
+        <section class="awareness-page">
+            <div class="awareness-hero">
+                <h1 class="awareness-title">News &amp; Updates</h1>
+                <p class="awareness-subtitle">The latest stories, milestones, and happenings from the Agapay community — as we bring reading and writing closer to every Filipino child in Metro Manila.</p>
+            </div>
+
+            <div class="awareness-grid">
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A1.jpg" alt="News image" class="awareness-img">
+                        <span class="awareness-badge">Announcement</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">March 12, 2026</p>
+                        <h3 class="awareness-card-title">Agapay Launches "Bawat Bata, Bawat Kwento" Reading Drive</h3>
+                        <p class="awareness-excerpt">A Metro Manila initiative bringing 10,000 storybooks to children in public schools across Quezon City, Manila, Caloocan, and Pasay.</p>
+                        <a href="#" class="awareness-link">Read more →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A2.jpg" alt="News image" class="awareness-img">
+                        <span class="awareness-badge">Milestone</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">February 28, 2026</p>
+                        <h3 class="awareness-card-title">150,000 Children Reached Nationwide</h3>
+                        <p class="awareness-excerpt">Thanks to our volunteers and partners, Agapay has now touched the lives of over 150,000 children across Metro Manila through free reading and writing programs.</p>
+                        <a href="#" class="awareness-link">Read more →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A3.jpg" alt="News image" class="awareness-img">
+                        <span class="awareness-badge">Partnership</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">February 10, 2026</p>
+                        <h3 class="awareness-card-title">New Partnership with Local Barangay Councils</h3>
+                        <p class="awareness-excerpt">Agapay formalizes partnerships with 40 barangays across Metro Manila to establish weekly reading corners for out-of-school youth.</p>
+                        <a href="#" class="awareness-link">Read more →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A4.jpg" alt="News image" class="awareness-img">
+                        <span class="awareness-badge">Event</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">January 22, 2026</p>
+                        <h3 class="awareness-card-title">Volunteer Orientation Kicks Off in Quezon City</h3>
+                        <p class="awareness-excerpt">Over 300 new volunteers joined our Quezon City chapter to be trained as reading mentors for children ages 5–12.</p>
+                        <a href="#" class="awareness-link">Read more →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A5.jpg" alt="News image" class="awareness-img">
+                        <span class="awareness-badge">Announcement</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">January 8, 2026</p>
+                        <h3 class="awareness-card-title">Summer Reading Camp 2026 Registration Now Open</h3>
+                        <p class="awareness-excerpt">A 6-week reading and writing camp for children ages 6–12 — free of charge, in partnership with public schools across Metro Manila.</p>
+                        <a href="#" class="awareness-link">Read more →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A6.jpg" alt="News image" class="awareness-img">
+                        <span class="awareness-badge">Milestone</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">December 15, 2025</p>
+                        <h3 class="awareness-card-title">42,000 Books Donated This Year</h3>
+                        <p class="awareness-excerpt">Our book donation drive wraps up with a record-breaking 42,000 books distributed to children across Metro Manila.</p>
+                        <a href="#" class="awareness-link">Read more →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== Blog / Articles ========== -->
+    <main id="blog" class="page awareness-page-inline">
+        <section class="awareness-page">
+            <div class="awareness-hero">
+                <h1 class="awareness-title">Blog / Articles</h1>
+                <p class="awareness-subtitle">Essays, reflections, and practical guides from our volunteers, educators, and partners on literacy and learning.</p>
+            </div>
+
+            <div class="awareness-grid">
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A7.jpg" alt="Article cover" class="awareness-img">
+                        <span class="awareness-badge">Essay</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">By Maria Santos · March 5, 2026</p>
+                        <h3 class="awareness-card-title">Why Reading Aloud Matters More Than Ever</h3>
+                        <p class="awareness-excerpt">Reading aloud to a child does more than teach words — it builds trust, imagination, and a lifelong love of stories.</p>
+                        <a href="#" class="awareness-link">Read article →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A8.jpg" alt="Article cover" class="awareness-img">
+                        <span class="awareness-badge">Guide</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">By Juan Dela Cruz · February 20, 2026</p>
+                        <h3 class="awareness-card-title">5 Simple Ways to Encourage Writing at Home</h3>
+                        <p class="awareness-excerpt">You don't need a classroom to nurture a young writer. Here are five everyday habits that make a difference.</p>
+                        <a href="#" class="awareness-link">Read article →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A9.jpg" alt="Article cover" class="awareness-img">
+                        <span class="awareness-badge">Reflection</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">By Ate Liza · February 4, 2026</p>
+                        <h3 class="awareness-card-title">What I Learned from Teaching in Tondo, Manila</h3>
+                        <p class="awareness-excerpt">A volunteer mentor shares three months of lessons — not just for her students, but for herself.</p>
+                        <a href="#" class="awareness-link">Read article →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A10.jpg" alt="Article cover" class="awareness-img">
+                        <span class="awareness-badge">Research</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">By Agapay Team · January 18, 2026</p>
+                        <h3 class="awareness-card-title">The State of Child Literacy in Metro Manila</h3>
+                        <p class="awareness-excerpt">A look at the current literacy landscape across NCR and where community-led interventions make the biggest impact.</p>
+                        <a href="#" class="awareness-link">Read article →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A11.jpg" alt="Article cover" class="awareness-img">
+                        <span class="awareness-badge">Guide</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">By Teacher Ana · January 3, 2026</p>
+                        <h3 class="awareness-card-title">Building a Reading Corner on a Small Budget</h3>
+                        <p class="awareness-excerpt">A step-by-step guide for parents and teachers who want to create a cozy reading space with limited resources.</p>
+                        <a href="#" class="awareness-link">Read article →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A12.jpg" alt="Article cover" class="awareness-img">
+                        <span class="awareness-badge">Essay</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">By Kuya Ben · December 12, 2025</p>
+                        <h3 class="awareness-card-title">The Quiet Power of a Library Card</h3>
+                        <p class="awareness-excerpt">How a small piece of plastic can open a whole world for a child who has never owned a book.</p>
+                        <a href="#" class="awareness-link">Read article →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== Success Stories ========== -->
+    <main id="success-stories" class="page awareness-page-inline">
+        <section class="awareness-page">
+            <div class="awareness-hero">
+                <h1 class="awareness-title">Success Stories</h1>
+                <p class="awareness-subtitle">Real journeys of children, mentors, and communities whose lives were changed by the simple act of learning to read and write.</p>
+            </div>
+
+            <div class="awareness-grid">
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A13.jpg" alt="Success story" class="awareness-img">
+                        <span class="awareness-badge">Student</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">Quezon City · 2025</p>
+                        <h3 class="awareness-card-title">From Non-Reader to Class Valedictorian</h3>
+                        <p class="awareness-excerpt">At 9, Ana could not read a single sentence. Today, she leads her class and dreams of becoming a teacher.</p>
+                        <a href="#" class="awareness-link">Read her story →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A14.jpg" alt="Success story" class="awareness-img">
+                        <span class="awareness-badge">Student</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">Manila · 2025</p>
+                        <h3 class="awareness-card-title">The Boy Who Read His First Storybook</h3>
+                        <p class="awareness-excerpt">At seven, Ben had never owned a book. Six months into Agapay's reading program, he finished his first full storybook — and asked for another.</p>
+                        <a href="#" class="awareness-link">Read his story →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A15.jpg" alt="Success story" class="awareness-img">
+                        <span class="awareness-badge">Community</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">Pasig · 2024</p>
+                        <h3 class="awareness-card-title">A Barangay That Built Its Own Library</h3>
+                        <p class="awareness-excerpt">With Agapay's help, residents of Barangay Malinao transformed an old shed into a thriving community library.</p>
+                        <a href="#" class="awareness-link">Read their story →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A16.jpg" alt="Success story" class="awareness-img">
+                        <span class="awareness-badge">Student</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">Caloocan · 2024</p>
+                        <h3 class="awareness-card-title">The Boy Who Wrote His First Poem</h3>
+                        <p class="awareness-excerpt">Marco struggled with words for years. A patient mentor helped him write — and publish — his first poem.</p>
+                        <a href="#" class="awareness-link">Read his story →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A17.jpg" alt="Success story" class="awareness-img">
+                        <span class="awareness-badge">Mentor</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">Makati · 2024</p>
+                        <h3 class="awareness-card-title">A College Student Who Volunteers Every Saturday</h3>
+                        <p class="awareness-excerpt">Miguel spends his weekends teaching reading. He says it's the best part of his week — every single week.</p>
+                        <a href="#" class="awareness-link">Read his story →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A18.jpg" alt="Success story" class="awareness-img">
+                        <span class="awareness-badge">Community</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">Navotas · 2023</p>
+                        <h3 class="awareness-card-title">Coastal Families Turn to Storybooks</h3>
+                        <p class="awareness-excerpt">In a coastal community in Navotas, reading nights have become a weekly tradition — bringing families closer together.</p>
+                        <a href="#" class="awareness-link">Read their story →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== Educational Resources ========== -->
+    <main id="educational-resources" class="page awareness-page-inline">
+        <section class="awareness-page">
+            <div class="awareness-hero">
+                <h1 class="awareness-title">Educational Resources</h1>
+                <p class="awareness-subtitle">Free, downloadable materials for parents, teachers, and volunteers who want to help children learn to read and write.</p>
+            </div>
+
+            <div class="awareness-grid">
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A19.jpg" alt="Resource cover" class="awareness-img">
+                        <span class="awareness-badge">Worksheet</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">PDF · Ages 5–7</p>
+                        <h3 class="awareness-card-title">Beginner Reading Worksheets: Set A</h3>
+                        <p class="awareness-excerpt">A printable 20-page pack of phonics, sight words, and simple sentences for early readers.</p>
+                        <a href="#" class="awareness-link">Download PDF →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A20.jpg" alt="Resource cover" class="awareness-img">
+                        <span class="awareness-badge">Guide</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">PDF · For Parents</p>
+                        <h3 class="awareness-card-title">A Parent's Guide to Reading Aloud</h3>
+                        <p class="awareness-excerpt">Simple, practical tips on turning storytime into a powerful learning moment every day.</p>
+                        <a href="#" class="awareness-link">Download PDF →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A21.jpg" alt="Resource cover" class="awareness-img">
+                        <span class="awareness-badge">Module</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">PDF · For Volunteers</p>
+                        <h3 class="awareness-card-title">Volunteer Mentor Training Module</h3>
+                        <p class="awareness-excerpt">Everything a new volunteer needs: session flow, teaching strategies, and child-friendly activities.</p>
+                        <a href="#" class="awareness-link">Download PDF →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A22.jpg" alt="Resource cover" class="awareness-img">
+                        <span class="awareness-badge">Activity Book</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">PDF · Ages 6–10</p>
+                        <h3 class="awareness-card-title">My First Writing Journal</h3>
+                        <p class="awareness-excerpt">A cheerful 30-page activity book that encourages children to write about their day, their dreams, and their world.</p>
+                        <a href="#" class="awareness-link">Download PDF →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A23.jpg" alt="Resource cover" class="awareness-img">
+                        <span class="awareness-badge">Flashcards</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">PDF · Ages 4–7</p>
+                        <h3 class="awareness-card-title">Printable Alphabet &amp; Sight Word Flashcards</h3>
+                        <p class="awareness-excerpt">Colorful flashcards designed for one-on-one tutoring and small group sessions.</p>
+                        <a href="#" class="awareness-link">Download PDF →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/A24.jpg" alt="Resource cover" class="awareness-img">
+                        <span class="awareness-badge">Storybook</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">PDF · Ages 5–9</p>
+                        <h3 class="awareness-card-title">"Ang Munting Manunulat" — A Free Storybook</h3>
+                        <p class="awareness-excerpt">An illustrated Filipino story about a young girl who discovers the joy of writing. Free to download and print.</p>
+                        <a href="#" class="awareness-link">Download PDF →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== Awareness Campaigns ========== -->
+    <main id="awareness-campaigns" class="page awareness-page-inline">
+        <section class="awareness-page">
+            <div class="awareness-hero">
+                <h1 class="awareness-title">Awareness Campaigns</h1>
+                <p class="awareness-subtitle">Ongoing drives and calls to action — join us in spreading the word that every Filipino child deserves to read and write.</p>
+            </div>
+
+            <div class="awareness-grid">
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/placeholder.jpg" alt="Campaign cover" class="awareness-img">
+                        <span class="awareness-badge">Reading Drive</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">Ongoing · Metro Manila</p>
+                        <h3 class="awareness-card-title">Bawat Bata, Bawat Kwento</h3>
+                        <p class="awareness-excerpt">Help us put a storybook in the hands of every Filipino child. Goal: 10,000 books by December 2026.</p>
+                        <a href="#" class="awareness-link">Join the campaign →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/placeholder.jpg" alt="Campaign cover" class="awareness-img">
+                        <span class="awareness-badge">Literacy Month</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">November 2026 · Metro Manila</p>
+                        <h3 class="awareness-card-title">National Reading Month</h3>
+                        <p class="awareness-excerpt">A month-long celebration of literacy with read-aloud events, storytelling festivals, and community read-ins.</p>
+                        <a href="#" class="awareness-link">See events →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/placeholder.jpg" alt="Campaign cover" class="awareness-img">
+                        <span class="awareness-badge">Social Media</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">Ongoing · Online</p>
+                        <h3 class="awareness-card-title">#TaraBasaTayo Challenge</h3>
+                        <p class="awareness-excerpt">Post a 30-second video of you reading to a child. Tag three friends. Help us make reading go viral.</p>
+                        <a href="#" class="awareness-link">Take the challenge →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/placeholder.jpg" alt="Campaign cover" class="awareness-img">
+                        <span class="awareness-badge">Fundraising</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">June–August 2026</p>
+                        <h3 class="awareness-card-title">Back-to-School Kits Drive</h3>
+                        <p class="awareness-excerpt">Help us provide notebooks, pencils, and reading materials to 5,000 students before the new school year begins.</p>
+                        <a href="#" class="awareness-link">Donate a kit →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/placeholder.jpg" alt="Campaign cover" class="awareness-img">
+                        <span class="awareness-badge">Community</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">Ongoing · Barangay-based</p>
+                        <h3 class="awareness-card-title">Adopt-a-Reading-Corner</h3>
+                        <p class="awareness-excerpt">Sponsor a reading corner in a public school or barangay hall. Each corner serves 30–50 children weekly.</p>
+                        <a href="#" class="awareness-link">Sponsor a corner →</a>
+                    </div>
+                </article>
+
+                <article class="awareness-card">
+                    <div class="awareness-img-wrap">
+                        <img src="assets/placeholder.jpg" alt="Campaign cover" class="awareness-img">
+                        <span class="awareness-badge">Volunteer Call</span>
+                    </div>
+                    <div class="awareness-body-content">
+                        <p class="awareness-date">Rolling intake · Metro Manila</p>
+                        <h3 class="awareness-card-title">Be a Reading Mentor</h3>
+                        <p class="awareness-excerpt">Volunteer 2 hours a week to help a child read. Training and materials provided — all you need is heart.</p>
+                        <a href="#" class="awareness-link">Sign up to mentor →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <!-- Donate -->
     <div id="donation" class="page">
@@ -481,7 +943,7 @@
 
         document.querySelectorAll('.campaign-card').forEach(card =>
             card.querySelectorAll('a').forEach(a => a.addEventListener('click', () => showCampaign(card))));
-        showCampaign(document.querySelector('.campaign-card'));   // default if the page is opened directly
+        showCampaign(document.querySelector('.campaign-card'));
 
         document.querySelectorAll('form').forEach(f => f.onsubmit = e => { e.preventDefault(); f.classList.add('done'); });
 
