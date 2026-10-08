@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agapay</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body style="display:flex; flex-direction:column; margin:0; font-family: Arial, sans-serif; background-color:#EAF4FF; font-size:16px;">
+
+    <header class="site-header">
+        <div class="header-inner">
+
+            <a href="#home" class="logo-link">
+                <img src="assets/Agapay Logo.png" alt="Agapay Logo" class="logo-img">
+                <span class="logo-text"><i>Agapay</i></span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+
+                    <!-- Volunteer dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#volunteer" class="nav-link">
+                            Volunteer
+                            <svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="#volunteer-opportunities">Volunteer Opportunities</a></li>
+                            <li><a href="#event-registration">Event Registration</a></li>
+                            <li><a href="#volunteer-history">Volunteer History</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Mentorship dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#mentorship" class="nav-link">
+                            Mentorship
+                            <svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="#mentor-profiles">Mentor Profiles</a></li>
+                            <li><a href="#mentor-application">Mentor Application</a></li>
+                            <li><a href="#student-requests">Student Requests</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Awareness dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#awareness" class="nav-link">
+                            Awareness
+                            <svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="#news">News &amp; Updates</a></li>
+                            <li><a href="#blog">Blog / Articles</a></li>
+                            <li><a href="#success-stories">Success Stories</a></li>
+                            <li><a href="#educational-resources">Educational Resources</a></li>
+                            <li><a href="#awareness-campaigns">Awareness Campaigns</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Account button -->
+            <div class="account-area">
+                <button class="account-btn" aria-label="Account menu" aria-haspopup="true" aria-expanded="false">
+                    <svg class="person-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                </button>
+
+                <ul class="dropdown account-dropdown">
+                    <li><a href="#profile">My Profile</a></li>
+                    <li><a href="#logout">Log Out</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+</body>
+</html>

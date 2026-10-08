@@ -1,0 +1,276 @@
+/* ===== HEADER ===== */
+.site-header {
+    background-color: #EAF4FF;
+    padding: 14px 32px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(49, 91, 145, 0.10);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: translateY(-1px);
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;      
+    object-fit: cover;
+    box-shadow: 0 3px 8px rgba(49, 91, 145, 0.20);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.logo-link:hover .logo-img {
+    box-shadow: 0 6px 14px rgba(49, 91, 145, 0.35);
+    transform: rotate(-4deg) scale(1.05);
+}
+
+.logo-text {
+    font-family: 'Poltawski Nowy', serif;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
+    color: #315b91;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease;
+}
+
+.logo-link:hover .logo-text {
+    color: #24487a;
+}
+
+.main-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: #315b91;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: color 0.25s ease, background-color 0.25s ease;
+    white-space: nowrap;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #315b91, #5C92DF);
+    border-radius: 2px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #24487a;
+    background-color: rgba(49, 91, 145, 0.07);
+}
+
+.nav-link:hover::after {
+    width: 55%;
+    left: 22.5%;
+}
+
+.caret {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease;
+}
+
+.nav-item.has-dropdown:hover .caret {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    background: #ffffff;
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    min-width: 230px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(49, 91, 145, 0.18);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+    z-index: 50;
+}
+
+.dropdown::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.dropdown::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: transparent;
+}
+
+.nav-item.has-dropdown:hover .dropdown,
+.account-area:hover .account-dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+.nav-item.has-dropdown:not(:hover) .dropdown {
+    transition-delay: 0.15s;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #315b91;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease, padding-left 0.25s ease;
+}
+
+.dropdown li a:hover {
+    background-color: #EAF4FF;
+    color: #24487a;
+    padding-left: 20px;
+}
+
+.account-area {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.account-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    background: linear-gradient(135deg, #315b91 0%, #4a7ac0 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(49, 91, 145, 0.22);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.4s ease;
+}
+
+.account-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(49, 91, 145, 0.38);
+    background: linear-gradient(135deg, #24487a 0%, #3a68a8 100%);
+}
+
+.account-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(49, 91, 145, 0.28);
+}
+
+.person-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.dropdown-arrow {
+    width: 12px;
+    height: 12px;
+    margin-left: -2px;
+    transition: transform 0.3s ease;
+}
+
+.account-area:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.account-dropdown {
+    left: auto;
+    right: 0;
+    transform: translateX(0) translateY(-6px);
+    min-width: 180px;
+}
+
+.account-dropdown::before {
+    left: auto;
+    right: 14px;
+    transform: rotate(45deg);
+}
+
+.account-dropdown::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: transparent;
+}
+
+.account-area:hover .account-dropdown {
+    transform: translateX(0) translateY(0);
+}
+
+.account-area:not(:hover) .account-dropdown {
+    transition-delay: 0.15s;
+}
