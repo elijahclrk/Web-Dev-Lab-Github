@@ -22,18 +22,14 @@
 
             <nav class="main-nav" aria-label="Main navigation">
                 <ul class="nav-list">
-
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About Us</a></li>
                     <li><a href="#donation" class="nav-link nav-donate">Donation</a></li>
 
-                    <!-- Volunteer dropdown -->
                     <li class="nav-item has-dropdown">
                         <a href="#volunteer" class="nav-link">
                             Volunteer
-                            <svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M7 10l5 5 5-5z"/>
-                            </svg>
+                            <svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
                         </a>
                         <ul class="dropdown">
                             <li><a href="#volunteer-opportunities">Volunteer Opportunities</a></li>
@@ -42,13 +38,10 @@
                         </ul>
                     </li>
 
-                    <!-- Mentorship dropdown -->
                     <li class="nav-item has-dropdown">
                         <a href="#mentorship" class="nav-link">
                             Mentorship
-                            <svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M7 10l5 5 5-5z"/>
-                            </svg>
+                            <svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
                         </a>
                         <ul class="dropdown">
                             <li><a href="#mentor-profiles">Mentor Profiles</a></li>
@@ -57,13 +50,10 @@
                         </ul>
                     </li>
 
-                    <!-- Awareness dropdown -->
                     <li class="nav-item has-dropdown">
                         <a href="#news" class="nav-link">
                             Awareness
-                            <svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M7 10l5 5 5-5z"/>
-                            </svg>
+                            <svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
                         </a>
                         <ul class="dropdown">
                             <li><a href="#news">News &amp; Updates</a></li>
@@ -75,31 +65,23 @@
                     </li>
 
                     <li><a href="#contact" class="nav-link">Contact</a></li>
-
                 </ul>
             </nav>
 
-            <!-- Account button -->
             <div class="account-area">
                 <button class="account-btn" aria-label="Account menu" aria-haspopup="true" aria-expanded="false">
-                    <svg class="person-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    </svg>
-                    <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M7 10l5 5 5-5z"/>
-                    </svg>
+                    <svg class="person-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
                 </button>
 
                 <ul class="dropdown account-dropdown">
-                    <!-- guest-only items show when logged out; member-only items show when logged in -->
                     <li class="guest-only"><a href="#login">Log In</a></li>
                     <li class="guest-only"><a href="#signup">Sign Up</a></li>
                     <li class="member-only"><a href="#profile">My Profile</a></li>
-                    <li class="member-only"><a href="#logout" class="logout-link">Log Out</a></li>
+                    <li class="member-only"><a href="#login">Log Out</a></li>
                 </ul>
             </div>
 
-            <!-- Hamburger button (only visible on small screens) -->
             <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -108,8 +90,6 @@
 
         </div>
     </header>
-
-    <!-- ========== AWARENESS MODULE ========== -->
 
     <!-- ========== News & Updates ========== -->
     <main id="news" class="page awareness-page-inline">
@@ -561,9 +541,9 @@
         </section>
     </main>
 
-     <!-- Donate -->
+    <!-- Donate -->
     <div id="donation" class="page">
- 
+
         <div class="filter-bar">
             <div class="filter-inner">
                 <div class="search-group">
@@ -575,90 +555,93 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 5h18l-7 8v6l-4 2v-8L3 5z"/></svg>
                     </button>
                 </div>
- 
+
                 <ul class="category-tabs">
-                <li><label><input type="radio" name="cat" id="cat-all" checked>All</label></li>
-                <li><label><input type="radio" name="cat" id="cat-books">Books</label></li>
-                <li><label><input type="radio" name="cat" id="cat-school-supplies">School Supplies</label></li>
-                <li><label><input type="radio" name="cat" id="cat-facilities">Facilities</label></li>
+                    <li><label><input type="radio" name="cat" id="cat-all" checked>All</label></li>
+                    <li><label><input type="radio" name="cat" id="cat-books">Books</label></li>
+                    <li><label><input type="radio" name="cat" id="cat-school-supplies">School Supplies</label></li>
+                    <li><label><input type="radio" name="cat" id="cat-facilities">Facilities</label></li>
                 </ul>
             </div>
         </div>
- 
+
         <main class="campaigns">
             <div class="campaigns-inner">
                 <div class="section-head">
                     <h1>Discover Fundraising Campaigns</h1>
                     <p>One Peso, One Dream: Help Filipino Students Achieve English Literacy</p>
                 </div>
- 
+
                 <div class="campaign-grid">
- 
-                <article class="campaign-card" data-category="Books">
-                    <a href="#campaign-books" aria-label="Books for Future Engineers">
-                        <img class="card-img" src="assets/books.jpg" alt="Books for Future Engineers">
-                    </a>
-                    <div class="card-body">
-                        <span class="card-tag">Books</span>
-                        <h3 class="card-title"><a href="#campaign-books">Books for Future Engineers</a></h3>
-                        <p class="card-desc">Help Engineering Elementary School to provide books for their students that aims to be future engineers.</p>
-                        <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-fill" style="width: 75%;"></div>
+                    <article class="campaign-card" data-category="Books">
+                        <a href="#campaign-books" aria-label="Books for Future Engineers">
+                            <img class="card-img" src="assets/books.jpg" alt="Books for Future Engineers">
+                        </a>
+                        <div class="card-body">
+                            <span class="card-tag">Books</span>
+                            <h3 class="card-title"><a href="#campaign-books">Books for Future Engineers</a></h3>
+                            <p class="card-desc">Help Engineering Elementary School to provide books for their students that aims to be future engineers.</p>
+                            <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-fill" style="width: 75%;"></div>
+                            </div>
+                            <div class="card-meta"><span>₱8,000 raised</span><span>₱11,000 goal</span></div>
                         </div>
-                        <div class="card-meta"><span>₱8,000 raised</span><span>₱11,000 goal</span></div>
-                    </div>
-                </article>
- 
-                <article class="campaign-card" data-category="School Supplies">
-                    <a href="#campaign-supplies" aria-label="Paper and Pencil Drive">
-                        <img class="card-img" src="assets/school-supplies.jpg" alt="Paper and Pencil Drive">
-                    </a>
-                    <div class="card-body">
-                        <span class="card-tag">School Supplies</span>
-                        <h3 class="card-title"><a href="#campaign-supplies">Paper and Pencil Drive</a></h3>
-                        <p class="card-desc">Help learners from province of Cabuyao Laguna by giving them essential school supplies.</p>
-                        <div class="progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-fill" style="width: 40%;"></div>
+                    </article>
+
+                    <article class="campaign-card" data-category="School Supplies">
+                        <a href="#campaign-supplies" aria-label="Paper and Pencil Drive">
+                            <img class="card-img" src="assets/school-supplies.jpg" alt="Paper and Pencil Drive">
+                        </a>
+                        <div class="card-body">
+                            <span class="card-tag">School Supplies</span>
+                            <h3 class="card-title"><a href="#campaign-supplies">Paper and Pencil Drive</a></h3>
+                            <p class="card-desc">Help learners from province of Cabuyao Laguna by giving them essential school supplies.</p>
+                            <div class="progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-fill" style="width: 40%;"></div>
+                            </div>
+                            <div class="card-meta"><span>₱12,000 raised</span><span>₱20,000 goal</span></div>
                         </div>
-                        <div class="card-meta"><span>₱12,000 raised</span><span>₱20,000 goal</span></div>
-                    </div>
-                </article>
- 
-                <article class="campaign-card" data-category="Facilities">
-                    <a href="#campaign-library" aria-label="Library Buildding Project">
-                        <img class="card-img" src="assets/library.jpg" alt="">
-                    </a>
-                    <div class="card-body">
-                        <span class="card-tag">Facilities</span>
-                        <h3 class="card-title"><a href="#campaign-library">Library Building Project</a></h3>
-                        <p class="card-desc">Build a new library to provide a better learning environment for students in Malate, Manila.</p>
-                        <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-fill" style="width: 80%;"></div>
+                    </article>
+
+                    <article class="campaign-card" data-category="Facilities">
+                        <a href="#campaign-library" aria-label="Library Building Project">
+                            <img class="card-img" src="assets/library.jpg" alt="">
+                        </a>
+                        <div class="card-body">
+                            <span class="card-tag">Facilities</span>
+                            <h3 class="card-title"><a href="#campaign-library">Library Building Project</a></h3>
+                            <p class="card-desc">Build a new library to provide a better learning environment for students in Malate, Manila.</p>
+                            <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-fill" style="width: 80%;"></div>
+                            </div>
+                            <div class="card-meta"><span>₱40,000 raised</span><span>₱50,000 goal</span></div>
                         </div>
-                        <div class="card-meta"><span>₱40,000 raised</span><span>₱50,000 goal</span></div>
-                    </div>
-                </article>
-            </main>      
-                <div class="show-more-wrap">
-                    <button class="show-more">Show more</button>
+                    </article>
                 </div>
+            </div>
+        </main>
+
+        <div class="show-more-wrap">
+            <button class="show-more">Show more</button>
         </div>
- 
+
+    </div>
+
     <main id="campaign-books" class="page">
         <input type="checkbox" id="donate-books" class="donate-toggle" hidden>
- 
+
         <div class="wrap">
             <h1 class="detail-title">Books for Future Engineers</h1>
             <div class="detail-meta"><span>👤 Engineering Elementary School</span><span>📍 Quezon City</span><span>🏷️ Books</span></div>
             <div class="detail-layout">
- 
+
                 <section class="detail-main">
                     <div class="detail-tabs">
                         <label class="tab-btn"><input type="radio" name="ct-books" class="ct-story" checked>Story</label>
                         <label class="tab-btn"><input type="radio" name="ct-books" class="ct-update">Update</label>
                         <label class="tab-btn"><input type="radio" name="ct-books" class="ct-donors">Donors</label>
                     </div>
- 
+
                     <div class="tab-panel p-story">
                         <img class="story-img" src="assets/books.jpg" alt="">
                         <div class="story-text">
@@ -671,65 +654,65 @@
                             <div><strong>Engineering Elementary School</strong><span>Campaign organizer</span></div>
                         </div>
                     </div>
- 
+
                     <div class="tab-panel p-update">
                         <ul class="timeline">
-                    <li class="timeline-item"><div class="timeline-date">Oct 1, 2026</div>
-                        <div class="timeline-body"><h3>Scholars received their first set of books</h3><p>The scholars at Engineering Elementary School have received their first set of books, thanks to the generous donations from our supporters.</p></div></li>
-                    <li class="timeline-item"><div class="timeline-date">Sep 15, 2026</div>
-                        <div class="timeline-body"><h3>Campaign passed 50% of the goal</h3><p>We are thrilled to announce that our campaign has passed 50% of its goal, thanks to the support of our amazing donors.</p></div></li>
-                    <li class="timeline-item"><div class="timeline-date">Sep 1, 2026</div>
-                        <div class="timeline-body"><h3>Campaign launched</h3><p>We are excited to announce the launch of our campaign to provide books for students at Engineering Elementary School.</p></div></li>
+                            <li class="timeline-item"><div class="timeline-date">Oct 1, 2026</div>
+                                <div class="timeline-body"><h3>Scholars received their first set of books</h3><p>The scholars at Engineering Elementary School have received their first set of books, thanks to the generous donations from our supporters.</p></div></li>
+                            <li class="timeline-item"><div class="timeline-date">Sep 15, 2026</div>
+                                <div class="timeline-body"><h3>Campaign passed 50% of the goal</h3><p>We are thrilled to announce that our campaign has passed 50% of its goal, thanks to the support of our amazing donors.</p></div></li>
+                            <li class="timeline-item"><div class="timeline-date">Sep 1, 2026</div>
+                                <div class="timeline-body"><h3>Campaign launched</h3><p>We are excited to announce the launch of our campaign to provide books for students at Engineering Elementary School.</p></div></li>
                         </ul>
                     </div>
- 
+
                     <div class="tab-panel p-donors">
                         <ul class="donor-list">
-                    <li class="donor-card"><div class="avatar"></div>
-                        <div class="donor-info"><strong>Maria Santos</strong><span>Quezon City · 2 days ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱4,000</strong></div></li>
-                    <li class="donor-card"><div class="avatar"></div>
-                        <div class="donor-info"><strong>Juan Dela Cruz</strong><span>Antipolo · 3 days ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱1,500</strong></div></li>
-                    <li class="donor-card"><div class="avatar"></div>
-                        <div class="donor-info"><strong>Anonymous</strong><span>5 days ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱1,500</strong></div></li>
-                    <li class="donor-card"><div class="avatar"></div>
-                        <div class="donor-info"><strong>Ana Reyes</strong><span>Cebu City · 1 week ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱100</strong></div></li>
+                            <li class="donor-card"><div class="avatar"></div>
+                                <div class="donor-info"><strong>Maria Santos</strong><span>Quezon City · 2 days ago</span></div>
+                                <div class="donor-amount"><span>Donated:</span><strong>₱4,000</strong></div></li>
+                            <li class="donor-card"><div class="avatar"></div>
+                                <div class="donor-info"><strong>Juan Dela Cruz</strong><span>Antipolo · 3 days ago</span></div>
+                                <div class="donor-amount"><span>Donated:</span><strong>₱1,500</strong></div></li>
+                            <li class="donor-card"><div class="avatar"></div>
+                                <div class="donor-info"><strong>Anonymous</strong><span>5 days ago</span></div>
+                                <div class="donor-amount"><span>Donated:</span><strong>₱1,500</strong></div></li>
+                            <li class="donor-card"><div class="avatar"></div>
+                                <div class="donor-info"><strong>Ana Reyes</strong><span>Cebu City · 1 week ago</span></div>
+                                <div class="donor-amount"><span>Donated:</span><strong>₱100</strong></div></li>
                         </ul>
                     </div>
                 </section>
- 
+
                 <aside class="donate-card">
                     <div class="raised-row">
                         <div class="donut" style="--pct: 75;"><span>80%</span></div>
                         <div><h2>₱8,000</h2><p>raised of ₱11,000 needed</p></div>
                     </div>
- 
+
                     <label for="donate-books" class="btn-pill btn-primary">Donate Now</label>
                     <input type="button" value="Share" class="btn-pill btn-secondary">
- 
-                    <h3 class="recent-title"></span>Recent Donors</h3>
+
+                    <h3 class="recent-title">Recent Donors</h3>
                     <ul class="recent-list">
-                    <li><div class="avatar sm"></div><span>Maria Santos</span><strong>₱4,000</strong></li>
-                    <li><div class="avatar sm"></div><span>Juan Dela Cruz</span><strong>₱1,500</strong></li>
-                    <li><div class="avatar sm"></div><span>Anonymous</span><strong>₱1,500</strong></li>
+                        <li><div class="avatar sm"></div><span>Maria Santos</span><strong>₱4,000</strong></li>
+                        <li><div class="avatar sm"></div><span>Juan Dela Cruz</span><strong>₱1,500</strong></li>
+                        <li><div class="avatar sm"></div><span>Anonymous</span><strong>₱1,500</strong></li>
                     </ul>
                 </aside>
             </div>
         </div>
- 
+
         <div class="donate-modal">
             <label for="donate-books" class="modal-backdrop"></label>
- 
+
             <form class="modal-box donate-form" action="#donation-thanks">
                 <label for="donate-books" class="modal-close">&times;</label>
- 
+
                 <div class="form-body">
                     <h2>Make a Donation</h2>
                     <p class="modal-sub">Send your donation first, then confirm it below.</p>
- 
+
                     <p class="modal-label">1. Which app did you use?</p>
                     <div class="pill-options">
                         <label><input type="radio" name="method" value="GCash" class="m-gcash" checked><span>GCash</span></label>
@@ -737,7 +720,7 @@
                         <label><input type="radio" name="method" value="Bank Transfer" class="m-bank"><span>Bank</span></label>
                         <label><input type="radio" name="method" value="Other" class="m-other"><span>Other</span></label>
                     </div>
- 
+
                     <div class="send-box">
                         <div class="qr">QR</div>
                         <div>
@@ -748,7 +731,7 @@
                             <p class="send for-other">Contact us for other ways to give</p>
                         </div>
                     </div>
- 
+
                     <p class="modal-label">2. Amount you sent</p>
                     <div class="pill-options">
                         <label><input type="radio" name="amount" value="100"><span>₱100</span></label>
@@ -757,39 +740,39 @@
                         <label><input type="radio" name="amount" value="5000"><span>₱5,000</span></label>
                     </div>
                     <input class="plain-input" type="number" name="custom" min="1" placeholder="Other amount (₱) — leave blank to use the one above">
- 
+
                     <label class="field"><span>3. Reference number</span>
                         <input type="text" name="ref" required minlength="6" placeholder="e.g. 1234 567 890123" autocomplete="off"></label>
- 
+
                     <div class="field-row">
                         <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Juan Dela Cruz"></label>
                         <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com"></label>
                     </div>
- 
+
                     <label class="field"><span>Message (optional)</span><textarea name="message" rows="2" placeholder="Words of encouragement for the student"></textarea></label>
                     <label class="check"><input type="checkbox" name="anonymous"> Donate anonymously</label>
- 
+
                     <button type="submit" class="btn-pill btn-primary">Confirm donation</button>
                 </div>
             </form>
         </div>
     </main>
- 
+
     <main id="campaign-supplies" class="page">
         <input type="checkbox" id="donate-supplies" class="donate-toggle" hidden>
- 
+
         <div class="wrap">
             <h1 class="detail-title">Paper and Pencil Drive</h1>
             <div class="detail-meta"><span>👤 Cabuyao Learners Council</span><span>📍 Cabuyao, Laguna</span><span>🏷️ School Supplies</span></div>
             <div class="detail-layout">
- 
+
                 <section class="detail-main">
                     <div class="detail-tabs">
                         <label class="tab-btn"><input type="radio" name="ct-supplies" class="ct-story" checked>Story</label>
                         <label class="tab-btn"><input type="radio" name="ct-supplies" class="ct-update">Update</label>
                         <label class="tab-btn"><input type="radio" name="ct-supplies" class="ct-donors">Donors</label>
                     </div>
- 
+
                     <div class="tab-panel p-story">
                         <img class="story-img" src="assets/school-supplies.jpg" alt="">
                         <div class="story-text">
@@ -802,60 +785,60 @@
                             <div><strong>Cabuyao Learners Council</strong><span>Campaign organizer</span></div>
                         </div>
                     </div>
- 
+
                     <div class="tab-panel p-update">
                         <ul class="timeline">
-                    <li class="timeline-item"><div class="timeline-date">October 3, 2026</div>
-                        <div class="timeline-body"><h3>Donation Announcement to Students</h3><p>We are excited to announce that we have received a generous donation to support our students in need and we've told this to our learners.</p></div></li>
-                    <li class="timeline-item"><div class="timeline-date">August 25, 2026</div>
-                        <div class="timeline-body"><h3>Paper and Pencil Donation</h3><p>We are grateful for the recent donation to support our students' learning needs.</p></div></li>
-                    </ul>
+                            <li class="timeline-item"><div class="timeline-date">October 3, 2026</div>
+                                <div class="timeline-body"><h3>Donation Announcement to Students</h3><p>We are excited to announce that we have received a generous donation to support our students in need and we've told this to our learners.</p></div></li>
+                            <li class="timeline-item"><div class="timeline-date">August 25, 2026</div>
+                                <div class="timeline-body"><h3>Paper and Pencil Donation</h3><p>We are grateful for the recent donation to support our students' learning needs.</p></div></li>
+                        </ul>
                     </div>
- 
+
                     <div class="tab-panel p-donors">
                         <ul class="donor-list">
-                    <li class="donor-card"><div class="avatar"></div>
-                        <div class="donor-info"><strong>Mycha Ogania</strong><span>Quezon City · 2 days ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱7,000</strong></div></li>
-                    <li class="donor-card"><div class="avatar"></div>
-                        <div class="donor-info"><strong>Hailey Lumanglas</strong><span>Antipolo · 3 days ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱3,000</strong></div></li>
-                    <li class="donor-card"><div class="avatar"></div>
-                        <div class="donor-info"><strong>Anonymous</strong><span>5 days ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱2,000</strong></div></li>
+                            <li class="donor-card"><div class="avatar"></div>
+                                <div class="donor-info"><strong>Mycha Ogania</strong><span>Quezon City · 2 days ago</span></div>
+                                <div class="donor-amount"><span>Donated:</span><strong>₱7,000</strong></div></li>
+                            <li class="donor-card"><div class="avatar"></div>
+                                <div class="donor-info"><strong>Hailey Lumanglas</strong><span>Antipolo · 3 days ago</span></div>
+                                <div class="donor-amount"><span>Donated:</span><strong>₱3,000</strong></div></li>
+                            <li class="donor-card"><div class="avatar"></div>
+                                <div class="donor-info"><strong>Anonymous</strong><span>5 days ago</span></div>
+                                <div class="donor-amount"><span>Donated:</span><strong>₱2,000</strong></div></li>
                         </ul>
                     </div>
                 </section>
- 
+
                 <aside class="donate-card">
                     <div class="raised-row">
                         <div class="donut" style="--pct: 60;"><span>60%</span></div>
                         <div><h2>₱12,000</h2><p>raised of ₱20,000 needed</p></div>
                     </div>
- 
+
                     <label for="donate-supplies" class="btn-pill btn-primary">Donate Now</label>
                     <input type="button" value="Share" class="btn-pill btn-secondary">
- 
-                    <h3 class="recent-title"></span>Recent Donors</h3>
+
+                    <h3 class="recent-title">Recent Donors</h3>
                     <ul class="recent-list">
-                    <li><div class="avatar sm"></div><span>Mycha Ogania</span><strong>₱7,000</strong></li>
-                    <li><div class="avatar sm"></div><span>Hailey Lumanglas</span><strong>₱3,000</strong></li>
-                    <li><div class="avatar sm"></div><span>Anonymous</span><strong>₱2,000</strong></li>
+                        <li><div class="avatar sm"></div><span>Mycha Ogania</span><strong>₱7,000</strong></li>
+                        <li><div class="avatar sm"></div><span>Hailey Lumanglas</span><strong>₱3,000</strong></li>
+                        <li><div class="avatar sm"></div><span>Anonymous</span><strong>₱2,000</strong></li>
                     </ul>
                 </aside>
             </div>
         </div>
- 
+
         <div class="donate-modal">
             <label for="donate-supplies" class="modal-backdrop"></label>
- 
+
             <form class="modal-box donate-form" action="#donation-thanks">
                 <label for="donate-supplies" class="modal-close">&times;</label>
- 
+
                 <div class="form-body">
                     <h2>Make a Donation</h2>
                     <p class="modal-sub">Send your donation first, then confirm it below.</p>
- 
+
                     <p class="modal-label">1. Which app did you use?</p>
                     <div class="pill-options">
                         <label><input type="radio" name="method" value="GCash" class="m-gcash" checked><span>GCash</span></label>
@@ -863,7 +846,7 @@
                         <label><input type="radio" name="method" value="Bank Transfer" class="m-bank"><span>Bank</span></label>
                         <label><input type="radio" name="method" value="Other" class="m-other"><span>Other</span></label>
                     </div>
- 
+
                     <div class="send-box">
                         <div class="qr">QR</div>
                         <div>
@@ -874,7 +857,7 @@
                             <p class="send for-other">Contact us for other ways to give</p>
                         </div>
                     </div>
- 
+
                     <p class="modal-label">2. Amount you sent</p>
                     <div class="pill-options">
                         <label><input type="radio" name="amount" value="100"><span>₱100</span></label>
@@ -883,39 +866,39 @@
                         <label><input type="radio" name="amount" value="5000"><span>₱5,000</span></label>
                     </div>
                     <input class="plain-input" type="number" name="custom" min="1" placeholder="Other amount (₱) — leave blank to use the one above">
- 
+
                     <label class="field"><span>3. Reference number</span>
                         <input type="text" name="ref" required minlength="6" placeholder="e.g. 1234 567 890123" autocomplete="off"></label>
- 
+
                     <div class="field-row">
                         <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Juan Dela Cruz"></label>
                         <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com"></label>
                     </div>
- 
+
                     <label class="field"><span>Message (optional)</span><textarea name="message" rows="2" placeholder="Words of encouragement for the student"></textarea></label>
                     <label class="check"><input type="checkbox" name="anonymous"> Donate anonymously</label>
- 
+
                     <button type="submit" class="btn-pill btn-primary">Confirm donation</button>
                 </div>
             </form>
         </div>
     </main>
- 
+
     <main id="campaign-library" class="page">
         <input type="checkbox" id="donate-library" class="donate-toggle" hidden>
- 
+
         <div class="wrap">
             <h1 class="detail-title">Library Building Project</h1>
             <div class="detail-meta"><span>👤 Malate Community School</span><span>📍 Malate, Manila</span><span>🏷️ Facilities</span></div>
             <div class="detail-layout">
- 
+
                 <section class="detail-main">
                     <div class="detail-tabs">
                         <label class="tab-btn"><input type="radio" name="ct-library" class="ct-story" checked>Story</label>
                         <label class="tab-btn"><input type="radio" name="ct-library" class="ct-update">Update</label>
                         <label class="tab-btn"><input type="radio" name="ct-library" class="ct-donors">Donors</label>
                     </div>
- 
+
                     <div class="tab-panel p-story">
                         <img class="story-img" src="assets/library.jpg" alt="">
                         <div class="story-text">
@@ -928,65 +911,65 @@
                             <div><strong>Malate Community School</strong><span>Campaign organizer</span></div>
                         </div>
                     </div>
- 
+
                     <div class="tab-panel p-update">
                         <ul class="timeline">
-                    <li class="timeline-item"><div class="timeline-date">September 4, 2026</div>
-                        <div class="timeline-body"><h3>Shelves Installed</h3><p>The shelves for the new library have been installed and are ready for use.</p></div></li>
-                    <li class="timeline-item"><div class="timeline-date">April 10, 2026</div>
-                        <div class="timeline-body"><h3>Campaign passed 50% of the goal</h3><p>We are thrilled to announce that our campaign has passed 50% of its goal, thanks to the support of our amazing donors.</p></div></li>
-                    <li class="timeline-item"><div class="timeline-date">March 1, 2026</div>
-                        <div class="timeline-body"><h3>We have bought the materials</h3><p>The necessary materials for the new library have been purchased and are on their way.</p></div></li>
+                            <li class="timeline-item"><div class="timeline-date">September 4, 2026</div>
+                                <div class="timeline-body"><h3>Shelves Installed</h3><p>The shelves for the new library have been installed and are ready for use.</p></div></li>
+                            <li class="timeline-item"><div class="timeline-date">April 10, 2026</div>
+                                <div class="timeline-body"><h3>Campaign passed 50% of the goal</h3><p>We are thrilled to announce that our campaign has passed 50% of its goal, thanks to the support of our amazing donors.</p></div></li>
+                            <li class="timeline-item"><div class="timeline-date">March 1, 2026</div>
+                                <div class="timeline-body"><h3>We have bought the materials</h3><p>The necessary materials for the new library have been purchased and are on their way.</p></div></li>
                         </ul>
                     </div>
- 
+
                     <div class="tab-panel p-donors">
                         <ul class="donor-list">
-                    <li class="donor-card"><div class="avatar"></div>
-                        <div class="donor-info"><strong>Ariyhanna Macawile</strong><span>Quezon City · 2 days ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱25,000</strong></div></li>
-                    <li class="donor-card"><div class="avatar"></div>
-                        <div class="donor-info"><strong>Ian Diaz</strong><span>Antipolo · 3 days ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱5,500</strong></div></li>
-                    <li class="donor-card"><div class="avatar"></div>
-                        <div class="donor-info"><strong>Elijah Refuncion</strong><span>5 days ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱5,000</strong></div></li>
-                    <li class="donor-card"><div class="avatar"></div>
-                        <div class="donor-info"><strong>Ana Reyes</strong><span>Cebu City · 1 week ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱5,000</strong></div></li>
+                            <li class="donor-card"><div class="avatar"></div>
+                                <div class="donor-info"><strong>Ariyhanna Macawile</strong><span>Quezon City · 2 days ago</span></div>
+                                <div class="donor-amount"><span>Donated:</span><strong>₱25,000</strong></div></li>
+                            <li class="donor-card"><div class="avatar"></div>
+                                <div class="donor-info"><strong>Ian Diaz</strong><span>Antipolo · 3 days ago</span></div>
+                                <div class="donor-amount"><span>Donated:</span><strong>₱5,500</strong></div></li>
+                            <li class="donor-card"><div class="avatar"></div>
+                                <div class="donor-info"><strong>Elijah Refuncion</strong><span>5 days ago</span></div>
+                                <div class="donor-amount"><span>Donated:</span><strong>₱5,000</strong></div></li>
+                            <li class="donor-card"><div class="avatar"></div>
+                                <div class="donor-info"><strong>Ana Reyes</strong><span>Cebu City · 1 week ago</span></div>
+                                <div class="donor-amount"><span>Donated:</span><strong>₱5,000</strong></div></li>
                         </ul>
                     </div>
                 </section>
- 
+
                 <aside class="donate-card">
                     <div class="raised-row">
                         <div class="donut" style="--pct: 80;"><span>80%</span></div>
                         <div><h2>₱40,000</h2><p>raised of ₱50,000 needed</p></div>
                     </div>
- 
+
                     <label for="donate-library" class="btn-pill btn-primary">Donate Now</label>
                     <input type="button" value="Share" class="btn-pill btn-secondary">
- 
-                    <h3 class="recent-title"></span>Recent Donors</h3>
+
+                    <h3 class="recent-title">Recent Donors</h3>
                     <ul class="recent-list">
-                    <li><div class="avatar sm"></div><span>Ariyhanna Macawile</span><strong>₱25,000</strong></li>
-                    <li><div class="avatar sm"></div><span>Ian Diaz</span><strong>₱5,500</strong></li>
-                    <li><div class="avatar sm"></div><span>Elijah Refuncion</span><strong>₱5,000</strong></li>
+                        <li><div class="avatar sm"></div><span>Ariyhanna Macawile</span><strong>₱25,000</strong></li>
+                        <li><div class="avatar sm"></div><span>Ian Diaz</span><strong>₱5,500</strong></li>
+                        <li><div class="avatar sm"></div><span>Elijah Refuncion</span><strong>₱5,000</strong></li>
                     </ul>
                 </aside>
             </div>
         </div>
- 
+
         <div class="donate-modal">
             <label for="donate-library" class="modal-backdrop"></label>
- 
+
             <form class="modal-box donate-form" action="#donation-thanks">
                 <label for="donate-library" class="modal-close">&times;</label>
- 
+
                 <div class="form-body">
                     <h2>Make a Donation</h2>
                     <p class="modal-sub">Send your donation first, then confirm it below.</p>
- 
+
                     <p class="modal-label">1. Which app did you use?</p>
                     <div class="pill-options">
                         <label><input type="radio" name="method" value="GCash" class="m-gcash" checked><span>GCash</span></label>
@@ -994,7 +977,7 @@
                         <label><input type="radio" name="method" value="Bank Transfer" class="m-bank"><span>Bank</span></label>
                         <label><input type="radio" name="method" value="Other" class="m-other"><span>Other</span></label>
                     </div>
- 
+
                     <div class="send-box">
                         <div class="qr">QR</div>
                         <div>
@@ -1005,7 +988,7 @@
                             <p class="send for-other">Contact us for other ways to give</p>
                         </div>
                     </div>
- 
+
                     <p class="modal-label">2. Amount you sent</p>
                     <div class="pill-options">
                         <label><input type="radio" name="amount" value="100"><span>₱100</span></label>
@@ -1014,18 +997,18 @@
                         <label><input type="radio" name="amount" value="5000"><span>₱5,000</span></label>
                     </div>
                     <input class="plain-input" type="number" name="custom" min="1" placeholder="Other amount (₱) — leave blank to use the one above">
- 
+
                     <label class="field"><span>3. Reference number</span>
                         <input type="text" name="ref" required minlength="6" placeholder="e.g. 1234 567 890123" autocomplete="off"></label>
- 
+
                     <div class="field-row">
                         <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Juan Dela Cruz"></label>
                         <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com"></label>
                     </div>
- 
+
                     <label class="field"><span>Message (optional)</span><textarea name="message" rows="2" placeholder="Words of encouragement for the student"></textarea></label>
                     <label class="check"><input type="checkbox" name="anonymous"> Donate anonymously</label>
- 
+
                     <button type="submit" class="btn-pill btn-primary">Confirm donation</button>
                 </div>
             </form>
@@ -1033,255 +1016,244 @@
     </main>
 
     <main id="about" class="page info-page">
-      <section class="hero">
-        <h1>About Us</h1>
-      </section>
-
-      <div class="page-content">
-        <section class="split">
-          <div>
-            <h2>Mission</h2>
-            <p>To empower underprivileged Filipino students by building their English reading and writing skills through volunteer-led sessions, and by directing requested monetary donations toward the cause. Agapay connects volunteers and donors into tangible action that helps students read with confidence, write with clarity, and believe in their own potential.</p>
-          </div>
-          <img src="assets/mission-image.jpg" alt="A group of students intently listening">
+        <section class="hero">
+            <h1>About Us</h1>
         </section>
 
-        <section class="split">
-          <img src="assets/vision-image.jpg" alt="A group of 7 children laying down, hands reaching the camera">
-          <div>
-            <h2>Vision</h2>
-            <p>A Philippines where every student, regardless of economic background, can read and write in English which will open doors to education, opportunity, and in turn, prepare them to be internationally competent. A foundation where people come together to provide time and necessities to ensure that children are educated, confident, and advanced.</p>
-          </div>
-        </section>
+        <div class="page-content">
+            <section class="split">
+                <div>
+                    <h2>Mission</h2>
+                    <p>To empower underprivileged Filipino students by building their English reading and writing skills through volunteer-led sessions, and by directing requested monetary donations toward the cause. Agapay connects volunteers and donors into tangible action that helps students read with confidence, write with clarity, and believe in their own potential.</p>
+                </div>
+                <img src="assets/mission-image.jpg" alt="A group of students intently listening">
+            </section>
 
-        <section>
-          <h2>Objectives</h2>
-          <p>Agapay is an initiative with a focused goal: to strengthen English literacy among Filipino youth through volunteer teaching and by responding to requests for monetary support related to the cause. To achieve this, the organization aims to:</p>
-          <ul>
-            <li>To provide English reading and writing support to students in low-income communities by mobilizing volunteers to serve as tutors and reading partners.</li>
-            <li>To receive and evaluate requests for monetary assistance related to English literacy such as learning materials, facilities, or student opportunities and direct donations toward fulfilling them.</li>
-            <li>To distribute essential reading and writing tools such as books, workbooks, and school supplies </li>
-            <li>To create a safe and encouraging space for learning, where students feel comfortable practicing English without fear of judgment.</li>
-            <li>To raise awareness about the literacy gap in Philippine education and to inspire others to volunteer or donate.</li>
-          </ul>
-        </section>
+            <section class="split">
+                <img src="assets/vision-image.jpg" alt="A group of 7 children laying down, hands reaching the camera">
+                <div>
+                    <h2>Vision</h2>
+                    <p>A Philippines where every student, regardless of economic background, can read and write in English which will open doors to education, opportunity, and in turn, prepare them to be internationally competent. A foundation where people come together to provide time and necessities to ensure that children are educated, confident, and advanced.</p>
+                </div>
+            </section>
 
-        <section>
-          <h2>Company History</h2>
-          <ol class="history">
-            <li>
-              <h3>2019</h3>
-              <p>Agapay started as a weekend reading circle in Metro Manila, where five volunteers tutored twelve children in a low-income community. These early sessions helped students build foundational English reading and writing skills in a safe, encouraging space.</p>
-            </li>
-            <li>
-              <h3>2022</h3>
-              <p>Agapay expanded its volunteer network across Luzon and began directing requested donations toward learning materials, books, and school supplies, giving more Filipino students the tools they needed to learn.</p>
-            </li>
-            <li>
-              <h3>2025</h3>
-              <p>Agapay launched its official website, connecting volunteers and donors nationwide. This scaled its impact, helping more students read with confidence, write with clarity, and believe in their own potential.</p>
-            </li>
-          </ol>
-        </section>
+            <section>
+                <h2>Objectives</h2>
+                <p>Agapay is an initiative with a focused goal: to strengthen English literacy among Filipino youth through volunteer teaching and by responding to requests for monetary support related to the cause. To achieve this, the organization aims to:</p>
+                <ul>
+                    <li>To provide English reading and writing support to students in low-income communities by mobilizing volunteers to serve as tutors and reading partners.</li>
+                    <li>To receive and evaluate requests for monetary assistance related to English literacy such as learning materials, facilities, or student opportunities and direct donations toward fulfilling them.</li>
+                    <li>To distribute essential reading and writing tools such as books, workbooks, and school supplies </li>
+                    <li>To create a safe and encouraging space for learning, where students feel comfortable practicing English without fear of judgment.</li>
+                    <li>To raise awareness about the literacy gap in Philippine education and to inspire others to volunteer or donate.</li>
+                </ul>
+            </section>
 
-        <section>
-          <h2>Success Story: Our Impact</h2>
-          <div class="stats">
-            <div><strong>#</strong> volunteers</div>
-            <div><strong>#</strong> scholars</div>
-            <div><strong>#</strong> books donated</div>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </section>
+            <section>
+                <h2>Company History</h2>
+                <ol class="history">
+                    <li>
+                        <h3>2019</h3>
+                        <p>Agapay started as a weekend reading circle in Metro Manila, where five volunteers tutored twelve children in a low-income community. These early sessions helped students build foundational English reading and writing skills in a safe, encouraging space.</p>
+                    </li>
+                    <li>
+                        <h3>2022</h3>
+                        <p>Agapay expanded its volunteer network across Luzon and began directing requested donations toward learning materials, books, and school supplies, giving more Filipino students the tools they needed to learn.</p>
+                    </li>
+                    <li>
+                        <h3>2025</h3>
+                        <p>Agapay launched its official website, connecting volunteers and donors nationwide. This scaled its impact, helping more students read with confidence, write with clarity, and believe in their own potential.</p>
+                    </li>
+                </ol>
+            </section>
 
-        <section class="sponsors">
-          <h2>Company Sponsors</h2>
-          <div>
-            <img src="assets/Agapay logo.png" alt="Sponsor 1">
-            <img src="assets/Agapay logo.png" alt="Sponsor 2">
-            <img src="assets/Agapay logo.png" alt="Sponsor 3">
-            <img src="assets/Agapay logo.png" alt="Sponsor 4">
-          </div>
-        </section>
-      </div>
+            <section>
+                <h2>Success Story: Our Impact</h2>
+                <div class="stats">
+                    <div><strong>#</strong> volunteers</div>
+                    <div><strong>#</strong> scholars</div>
+                    <div><strong>#</strong> books donated</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
+
+            <section class="sponsors">
+                <h2>Company Sponsors</h2>
+                <div>
+                    <img src="assets/Agapay logo.png" alt="Sponsor 1">
+                    <img src="assets/Agapay logo.png" alt="Sponsor 2">
+                    <img src="assets/Agapay logo.png" alt="Sponsor 3">
+                    <img src="assets/Agapay logo.png" alt="Sponsor 4">
+                </div>
+            </section>
+        </div>
     </main>
 
     <main id="mentorship" class="page info-page">
-      <div class="page-content">
-        <section id="mentor-profiles">
-          <h2>Our Mentors</h2>
-          <p class="intro">Our mentors are passionate experts in the English language who guide children on their reading and writing journey. From storytelling and grammar to creative writing and public speaking, they make learning English fun, encouraging, and full of discovery.</p>
-          <div class="mentors">
-            <article class="mentor">
-              <img src="assets/Agapay Logo.png" alt="Mentor 1">
-              <h3>Mentor Name</h3>
-              <p>A retired teacher who loves reading stories aloud and helping kids discover the joy of books.</p>
-            </article>
-            <article class="mentor">
-              <img src="assets/Agapay Logo.png" alt="Mentor 2">
-              <h3>Mentor Name</h3>
-              <p>A poet who teaches children how to play with words and write their own poems.</p>
-            </article>
-            <article class="mentor">
-              <img src="assets/Agapay Logo.png" alt="Mentor 3">
-              <h3>Mentor Name</h3>
-              <p>A friendly grammar expert who makes learning English rules feel like a fun game.</p>
-            </article>
-            <article class="mentor">
-              <img src="assets/Agapay Logo.png" alt="Mentor 4">
-              <h3>Mentor Name</h3>
-              <p>A former newspaper writer who helps kids write clear, exciting stories of their own.</p>
-            </article>
-            <article class="mentor">
-              <img src="assets/Agapay Logo.png" alt="Mentor 5">
-              <h3>Mentor Name</h3>
-              <p>A children's author who helps young writers use their imagination to create amazing tales.</p>
-            </article>
-          </div>
-        </section>
-
-        <div class="two-col">
-          <section id="mentor-application">
-            <h2>Become a Mentor</h2>
-            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            <form action="#" method="post">
-              <label>Full name
-                <input type="text" name="name" required>
-              </label>
-              <label>Email
-                <input type="email" name="email" required>
-              </label>
-              <label>Availability
-                <select name="availability">
-                  <option>Weekdays</option>
-                  <option>Weekends</option>
-                  <option>Flexible</option>
-                </select>
-              </label>
-              <label>Hours per Week
-                <input type="number" name="hours" min="1" max="40">
-                </label>
-
-                <div class="checks">
-                <span>Areas of Expertise (check all that apply)</span>
-                <label><input type="checkbox" name="expertise" value="Reading"> Reading</label>
-                <label><input type="checkbox" name="expertise" value="Writing"> Writing</label>
-                <label><input type="checkbox" name="expertise" value="Grammar"> Grammar</label>
-                <label><input type="checkbox" name="expertise" value="Creative Writing"> Creative Writing</label>
-                <label><input type="checkbox" name="expertise" value="Public Speaking"> Public Speaking</label>
-                <label><input type="checkbox" name="expertise" value="Other"> Other</label>
+        <div class="page-content">
+            <section id="mentor-profiles">
+                <h2>Our Mentors</h2>
+                <p class="intro">Our mentors are passionate experts in the English language who guide children on their reading and writing journey. From storytelling and grammar to creative writing and public speaking, they make learning English fun, encouraging, and full of discovery.</p>
+                <div class="mentors">
+                    <article class="mentor">
+                        <img src="assets/Agapay Logo.png" alt="Mentor 1">
+                        <h3>Mentor Name</h3>
+                        <p>A retired teacher who loves reading stories aloud and helping kids discover the joy of books.</p>
+                    </article>
+                    <article class="mentor">
+                        <img src="assets/Agapay Logo.png" alt="Mentor 2">
+                        <h3>Mentor Name</h3>
+                        <p>A poet who teaches children how to play with words and write their own poems.</p>
+                    </article>
+                    <article class="mentor">
+                        <img src="assets/Agapay Logo.png" alt="Mentor 3">
+                        <h3>Mentor Name</h3>
+                        <p>A friendly grammar expert who makes learning English rules feel like a fun game.</p>
+                    </article>
+                    <article class="mentor">
+                        <img src="assets/Agapay Logo.png" alt="Mentor 4">
+                        <h3>Mentor Name</h3>
+                        <p>A former newspaper writer who helps kids write clear, exciting stories of their own.</p>
+                    </article>
+                    <article class="mentor">
+                        <img src="assets/Agapay Logo.png" alt="Mentor 5">
+                        <h3>Mentor Name</h3>
+                        <p>A children's author who helps young writers use their imagination to create amazing tales.</p>
+                    </article>
                 </div>
+            </section>
 
-                <label>Other (please specify)
-                <input type="text" name="expertise-other">
-                </label>
+            <div class="two-col">
+                <section id="mentor-application">
+                    <h2>Become a Mentor</h2>
+                    <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <form action="#" method="post">
+                        <label>Full name
+                            <input type="text" name="name" required>
+                        </label>
+                        <label>Email
+                            <input type="email" name="email" required>
+                        </label>
+                        <label>Availability
+                            <select name="availability">
+                                <option>Weekdays</option>
+                                <option>Weekends</option>
+                                <option>Flexible</option>
+                            </select>
+                        </label>
+                        <label>Hours per Week
+                            <input type="number" name="hours" min="1" max="40">
+                        </label>
 
-                <label>Relevant Experience
-                <textarea name="experience" rows="3"></textarea>
-                </label>
+                        <div class="checks">
+                            <span>Areas of Expertise (check all that apply)</span>
+                            <label><input type="checkbox" name="expertise" value="Reading"> Reading</label>
+                            <label><input type="checkbox" name="expertise" value="Writing"> Writing</label>
+                            <label><input type="checkbox" name="expertise" value="Grammar"> Grammar</label>
+                            <label><input type="checkbox" name="expertise" value="Creative Writing"> Creative Writing</label>
+                            <label><input type="checkbox" name="expertise" value="Public Speaking"> Public Speaking</label>
+                            <label><input type="checkbox" name="expertise" value="Other"> Other</label>
+                        </div>
 
-                <label>Teaching or Tutoring Background (if any)
-                <textarea name="tutoring" rows="3"></textarea>
-                </label>
-              <label>Why do you want to be a mentor?
-                <textarea name="message" rows="5" required></textarea>
-              </label>
-              <button type="submit">Submit application</button>
-              <p class="ok-msg">&#10003; Submitted. Thank you!</p>
-            </form>
-          </section>
+                        <label>Other (please specify)
+                            <input type="text" name="expertise-other">
+                        </label>
 
-          <section id="student-requests">
-            <h2>Help Request</h2>
-            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
-            <form action="#" method="post">
-              <label>Name of student or school
-                <input type="text" name="name" required>
-              </label>
-              <label>I am a
-                <select name="requester">
-                  <option>Student</option>
-                  <option>School</option>
-                </select>
-              </label>
-              <label>Email
-                <input type="email" name="email" required>
-              </label>
-              <label>Type of help needed
-                <select name="help-type">
-                  <option>Books</option>
-                  <option>School supplies</option>
-                  <option>Monetary donation</option>
-                  <option>Other</option>
-                </select>
-              </label>
-              <label>Quantity or amount
-                <input type="text" name="amount" placeholder="e.g. 20 books, or amount needed">
-              </label>
-              <label>Tell us about your need
-                <textarea name="message" rows="5" required></textarea>
-              </label>
-              <button type="submit">Submit request</button>
-              <p class="ok-msg">&#10003; Submitted. Thank you!</p>
-            </form>
-          </section>
+                        <label>Relevant Experience
+                            <textarea name="experience" rows="3"></textarea>
+                        </label>
+
+                        <label>Teaching or Tutoring Background (if any)
+                            <textarea name="tutoring" rows="3"></textarea>
+                        </label>
+                        <label>Why do you want to be a mentor?
+                            <textarea name="message" rows="5" required></textarea>
+                        </label>
+                        <button type="submit">Submit application</button>
+                    </form>
+                </section>
+
+                <section id="student-requests">
+                    <h2>Help Request</h2>
+                    <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <form action="#" method="post">
+                        <label>Name of student or school
+                            <input type="text" name="name" required>
+                        </label>
+                        <label>I am a
+                            <select name="requester">
+                                <option>Student</option>
+                                <option>School</option>
+                            </select>
+                        </label>
+                        <label>Email
+                            <input type="email" name="email" required>
+                        </label>
+                        <label>Type of help needed
+                            <select name="help-type">
+                                <option>Books</option>
+                                <option>School supplies</option>
+                                <option>Monetary donation</option>
+                                <option>Other</option>
+                            </select>
+                        </label>
+                        <label>Quantity or amount
+                            <input type="text" name="amount" placeholder="e.g. 20 books, or amount needed">
+                        </label>
+                        <label>Tell us about your need
+                            <textarea name="message" rows="5" required></textarea>
+                        </label>
+                        <button type="submit">Submit request</button>
+                    </form>
+                </section>
+            </div>
         </div>
-      </div>
     </main>
 
     <!-- Profile -->
     <main id="profile" class="page">
         <div class="wrap">
 
-            <!-- Shown only to visitors who are not logged in -->
-            <section class="profile-locked">
-                <h1>Please log in</h1>
-                <p>Log in to see your profile.</p>
-                <a href="#login" class="btn-pill btn-primary inline">Log In</a>
-            </section>
-
             <section class="profile-banner">
-                <div class="profile-initials" id="profile-initials"></div>
+                <div class="profile-initials">JD</div>
                 <div class="profile-banner-text">
-                    <h1 id="profile-name"></h1>
-                    <p id="profile-email"></p>
-                    <span class="member-since" id="profile-since"></span>
+                    <h1>Juan Dela Cruz</h1>
+                    <p>juan@email.com</p>
+                    <span class="member-since">Member since September 2022</span>
                 </div>
                 <div class="profile-stats">
-                    <div><strong id="stat-donations">0</strong><span>Donations</span></div>
-                    <div><strong id="stat-given">₱0</strong><span>Total given</span></div>
-                    <div><strong id="stat-events">0</strong><span>Events joined</span></div>
-                    <div><strong id="stat-hours">0</strong><span>Volunteer hours</span></div>
+                    <div><strong>3</strong><span>Donations</span></div>
+                    <div><strong>₱1,750</strong><span>Total given</span></div>
+                    <div><strong>2</strong><span>Events joined</span></div>
+                    <div><strong>7</strong><span>Volunteer hours</span></div>
                 </div>
             </section>
 
             <div class="profile-layout">
-
                 <nav class="profile-menu" aria-label="Profile sections">
                     <label class="menu-btn"><input type="radio" name="pf" id="pf-info" checked>Personal Info</label>
                     <label class="menu-btn"><input type="radio" name="pf" id="pf-donations">My Donations</label>
                     <label class="menu-btn"><input type="radio" name="pf" id="pf-volunteer">My Volunteerism</label>
                     <label class="menu-btn"><input type="radio" name="pf" id="pf-security">Password &amp; Security</label>
-                    <a href="#logout" class="menu-btn logout-link">Log Out</a>
+                    <a href="#login" class="menu-btn">Log Out</a>
                 </nav>
 
                 <section class="profile-content">
 
                     <div class="tab-panel" id="panel-info">
                         <h2 class="panel-title">Personal Info</h2>
-                        <form>
+                        <form action="#">
                             <div class="field-row">
-                                <label class="field"><span>First name</span><input type="text" id="profile-firstname" readonly></label>
-                                <label class="field"><span>Last name</span><input type="text" id="profile-lastname" readonly></label>
-                                <label class="field"><span>Email</span><input type="email" id="profile-email-field" readonly></label>
-                                <label class="field"><span>Phone number</span><input type="tel" id="profile-phone" readonly></label>
-                                <label class="field"><span>City</span><input type="text" id="profile-city" readonly></label>
+                                <label class="field"><span>First name</span><input type="text" value="Juan" readonly></label>
+                                <label class="field"><span>Last name</span><input type="text" value="Dela Cruz" readonly></label>
+                                <label class="field"><span>Email</span><input type="email" value="juan@email.com" readonly></label>
+                                <label class="field"><span>Phone number</span><input type="tel" value="0900 000 0000" readonly></label>
+                                <label class="field"><span>City</span><input type="text" value="Antipolo" readonly></label>
                                 <label class="field"><span>Birthday</span><input type="date"></label>
                             </div>
-                            <label class="field"><span>Full address</span><input type="text" id="profile-address" readonly></label>
+                            <label class="field"><span>Full address</span><input type="text" value="Antipolo" readonly></label>
                             <label class="field"><span>About me</span><textarea rows="3" placeholder="Tell us a little about yourself"></textarea></label>
                             <button type="submit" class="btn-pill btn-primary inline">Save changes</button>
-                            <p class="ok-msg">&#10003; Your changes were saved.</p>
                         </form>
                     </div>
 
@@ -1290,8 +1262,10 @@
                         <div class="table-wrap">
                             <table class="donation-table">
                                 <thead><tr><th>Date</th><th>Campaign</th><th>Amount</th><th>App</th><th>Reference no.</th><th>Status</th></tr></thead>
-                                <tbody id="donations-body">
-                            <tr><td colspan="6">No donations yet.</td></tr>
+                                <tbody>
+                                    <tr><td>Oct 5, 2026</td><td>Books for Future Engineers</td><td>₱500</td><td>GCash</td><td>8841 203 551920</td><td><span class="status verified">Verified</span></td></tr>
+                                    <tr><td>Sep 28, 2026</td><td>Back-to-School Kits</td><td>₱1,000</td><td>Maya</td><td>MY20926371</td><td><span class="status pending">Pending</span></td></tr>
+                                    <tr><td>Sep 2, 2026</td><td>Feeding Program</td><td>₱250</td><td>Bank Transfer</td><td>BDO-5530918</td><td><span class="status verified">Verified</span></td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -1303,8 +1277,10 @@
                         <div class="table-wrap">
                             <table class="donation-table">
                                 <thead><tr><th>Date</th><th>Event</th><th>Role</th><th>Hours</th><th>Status</th></tr></thead>
-                                <tbody id="volunteer-body">
-                                    <tr><td colspan="5">No volunteer events yet.</td></tr>
+                                <tbody>
+                                    <tr><td>Oct 25, 2026</td><td>Library Build Day</td><td>Helper</td><td>&mdash;</td><td><span class="status pending">Upcoming</span></td></tr>
+                                    <tr><td>Oct 3, 2026</td><td>Book Sorting Day</td><td>Volunteer</td><td>4</td><td><span class="status verified">Completed</span></td></tr>
+                                    <tr><td>Sep 20, 2026</td><td>Tutoring Session</td><td>Tutor</td><td>3</td><td><span class="status verified">Completed</span></td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -1313,12 +1289,11 @@
 
                     <div class="tab-panel" id="panel-security">
                         <h2 class="panel-title">Password &amp; Security</h2>
-                        <form class="narrow">
+                        <form class="narrow" action="#">
                             <label class="field"><span>Current password</span><input type="password" required></label>
                             <label class="field"><span>New password</span><input type="password" required minlength="8" placeholder="At least 8 characters"></label>
                             <label class="field"><span>Confirm new password</span><input type="password" required minlength="8"></label>
                             <button type="submit" class="btn-pill btn-primary inline">Update password</button>
-                            <p class="ok-msg">&#10003; Password updated.</p>
                         </form>
                     </div>
 
@@ -1333,27 +1308,27 @@
             <h1 class="auth-title">Welcome Back!</h1>
             <p class="auth-sub">Log in to continue and make a difference.</p>
 
-            <form id="login-form">
-                <label class="field">
-                    <span>Email</span>
-                    <div class="auth-input">
-                        <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                        <input type="email" name="email" placeholder="Enter your email" required>
-                    </div>
-                </label>
+            <label class="field">
+                <span>Email</span>
+                <div class="auth-input">
+                    <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <input type="email" id="login-email" value="juan@email.com" readonly>
+                </div>
+            </label>
 
-                <label class="field">
-                    <span>Password</span>
-                    <div class="auth-input">
-                        <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6z"/></svg>
-                        <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
-                        <button type="button" class="show-btn" onclick="togglePassword('login-password', this)">Show</button>
-                    </div>
-                </label>
+            <label class="field">
+                <span>Password</span>
+                <div class="auth-input">
+                    <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6z"/></svg>
+                    <input type="password" id="login-password"
+                           placeholder="Enter your password"
+                           required pattern="Juan12345"
+                           title="Demo password: Juan12345">
+                </div>
+            </label>
 
-                <button type="submit" class="btn-pill btn-primary">Log In</button>
-                <p class="auth-msg" id="login-msg" role="alert"></p>
-            </form>
+            <a href="#profile" class="btn-pill btn-primary login-submit">Log In</a>
+            <p class="login-hint">Type the demo password to unlock the button.</p>
 
             <p class="auth-switch">Don't have an account? <a href="#signup">Sign Up</a></p>
             <p class="auth-test-note"><strong>Test account</strong> (for demo only)<br>Email: juan@email.com &nbsp;|&nbsp; Password: Juan12345</p>
@@ -1366,7 +1341,7 @@
             <h1 class="auth-title">Create an Account</h1>
             <p class="auth-sub">Sign up to Continue</p>
 
-            <form id="signup-form">
+            <form action="#login" method="get">
                 <label class="field">
                     <span>Full Name</span>
                     <div class="auth-input">
@@ -1403,8 +1378,7 @@
                     <span>Password</span>
                     <div class="auth-input">
                         <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6z"/></svg>
-                        <input type="password" id="signup-password" name="password" placeholder="Create a password" minlength="8" oninput="checkPasswordMatch()" required>
-                        <button type="button" class="show-btn" onclick="togglePassword('signup-password', this)">Show</button>
+                        <input type="password" name="password" placeholder="Create a password" minlength="8" required>
                     </div>
                 </label>
 
@@ -1412,13 +1386,11 @@
                     <span>Confirm Password</span>
                     <div class="auth-input">
                         <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6z"/></svg>
-                        <input type="password" id="signup-confirm" name="confirm" placeholder="Re-enter your password" oninput="checkPasswordMatch()" required>
-                        <button type="button" class="show-btn" onclick="togglePassword('signup-confirm', this)">Show</button>
+                        <input type="password" name="confirm" placeholder="Re-enter your password" minlength="8" required>
                     </div>
                 </label>
 
                 <button type="submit" class="btn-pill btn-primary">Sign Up</button>
-                <p class="auth-msg" id="signup-msg" role="alert"></p>
             </form>
 
             <p class="auth-switch">Already have an account? <a href="#login">Log In</a></p>
@@ -1452,287 +1424,5 @@
         </div>
     </footer>
 
-    <script>
-        /* ---------- Log In / Sign Up helpers ---------- */
-
-        // Show or hide the text of a password box
-        function togglePassword(inputId, button) {
-            const input = document.getElementById(inputId);
-            if (input.type === 'password') {
-                input.type = 'text';
-                button.textContent = 'Hide';
-            } else {
-                input.type = 'password';
-                button.textContent = 'Show';
-            }
-        }
-
-        // Block the Sign Up form when the two passwords are different
-        function checkPasswordMatch() {
-            const pass = document.getElementById('signup-password');
-            const confirm = document.getElementById('signup-confirm');
-            if (confirm.value !== '' && pass.value !== confirm.value) {
-                confirm.setCustomValidity('Passwords do not match.');
-            } else {
-                confirm.setCustomValidity('');
-            }
-        }
-
-        /* ---------- Test accounts (browser only) ---------- */
-
-        // IMPORTANT: this is a LOCAL TEST system, not real security.
-        // - Accounts are kept in this browser's localStorage, so only this browser can see them.
-        // - Passwords are never saved as plain text. Each one is saved as a salted hash.
-        //   But anyone using this browser can still open DevTools and read or edit the data.
-        // - A real website needs a backend and database. To switch later, replace
-        //   getAccounts(), saveAccounts(), hashPassword() and the session lines below.
-        const ACCOUNTS_KEY = 'agapay_accounts';   // accounts made through Sign Up (localStorage)
-        const SESSION_KEY = 'agapay_session';     // email of the logged-in user (sessionStorage, ends when the tab closes)
-
-        function getAccounts() {  
-            try {
-                return JSON.parse(localStorage.getItem(ACCOUNTS_KEY)) || [];
-            } catch (error) {
-                return [];
-            }
-        }
-
-        function saveAccounts(accounts) {
-            localStorage.setItem(ACCOUNTS_KEY, JSON.stringify(accounts));
-        }
-
-        // TEST ACCOUNT: built into the code so it works without signing up. It is separate from accounts made on the Sign Up page.
-        // Its password is saved as a salted hash, not as text. (Demo password: Juan12345, shown on the Log In page.)
-        // The records below stand in for a database. Donation row: date, campaign, amount, app, reference no., status class, status text.
-        // Volunteer row: date, event, role, hours (null = not attended yet), status class, status text.
-        const TEST_ACCOUNTS = [
-            {
-                name: 'Juan Dela Cruz',
-                firstName: 'Juan',
-                lastName: 'Dela Cruz',
-                email: 'juan@email.com',
-                phone: '0900 000 0000',
-                city: 'Antipolo',
-                address: 'Antipolo',
-                salt: '3f9a1c7e5b2d4a60',
-                hash: '9b0cc0e33ba7360a4bb5734aa74e586367bb8e9facb76fff3a7f451bff34c119',
-                created: '2022-09-01',
-                history: {
-                    donations: [
-                        ['Oct 5, 2026', 'Books for Future Engineers', 500, 'GCash', '8841 203 551920', 'verified', 'Verified'],
-                        ['Sep 28, 2026', 'Back-to-School Kits', 1000, 'Maya', 'MY20926371', 'pending', 'Pending'],
-                        ['Sep 2, 2026', 'Feeding Program', 250, 'Bank Transfer', 'BDO-5530918', 'verified', 'Verified']
-                    ],
-                    volunteering: [
-                        ['Oct 25, 2026', 'Library Build Day', 'Helper', null, 'pending', 'Upcoming'],
-                        ['Oct 3, 2026', 'Book Sorting Day', 'Volunteer', 4, 'verified', 'Completed'],
-                        ['Sep 20, 2026', 'Tutoring Session', 'Tutor', 3, 'verified', 'Completed']
-                    ]
-                }
-            }
-        ];
-
-        // Look in the test accounts first, then in the accounts made through Sign Up
-        function findAccount(email) {
-            return TEST_ACCOUNTS.find(account => account.email === email) || getAccounts().find(account => account.email === email);
-        }
-
-        // Random text added to a password before hashing, so equal passwords look different
-        function makeSalt() {
-            const bytes = crypto.getRandomValues(new Uint8Array(16));
-            return Array.from(bytes).map(b => b.toString(16).padStart(2, '0')).join('');
-        }
-
-        // Turn password + salt into a hash (PBKDF2). The original password cannot be read back from it.
-        async function hashPassword(password, salt) {
-            const encoder = new TextEncoder();
-            const key = await crypto.subtle.importKey('raw', encoder.encode(password), 'PBKDF2', false, ['deriveBits']);
-            const bits = await crypto.subtle.deriveBits(
-                { name: 'PBKDF2', salt: encoder.encode(salt), iterations: 100000, hash: 'SHA-256' }, key, 256);
-            return Array.from(new Uint8Array(bits)).map(b => b.toString(16).padStart(2, '0')).join('');
-        }
-
-        // Show a green (ok) or red (error) message inside a form
-        function showMessage(box, type, text) {
-            box.textContent = text;
-            box.className = 'auth-msg show ' + type;
-        }
-
-        function clearMessage(box) {
-            box.textContent = '';
-            box.className = 'auth-msg';
-        }
-
-        /* ---------- Sign Up ---------- */
-
-        async function handleSignUp(event) {
-            event.preventDefault();
-            const form = event.target;
-            const box = $('signup-msg');
-            const email = form.elements['email'].value.trim().toLowerCase();
-
-            if (form.elements['password'].value !== form.elements['confirm'].value) {
-                showMessage(box, 'error', 'Passwords do not match.');
-                return;
-            }
-            if (TEST_ACCOUNTS.some(account => account.email === email)) {
-                showMessage(box, 'error', 'This email is used by the test account. Please sign up with a different email.');
-                return;
-            }
-            if (findAccount(email)) {
-                showMessage(box, 'error', 'An account with this email already exists. Please log in instead.');
-                return;
-            }
-
-            try {
-                const salt = makeSalt();
-                const accounts = getAccounts();
-                accounts.push({
-                    name: form.elements['fullname'].value.trim(),
-                    email: email,
-                    address: form.elements['address'].value.trim(),
-                    phone: form.elements['phone'].value.trim(),
-                    salt: salt,
-                    hash: await hashPassword(form.elements['password'].value, salt),
-                    created: new Date().toISOString()
-                });
-                saveAccounts(accounts);
-            } catch (error) {
-                showMessage(box, 'error', 'The account could not be created in this browser. Open the site with Live Server (localhost) and try again.');
-                return;
-            }
-
-            // Account saved. Send the new member to Log In.
-            form.reset();
-            clearMessage(box);
-            $('login-form').reset();
-            $('login-form').elements['email'].value = email;
-            showMessage($('login-msg'), 'ok', '✓ Account created. Log in with your email and password.');
-            window.location.hash = '#login';
-        }
-
-        /* ---------- Log In ---------- */
-
-        async function handleLogIn(event) {
-            event.preventDefault();
-            const form = event.target;
-            const box = $('login-msg');
-            const email = form.elements['email'].value.trim().toLowerCase();
-            const account = findAccount(email);
-
-            if (!account) {
-                showMessage(box, 'error', 'No account found with that email. Please sign up first.');
-                return;
-            }
-
-            let hash = '';
-            try {
-                hash = await hashPassword(form.elements['password'].value, account.salt);
-            } catch (error) {
-                showMessage(box, 'error', 'Log in is not available in this browser. Open the site with Live Server (localhost) and try again.');
-                return;
-            }
-            if (hash !== account.hash) {
-                showMessage(box, 'error', 'Incorrect password. Please try again.');
-                return;
-            }
-
-            // Correct email and password: start the session
-            sessionStorage.setItem(SESSION_KEY, account.email);
-            updateAccountMenu();
-            form.reset();
-            showMessage(box, 'ok', '✓ Welcome back, ' + account.name.split(' ')[0] + '!');
-            setTimeout(() => {
-                clearMessage(box);
-                window.location.hash = '#profile';
-            }, 700);
-        }
-
-        /* ---------- Who is logged in? ---------- */
-
-        // The logged-in account, or null when nobody is logged in
-        function getCurrentUser() {
-            const email = sessionStorage.getItem(SESSION_KEY);
-            return email ? findAccount(email) || null : null;
-        }
-
-        function isLoggedIn() {
-            return getCurrentUser() !== null;
-        }
-
-        // Fill the two history tables and the four numbers in the profile banner
-        function fillHistory(user) {
-            const history = (user && user.history) || { donations: [], volunteering: [] };
-            let total = 0, hours = 0, events = 0;
-            let donationRows = '', volunteerRows = '';
-
-            history.donations.forEach(d => {
-                total += d[2];
-                donationRows += '<tr><td>' + d[0] + '</td><td>' + d[1] + '</td><td>' + peso(d[2]) + '</td><td>' + d[3] +
-                    '</td><td>' + d[4] + '</td><td><span class="status ' + d[5] + '">' + d[6] + '</span></td></tr>';
-            });
-            history.volunteering.forEach(v => {
-                if (v[3] !== null) { hours += v[3]; events += 1; }
-                volunteerRows += '<tr><td>' + v[0] + '</td><td>' + v[1] + '</td><td>' + v[2] + '</td><td>' + (v[3] === null ? '&mdash;' : v[3]) +
-                    '</td><td><span class="status ' + v[4] + '">' + v[5] + '</span></td></tr>';
-            });
-
-            $('donations-body').innerHTML = donationRows || '<tr><td colspan="6">No donations yet.</td></tr>';
-            $('volunteer-body').innerHTML = volunteerRows || '<tr><td colspan="5">No volunteer events yet.</td></tr>';
-            $('stat-donations').textContent = history.donations.length;
-            $('stat-given').textContent = peso(total);
-            $('stat-events').textContent = events;
-            $('stat-hours').textContent = hours;
-        }
-
-        /* ---------- My Profile ---------- */
-
-        // Fill My Profile with the logged-in user's details. When nobody is logged in, everything is cleared.
-        function fillProfile() {
-            const user = getCurrentUser();
-            const name = user ? user.name : '';
-            const words = name.split(' ').filter(word => word !== '');
-            // Test account has its own first/last name. For Sign Up accounts: first word = first name, the rest = last name.
-            const first = user ? (user.firstName || words[0] || '') : '';
-            const last = user ? (user.lastName || words.slice(1).join(' ')) : '';
-            const initials = (first.charAt(0) + last.charAt(0)).toUpperCase();
-
-            $('profile-initials').textContent = initials;
-            $('profile-name').textContent = name;
-            $('profile-email').textContent = user ? user.email : '';
-            $('profile-since').textContent = user ? 'Member since ' + new Date(user.created).toLocaleDateString('en-PH', { month: 'long', year: 'numeric' }) : '';
-            $('profile-firstname').value = first;
-            $('profile-lastname').value = last;
-            $('profile-email-field').value = user ? user.email : '';
-            $('profile-phone').value = user ? user.phone : '';
-            $('profile-city').value = user ? (user.city || '') : '';
-            $('profile-address').value = user ? user.address : '';
-            fillHistory(user);
-        }
-
-        /* ---------- Account menu (Log In / Sign Up  or  My Profile / Log Out) ---------- */
-
-        // Show the right menu items and the right profile data for the current status
-        function updateAccountMenu() {
-            document.body.classList.toggle('logged-in', isLoggedIn());
-            fillProfile();
-        }
-
-        // End the session, clear the profile, then go back to the public Home page.
-        // Registered accounts stay saved so they can log in again.
-        function logOut(event) {
-            event.preventDefault();
-            sessionStorage.removeItem(SESSION_KEY);
-            updateAccountMenu();
-            clearMessage($('login-msg'));
-            window.location.hash = '';      // no page targeted = default public page
-            window.scrollTo(0, 0);
-        }
-
-        $('signup-form').onsubmit = handleSignUp;   // replaces the shared "preventDefault + done" handler
-        $('login-form').onsubmit = handleLogIn;
-        document.querySelectorAll('.logout-link').forEach(link => link.addEventListener('click', logOut));
-        updateAccountMenu();
-    </script>
 </body>
 </html>
