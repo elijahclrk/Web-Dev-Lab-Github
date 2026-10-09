@@ -10,6 +10,8 @@
 </head>
 <body style="display:flex; flex-direction:column; margin:0; font-family: Arial, sans-serif; background-color:#EAF4FF; font-size:16px;">
 
+    <input type="checkbox" id="session" hidden>
+
     <header class="site-header">
         <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
 
@@ -78,7 +80,7 @@
                     <li class="guest-only"><a href="#login">Log In</a></li>
                     <li class="guest-only"><a href="#signup">Sign Up</a></li>
                     <li class="member-only"><a href="#profile">My Profile</a></li>
-                    <li class="member-only"><a href="#login">Log Out</a></li>
+                    <li class="member-only"><a href="#login"><label for="session">Log Out</label></a></li>
                 </ul>
             </div>
 
@@ -1235,7 +1237,7 @@
                     <label class="menu-btn"><input type="radio" name="pf" id="pf-donations">My Donations</label>
                     <label class="menu-btn"><input type="radio" name="pf" id="pf-volunteer">My Volunteerism</label>
                     <label class="menu-btn"><input type="radio" name="pf" id="pf-security">Password &amp; Security</label>
-                    <a href="#login" class="menu-btn">Log Out</a>
+                    <a href="#login" class="menu-btn"><label for="session">Log Out</label></a>
                 </nav>
 
                 <section class="profile-content">
@@ -1327,7 +1329,9 @@
                 </div>
             </label>
 
-            <a href="#profile" class="btn-pill btn-primary login-submit">Log In</a>
+            <a href="#profile" class="btn-pill btn-primary login-submit">
+                <label for="session">Log In</label>
+            </a>
             <p class="login-hint">Type the demo password to unlock the button.</p>
 
             <p class="auth-switch">Don't have an account? <a href="#signup">Sign Up</a></p>

@@ -688,10 +688,21 @@ body:has(.awareness-page-inline:target) #donation:not(:target) { display: none; 
     .auth-card { padding: 28px 18px 22px; }
 }
 
-/* --- ACCOUNT MENU: swap items based on whether the profile page is open --- */
+/* --- ACCOUNT MENU: driven by the persistent #session checkbox --- */
 .member-only { display: none; }
-body:has(#profile:target) .member-only { display: block; }
-body:has(#profile:target) .guest-only  { display: none; }
+body:has(#session:checked) .member-only { display: block; }
+body:has(#session:checked) .guest-only  { display: none; }
+
+/* Labels inside pill-shaped links should fill the whole button */
+.login-submit label,
+.menu-btn label,
+.account-dropdown label {
+    display: block;
+    cursor: inherit;
+}
+
+/* Hide the profile page while nobody is logged in */
+body:not(:has(#session:checked)) #profile { display: none; }
 
 /* --- LOG IN: the "Log In" link unlocks only when the password is correct --- */
 .login-submit {
