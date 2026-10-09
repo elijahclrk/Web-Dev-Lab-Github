@@ -91,8 +91,11 @@
                 </button>
 
                 <ul class="dropdown account-dropdown">
-                    <li><a href="#profile">My Profile</a></li>
-                    <li><a href="#logout">Log Out</a></li>
+                    <!-- guest-only items show when logged out; member-only items show when logged in -->
+                    <li class="guest-only"><a href="#login">Log In</a></li>
+                    <li class="guest-only"><a href="#signup">Sign Up</a></li>
+                    <li class="member-only"><a href="#profile">My Profile</a></li>
+                    <li class="member-only"><a href="#logout" class="logout-link">Log Out</a></li>
                 </ul>
             </div>
 
@@ -997,18 +1000,25 @@
     <main id="profile" class="page">
         <div class="wrap">
 
+            <!-- Shown only to visitors who are not logged in -->
+            <section class="profile-locked">
+                <h1>Please log in</h1>
+                <p>Log in to see your profile.</p>
+                <a href="#login" class="btn-pill btn-primary inline">Log In</a>
+            </section>
+
             <section class="profile-banner">
-                <div class="profile-initials">JD</div>
+                <div class="profile-initials" id="profile-initials"></div>
                 <div class="profile-banner-text">
-                    <h1>Juan Dela Cruz</h1>
-                    <p>juan@email.com</p>
-                    <span class="member-since">Member since September 2022</span>
+                    <h1 id="profile-name"></h1>
+                    <p id="profile-email"></p>
+                    <span class="member-since" id="profile-since"></span>
                 </div>
                 <div class="profile-stats">
-                    <div><strong>3</strong><span>Donations</span></div>
-                    <div><strong>₱1,750</strong><span>Total given</span></div>
-                    <div><strong>2</strong><span>Events joined</span></div>
-                    <div><strong>7</strong><span>Volunteer hours</span></div>
+                    <div><strong id="stat-donations">0</strong><span>Donations</span></div>
+                    <div><strong id="stat-given">₱0</strong><span>Total given</span></div>
+                    <div><strong id="stat-events">0</strong><span>Events joined</span></div>
+                    <div><strong id="stat-hours">0</strong><span>Volunteer hours</span></div>
                 </div>
             </section>
 
@@ -1019,7 +1029,7 @@
                     <label class="menu-btn"><input type="radio" name="pf" id="pf-donations">My Donations</label>
                     <label class="menu-btn"><input type="radio" name="pf" id="pf-volunteer">My Volunteerism</label>
                     <label class="menu-btn"><input type="radio" name="pf" id="pf-security">Password &amp; Security</label>
-                    <a href="#logout" class="menu-btn">Log Out</a>
+                    <a href="#logout" class="menu-btn logout-link">Log Out</a>
                 </nav>
 
                 <section class="profile-content">
@@ -1028,13 +1038,14 @@
                         <h2 class="panel-title">Personal Info</h2>
                         <form>
                             <div class="field-row">
-                                <label class="field"><span>First name</span><input type="text" value="Juan" required></label>
-                                <label class="field"><span>Last name</span><input type="text" value="Dela Cruz" required></label>
-                                <label class="field"><span>Email</span><input type="email" value="juan@email.com" required></label>
-                                <label class="field"><span>Phone number</span><input type="tel" value="0900 000 0000"></label>
-                                <label class="field"><span>City</span><input type="text" value="Antipolo"></label>
+                                <label class="field"><span>First name</span><input type="text" id="profile-firstname" readonly></label>
+                                <label class="field"><span>Last name</span><input type="text" id="profile-lastname" readonly></label>
+                                <label class="field"><span>Email</span><input type="email" id="profile-email-field" readonly></label>
+                                <label class="field"><span>Phone number</span><input type="tel" id="profile-phone" readonly></label>
+                                <label class="field"><span>City</span><input type="text" id="profile-city" readonly></label>
                                 <label class="field"><span>Birthday</span><input type="date"></label>
                             </div>
+                            <label class="field"><span>Full address</span><input type="text" id="profile-address" readonly></label>
                             <label class="field"><span>About me</span><textarea rows="3" placeholder="Tell us a little about yourself"></textarea></label>
                             <button type="submit" class="btn-pill btn-primary inline">Save changes</button>
                             <p class="ok-msg">&#10003; Your changes were saved.</p>
@@ -1046,10 +1057,8 @@
                         <div class="table-wrap">
                             <table class="donation-table">
                                 <thead><tr><th>Date</th><th>Campaign</th><th>Amount</th><th>App</th><th>Reference no.</th><th>Status</th></tr></thead>
-                                <tbody>
-                            <tr><td>Oct 5, 2026</td><td>Books for Future Engineers</td><td>₱500</td><td>GCash</td><td>8841 203 551920</td><td><span class="status verified">Verified</span></td></tr>
-                            <tr><td>Sep 28, 2026</td><td>Back-to-School Kits</td><td>₱1,000</td><td>Maya</td><td>MY20926371</td><td><span class="status pending">Pending</span></td></tr>
-                            <tr><td>Sep 2, 2026</td><td>Feeding Program</td><td>₱250</td><td>Bank Transfer</td><td>BDO-5530918</td><td><span class="status verified">Verified</span></td></tr>
+                                <tbody id="donations-body">
+                            <tr><td colspan="6">No donations yet.</td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -1061,10 +1070,8 @@
                         <div class="table-wrap">
                             <table class="donation-table">
                                 <thead><tr><th>Date</th><th>Event</th><th>Role</th><th>Hours</th><th>Status</th></tr></thead>
-                                <tbody>
-                                    <tr><td>Oct 25, 2026</td><td>Library Build Day</td><td>Helper</td><td>&mdash;</td><td><span class="status pending">Upcoming</span></td></tr>
-                                    <tr><td>Oct 3, 2026</td><td>Book Sorting Day</td><td>Volunteer</td><td>4</td><td><span class="status verified">Completed</span></td></tr>
-                                    <tr><td>Sep 20, 2026</td><td>Tutoring Session</td><td>Tutor</td><td>3</td><td><span class="status verified">Completed</span></td></tr>
+                                <tbody id="volunteer-body">
+                                    <tr><td colspan="5">No volunteer events yet.</td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -1084,6 +1091,104 @@
 
                 </section>
             </div>
+        </div>
+    </main>
+
+    <!-- ========== Log In ========== -->
+    <main id="login" class="page auth-page">
+        <div class="auth-card">
+            <h1 class="auth-title">Welcome Back!</h1>
+            <p class="auth-sub">Log in to continue and make a difference.</p>
+
+            <form id="login-form">
+                <label class="field">
+                    <span>Email</span>
+                    <div class="auth-input">
+                        <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                </label>
+
+                <label class="field">
+                    <span>Password</span>
+                    <div class="auth-input">
+                        <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6z"/></svg>
+                        <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                        <button type="button" class="show-btn" onclick="togglePassword('login-password', this)">Show</button>
+                    </div>
+                </label>
+
+                <button type="submit" class="btn-pill btn-primary">Log In</button>
+                <p class="auth-msg" id="login-msg" role="alert"></p>
+            </form>
+
+            <p class="auth-switch">Don't have an account? <a href="#signup">Sign Up</a></p>
+            <p class="auth-test-note"><strong>Test account</strong> (for demo only)<br>Email: juan@email.com &nbsp;|&nbsp; Password: Juan12345</p>
+        </div>
+    </main>
+
+    <!-- ========== Sign Up ========== -->
+    <main id="signup" class="page auth-page">
+        <div class="auth-card auth-card-wide">
+            <h1 class="auth-title">Create an Account</h1>
+            <p class="auth-sub">Sign up to Continue</p>
+
+            <form id="signup-form">
+                <label class="field">
+                    <span>Full Name</span>
+                    <div class="auth-input">
+                        <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <input type="text" name="fullname" placeholder="Enter your full name" required>
+                    </div>
+                </label>
+
+                <label class="field">
+                    <span>Email</span>
+                    <div class="auth-input">
+                        <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                </label>
+
+                <label class="field">
+                    <span>Full Address</span>
+                    <div class="auth-input">
+                        <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+                        <input type="text" name="address" placeholder="Enter your full address" required>
+                    </div>
+                </label>
+
+                <label class="field">
+                    <span>Contact Number</span>
+                    <div class="auth-input">
+                        <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+                        <input type="tel" name="phone" placeholder="0900 000 0000" pattern="[0-9 +\-]{10,16}" title="Use numbers only, for example 0900 000 0000" required>
+                    </div>
+                </label>
+
+                <label class="field">
+                    <span>Password</span>
+                    <div class="auth-input">
+                        <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6z"/></svg>
+                        <input type="password" id="signup-password" name="password" placeholder="Create a password" minlength="8" oninput="checkPasswordMatch()" required>
+                        <button type="button" class="show-btn" onclick="togglePassword('signup-password', this)">Show</button>
+                    </div>
+                </label>
+
+                <label class="field">
+                    <span>Confirm Password</span>
+                    <div class="auth-input">
+                        <svg class="auth-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6z"/></svg>
+                        <input type="password" id="signup-confirm" name="confirm" placeholder="Re-enter your password" oninput="checkPasswordMatch()" required>
+                        <button type="button" class="show-btn" onclick="togglePassword('signup-confirm', this)">Show</button>
+                    </div>
+                </label>
+
+                <button type="submit" class="btn-pill btn-primary">Sign Up</button>
+                <p class="auth-msg" id="signup-msg" role="alert"></p>
+            </form>
+
+            <p class="auth-switch">Already have an account? <a href="#login">Log In</a></p>
         </div>
     </main>
 
@@ -1149,6 +1254,289 @@
             f.reset();
             f.classList.remove('done');
         };
+    </script>
+
+    <script>
+        /* ---------- Log In / Sign Up helpers ---------- */
+
+        // Show or hide the text of a password box
+        function togglePassword(inputId, button) {
+            const input = document.getElementById(inputId);
+            if (input.type === 'password') {
+                input.type = 'text';
+                button.textContent = 'Hide';
+            } else {
+                input.type = 'password';
+                button.textContent = 'Show';
+            }
+        }
+
+        // Block the Sign Up form when the two passwords are different
+        function checkPasswordMatch() {
+            const pass = document.getElementById('signup-password');
+            const confirm = document.getElementById('signup-confirm');
+            if (confirm.value !== '' && pass.value !== confirm.value) {
+                confirm.setCustomValidity('Passwords do not match.');
+            } else {
+                confirm.setCustomValidity('');
+            }
+        }
+
+        /* ---------- Test accounts (browser only) ---------- */
+
+        // IMPORTANT: this is a LOCAL TEST system, not real security.
+        // - Accounts are kept in this browser's localStorage, so only this browser can see them.
+        // - Passwords are never saved as plain text. Each one is saved as a salted hash.
+        //   But anyone using this browser can still open DevTools and read or edit the data.
+        // - A real website needs a backend and database. To switch later, replace
+        //   getAccounts(), saveAccounts(), hashPassword() and the session lines below.
+        const ACCOUNTS_KEY = 'agapay_accounts';   // accounts made through Sign Up (localStorage)
+        const SESSION_KEY = 'agapay_session';     // email of the logged-in user (sessionStorage, ends when the tab closes)
+
+        function getAccounts() {
+            try {
+                return JSON.parse(localStorage.getItem(ACCOUNTS_KEY)) || [];
+            } catch (error) {
+                return [];
+            }
+        }
+
+        function saveAccounts(accounts) {
+            localStorage.setItem(ACCOUNTS_KEY, JSON.stringify(accounts));
+        }
+
+        // TEST ACCOUNT: built into the code so it works without signing up. It is separate from accounts made on the Sign Up page.
+        // Its password is saved as a salted hash, not as text. (Demo password: Juan12345, shown on the Log In page.)
+        // The records below stand in for a database. Donation row: date, campaign, amount, app, reference no., status class, status text.
+        // Volunteer row: date, event, role, hours (null = not attended yet), status class, status text.
+        const TEST_ACCOUNTS = [
+            {
+                name: 'Juan Dela Cruz',
+                firstName: 'Juan',
+                lastName: 'Dela Cruz',
+                email: 'juan@email.com',
+                phone: '0900 000 0000',
+                city: 'Antipolo',
+                address: 'Antipolo',
+                salt: '3f9a1c7e5b2d4a60',
+                hash: '9b0cc0e33ba7360a4bb5734aa74e586367bb8e9facb76fff3a7f451bff34c119',
+                created: '2022-09-01',
+                history: {
+                    donations: [
+                        ['Oct 5, 2026', 'Books for Future Engineers', 500, 'GCash', '8841 203 551920', 'verified', 'Verified'],
+                        ['Sep 28, 2026', 'Back-to-School Kits', 1000, 'Maya', 'MY20926371', 'pending', 'Pending'],
+                        ['Sep 2, 2026', 'Feeding Program', 250, 'Bank Transfer', 'BDO-5530918', 'verified', 'Verified']
+                    ],
+                    volunteering: [
+                        ['Oct 25, 2026', 'Library Build Day', 'Helper', null, 'pending', 'Upcoming'],
+                        ['Oct 3, 2026', 'Book Sorting Day', 'Volunteer', 4, 'verified', 'Completed'],
+                        ['Sep 20, 2026', 'Tutoring Session', 'Tutor', 3, 'verified', 'Completed']
+                    ]
+                }
+            }
+        ];
+
+        // Look in the test accounts first, then in the accounts made through Sign Up
+        function findAccount(email) {
+            return TEST_ACCOUNTS.find(account => account.email === email) || getAccounts().find(account => account.email === email);
+        }
+
+        // Random text added to a password before hashing, so equal passwords look different
+        function makeSalt() {
+            const bytes = crypto.getRandomValues(new Uint8Array(16));
+            return Array.from(bytes).map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
+        // Turn password + salt into a hash (PBKDF2). The original password cannot be read back from it.
+        async function hashPassword(password, salt) {
+            const encoder = new TextEncoder();
+            const key = await crypto.subtle.importKey('raw', encoder.encode(password), 'PBKDF2', false, ['deriveBits']);
+            const bits = await crypto.subtle.deriveBits(
+                { name: 'PBKDF2', salt: encoder.encode(salt), iterations: 100000, hash: 'SHA-256' }, key, 256);
+            return Array.from(new Uint8Array(bits)).map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
+        // Show a green (ok) or red (error) message inside a form
+        function showMessage(box, type, text) {
+            box.textContent = text;
+            box.className = 'auth-msg show ' + type;
+        }
+
+        function clearMessage(box) {
+            box.textContent = '';
+            box.className = 'auth-msg';
+        }
+
+        /* ---------- Sign Up ---------- */
+
+        async function handleSignUp(event) {
+            event.preventDefault();
+            const form = event.target;
+            const box = $('signup-msg');
+            const email = form.elements['email'].value.trim().toLowerCase();
+
+            if (form.elements['password'].value !== form.elements['confirm'].value) {
+                showMessage(box, 'error', 'Passwords do not match.');
+                return;
+            }
+            if (TEST_ACCOUNTS.some(account => account.email === email)) {
+                showMessage(box, 'error', 'This email is used by the test account. Please sign up with a different email.');
+                return;
+            }
+            if (findAccount(email)) {
+                showMessage(box, 'error', 'An account with this email already exists. Please log in instead.');
+                return;
+            }
+
+            try {
+                const salt = makeSalt();
+                const accounts = getAccounts();
+                accounts.push({
+                    name: form.elements['fullname'].value.trim(),
+                    email: email,
+                    address: form.elements['address'].value.trim(),
+                    phone: form.elements['phone'].value.trim(),
+                    salt: salt,
+                    hash: await hashPassword(form.elements['password'].value, salt),
+                    created: new Date().toISOString()
+                });
+                saveAccounts(accounts);
+            } catch (error) {
+                showMessage(box, 'error', 'The account could not be created in this browser. Open the site with Live Server (localhost) and try again.');
+                return;
+            }
+
+            // Account saved. Send the new member to Log In.
+            form.reset();
+            clearMessage(box);
+            $('login-form').reset();
+            $('login-form').elements['email'].value = email;
+            showMessage($('login-msg'), 'ok', '✓ Account created. Log in with your email and password.');
+            window.location.hash = '#login';
+        }
+
+        /* ---------- Log In ---------- */
+
+        async function handleLogIn(event) {
+            event.preventDefault();
+            const form = event.target;
+            const box = $('login-msg');
+            const email = form.elements['email'].value.trim().toLowerCase();
+            const account = findAccount(email);
+
+            if (!account) {
+                showMessage(box, 'error', 'No account found with that email. Please sign up first.');
+                return;
+            }
+
+            let hash = '';
+            try {
+                hash = await hashPassword(form.elements['password'].value, account.salt);
+            } catch (error) {
+                showMessage(box, 'error', 'Log in is not available in this browser. Open the site with Live Server (localhost) and try again.');
+                return;
+            }
+            if (hash !== account.hash) {
+                showMessage(box, 'error', 'Incorrect password. Please try again.');
+                return;
+            }
+
+            // Correct email and password: start the session
+            sessionStorage.setItem(SESSION_KEY, account.email);
+            updateAccountMenu();
+            form.reset();
+            showMessage(box, 'ok', '✓ Welcome back, ' + account.name.split(' ')[0] + '!');
+            setTimeout(() => {
+                clearMessage(box);
+                window.location.hash = '#profile';
+            }, 700);
+        }
+
+        /* ---------- Who is logged in? ---------- */
+
+        // The logged-in account, or null when nobody is logged in
+        function getCurrentUser() {
+            const email = sessionStorage.getItem(SESSION_KEY);
+            return email ? findAccount(email) || null : null;
+        }
+
+        function isLoggedIn() {
+            return getCurrentUser() !== null;
+        }
+
+        // Fill the two history tables and the four numbers in the profile banner
+        function fillHistory(user) {
+            const history = (user && user.history) || { donations: [], volunteering: [] };
+            let total = 0, hours = 0, events = 0;
+            let donationRows = '', volunteerRows = '';
+
+            history.donations.forEach(d => {
+                total += d[2];
+                donationRows += '<tr><td>' + d[0] + '</td><td>' + d[1] + '</td><td>' + peso(d[2]) + '</td><td>' + d[3] +
+                    '</td><td>' + d[4] + '</td><td><span class="status ' + d[5] + '">' + d[6] + '</span></td></tr>';
+            });
+            history.volunteering.forEach(v => {
+                if (v[3] !== null) { hours += v[3]; events += 1; }
+                volunteerRows += '<tr><td>' + v[0] + '</td><td>' + v[1] + '</td><td>' + v[2] + '</td><td>' + (v[3] === null ? '&mdash;' : v[3]) +
+                    '</td><td><span class="status ' + v[4] + '">' + v[5] + '</span></td></tr>';
+            });
+
+            $('donations-body').innerHTML = donationRows || '<tr><td colspan="6">No donations yet.</td></tr>';
+            $('volunteer-body').innerHTML = volunteerRows || '<tr><td colspan="5">No volunteer events yet.</td></tr>';
+            $('stat-donations').textContent = history.donations.length;
+            $('stat-given').textContent = peso(total);
+            $('stat-events').textContent = events;
+            $('stat-hours').textContent = hours;
+        }
+
+        /* ---------- My Profile ---------- */
+
+        // Fill My Profile with the logged-in user's details. When nobody is logged in, everything is cleared.
+        function fillProfile() {
+            const user = getCurrentUser();
+            const name = user ? user.name : '';
+            const words = name.split(' ').filter(word => word !== '');
+            // Test account has its own first/last name. For Sign Up accounts: first word = first name, the rest = last name.
+            const first = user ? (user.firstName || words[0] || '') : '';
+            const last = user ? (user.lastName || words.slice(1).join(' ')) : '';
+            const initials = (first.charAt(0) + last.charAt(0)).toUpperCase();
+
+            $('profile-initials').textContent = initials;
+            $('profile-name').textContent = name;
+            $('profile-email').textContent = user ? user.email : '';
+            $('profile-since').textContent = user ? 'Member since ' + new Date(user.created).toLocaleDateString('en-PH', { month: 'long', year: 'numeric' }) : '';
+            $('profile-firstname').value = first;
+            $('profile-lastname').value = last;
+            $('profile-email-field').value = user ? user.email : '';
+            $('profile-phone').value = user ? user.phone : '';
+            $('profile-city').value = user ? (user.city || '') : '';
+            $('profile-address').value = user ? user.address : '';
+            fillHistory(user);
+        }
+
+        /* ---------- Account menu (Log In / Sign Up  or  My Profile / Log Out) ---------- */
+
+        // Show the right menu items and the right profile data for the current status
+        function updateAccountMenu() {
+            document.body.classList.toggle('logged-in', isLoggedIn());
+            fillProfile();
+        }
+
+        // End the session, clear the profile, then go back to the public Home page.
+        // Registered accounts stay saved so they can log in again.
+        function logOut(event) {
+            event.preventDefault();
+            sessionStorage.removeItem(SESSION_KEY);
+            updateAccountMenu();
+            clearMessage($('login-msg'));
+            window.location.hash = '';      // no page targeted = default public page
+            window.scrollTo(0, 0);
+        }
+
+        $('signup-form').onsubmit = handleSignUp;   // replaces the shared "preventDefault + done" handler
+        $('login-form').onsubmit = handleLogIn;
+        document.querySelectorAll('.logout-link').forEach(link => link.addEventListener('click', logOut));
+        updateAccountMenu();
     </script>
 </body>
 </html>
