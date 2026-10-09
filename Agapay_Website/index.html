@@ -561,9 +561,9 @@
         </section>
     </main>
 
-    <!-- Donate -->
+     <!-- Donate -->
     <div id="donation" class="page">
-
+ 
         <div class="filter-bar">
             <div class="filter-inner">
                 <div class="search-group">
@@ -575,7 +575,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 5h18l-7 8v6l-4 2v-8L3 5z"/></svg>
                     </button>
                 </div>
-
+ 
                 <ul class="category-tabs">
                 <li><label><input type="radio" name="cat" id="cat-all" checked>All</label></li>
                 <li><label><input type="radio" name="cat" id="cat-books">Books</label></li>
@@ -584,79 +584,58 @@
                 </ul>
             </div>
         </div>
-
+ 
         <main class="campaigns">
             <div class="campaigns-inner">
                 <div class="section-head">
                     <h1>Discover Fundraising Campaigns</h1>
                     <p>One Peso, One Dream: Help Filipino Students Achieve English Literacy</p>
                 </div>
-
+ 
                 <div class="campaign-grid">
-
-                <article class="campaign-card" data-category="Books"
-                    data-name="Engineering Elementary School" data-city="Quezon City"
-                    data-raised="45000" data-goal="60000" data-avatar="assets/organizer.jpg">
-                    <a href="#campaign" aria-label="Books for Future Engineers">
+ 
+                <article class="campaign-card" data-category="Books">
+                    <a href="#campaign-books" aria-label="Books for Future Engineers">
                         <img class="card-img" src="assets/books.jpg" alt="Books for Future Engineers">
                     </a>
                     <div class="card-body">
                         <span class="card-tag">Books</span>
-                        <h3 class="card-title"><a href="#campaign">Books for Future Engineers</a></h3>
+                        <h3 class="card-title"><a href="#campaign-books">Books for Future Engineers</a></h3>
                         <p class="card-desc">Help Engineering Elementary School to provide books for their students that aims to be future engineers.</p>
                         <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-fill" style="width: 75%;"></div>
                         </div>
                         <div class="card-meta"><span>₱8,000 raised</span><span>₱11,000 goal</span></div>
                     </div>
-                    <div class="story-data" hidden>
-                        <p>Help Engineering Elementary School provide books for students who dream of becoming future engineers.</p>
-                        <p>Your donation will go to textbooks, reference books and reading materials for every grade level.</p>
-                        <p>Thank you for helping us reach our goal and giving these students a head start.</p>
-                    </div>
                 </article>
-
-                <article class="campaign-card" data-category="School Supplies"
-                    data-name="Cabuyao Learners Council" data-city="Cabuyao, Laguna"
-                    data-raised="12000" data-goal="30000" data-avatar="assets/organizer.jpg">
-                    <a href="#campaign" aria-label="Paper and Pencil Drive">
+ 
+                <article class="campaign-card" data-category="School Supplies">
+                    <a href="#campaign-supplies" aria-label="Paper and Pencil Drive">
                         <img class="card-img" src="assets/school-supplies.jpg" alt="Paper and Pencil Drive">
                     </a>
                     <div class="card-body">
                         <span class="card-tag">School Supplies</span>
-                        <h3 class="card-title"><a href="#campaign">Paper and Pencil Drive</a></h3>
+                        <h3 class="card-title"><a href="#campaign-supplies">Paper and Pencil Drive</a></h3>
                         <p class="card-desc">Help learners from province of Cabuyao Laguna by giving them essential school supplies.</p>
                         <div class="progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-fill" style="width: 40%;"></div>
                         </div>
                         <div class="card-meta"><span>₱12,000 raised</span><span>₱20,000 goal</span></div>
                     </div>
-                    <div class="story-data" hidden>
-                        <p>Help learners from the province of Cabuyao, Laguna by giving them essential school supplies.</p>
-                        <p>Your donation will buy notebooks, paper, pencils and other basics for the school year.</p>
-                        <p>Thank you for helping every learner come to class ready.</p>
-                    </div>
                 </article>
-
-                <article class="campaign-card" data-category="Facilities"
-                    data-name="Malate Community School" data-city="Malate, Manila"
-                    data-raised="40000" data-goal="50000" data-avatar="assets/organizer.jpg">
-                    <a href="#campaign" aria-label="Library Buildding Project">
+ 
+                <article class="campaign-card" data-category="Facilities">
+                    <a href="#campaign-library" aria-label="Library Buildding Project">
                         <img class="card-img" src="assets/library.jpg" alt="">
                     </a>
                     <div class="card-body">
                         <span class="card-tag">Facilities</span>
-                        <h3 class="card-title"><a href="#campaign">Library Building Project</a></h3>
+                        <h3 class="card-title"><a href="#campaign-library">Library Building Project</a></h3>
                         <p class="card-desc">Build a new library to provide a better learning environment for students in Malate, Manila.</p>
                         <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-fill" style="width: 80%;"></div>
                         </div>
                         <div class="card-meta"><span>₱40,000 raised</span><span>₱50,000 goal</span></div>
-                    </div>
-                    <div class="story-data" hidden>
-                        <p>Help build a new library that gives students in Malate, Manila a better place to learn.</p>
-                        <p>Your donation will go to construction, shelves, tables and chairs for the new reading space.</p>
-                        <p>Thank you for helping us open the doors of this library.</p>
                     </div>
                 </article>
             </main>      
@@ -664,97 +643,101 @@
                     <button class="show-more">Show more</button>
                 </div>
         </div>
-
-    <main id="campaign" class="page">
-        <input type="checkbox" id="donate-toggle" hidden>
-
+ 
+    <main id="campaign-books" class="page">
+        <input type="checkbox" id="donate-books" class="donate-toggle" hidden>
+ 
         <div class="wrap">
-            <h1 class="detail-title" id="d-title">Campaign Title</h1>
-            <div class="detail-meta"><span>👤 <span id="d-name">Name</span></span><span>📍 <span id="d-city">City</span></span><span>🏷️ <span id="d-purpose">Purpose</span></span></div>
+            <h1 class="detail-title">Books for Future Engineers</h1>
+            <div class="detail-meta"><span>👤 Engineering Elementary School</span><span>📍 Quezon City</span><span>🏷️ Books</span></div>
             <div class="detail-layout">
-
+ 
                 <section class="detail-main">
                     <div class="detail-tabs">
-                        <label class="tab-btn"><input type="radio" name="ct" id="ct-story" checked>Story</label>
-                        <label class="tab-btn"><input type="radio" name="ct" id="ct-update">Update</label>
-                        <label class="tab-btn"><input type="radio" name="ct" id="ct-donors">Donors</label>
+                        <label class="tab-btn"><input type="radio" name="ct-books" class="ct-story" checked>Story</label>
+                        <label class="tab-btn"><input type="radio" name="ct-books" class="ct-update">Update</label>
+                        <label class="tab-btn"><input type="radio" name="ct-books" class="ct-donors">Donors</label>
                     </div>
-
-                    <div class="tab-panel" id="p-story">
-                        <img class="story-img" id="d-img" alt="">
-                        <div class="story-text" id="d-story"></div>
+ 
+                    <div class="tab-panel p-story">
+                        <img class="story-img" src="assets/books.jpg" alt="">
+                        <div class="story-text">
+                            <p>Help Engineering Elementary School provide books for students who dream of becoming future engineers.</p>
+                            <p>Your donation will go to textbooks, reference books and reading materials for every grade level.</p>
+                            <p>Thank you for helping us reach our goal and giving these students a head start.</p>
+                        </div>
                         <div class="organizer-card">
-                            <img class="avatar lg" id="d-avatar" alt="">
-                            <div><strong id="d-org">Organizer Name</strong><span>Campaign organizer</span></div>
+                            <img class="avatar lg" src="assets/organizer.jpg" alt="picture of the organizer">
+                            <div><strong>Engineering Elementary School</strong><span>Campaign organizer</span></div>
                         </div>
                     </div>
-
-                    <div class="tab-panel" id="p-update">
+ 
+                    <div class="tab-panel p-update">
                         <ul class="timeline">
                     <li class="timeline-item"><div class="timeline-date">Oct 1, 2026</div>
-                        <div class="timeline-body"><h3>Scholars received their first set of books</h3><p>Placeholder text describing this update. Replace it with what happened and what comes next.</p></div></li>
+                        <div class="timeline-body"><h3>Scholars received their first set of books</h3><p>The scholars at Engineering Elementary School have received their first set of books, thanks to the generous donations from our supporters.</p></div></li>
                     <li class="timeline-item"><div class="timeline-date">Sep 15, 2026</div>
-                        <div class="timeline-body"><h3>Campaign passed 50% of the goal</h3><p>Placeholder text describing this update. Replace it with what happened and what comes next.</p></div></li>
+                        <div class="timeline-body"><h3>Campaign passed 50% of the goal</h3><p>We are thrilled to announce that our campaign has passed 50% of its goal, thanks to the support of our amazing donors.</p></div></li>
                     <li class="timeline-item"><div class="timeline-date">Sep 1, 2026</div>
-                        <div class="timeline-body"><h3>Campaign launched</h3><p>Placeholder text describing this update. Replace it with what happened and what comes next.</p></div></li>
+                        <div class="timeline-body"><h3>Campaign launched</h3><p>We are excited to announce the launch of our campaign to provide books for students at Engineering Elementary School.</p></div></li>
                         </ul>
                     </div>
-
-                    <div class="tab-panel" id="p-donors">
+ 
+                    <div class="tab-panel p-donors">
                         <ul class="donor-list">
                     <li class="donor-card"><div class="avatar"></div>
                         <div class="donor-info"><strong>Maria Santos</strong><span>Quezon City · 2 days ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱5,000</strong></div></li>
+                        <div class="donor-amount"><span>Donated:</span><strong>₱4,000</strong></div></li>
                     <li class="donor-card"><div class="avatar"></div>
                         <div class="donor-info"><strong>Juan Dela Cruz</strong><span>Antipolo · 3 days ago</span></div>
                         <div class="donor-amount"><span>Donated:</span><strong>₱1,500</strong></div></li>
                     <li class="donor-card"><div class="avatar"></div>
                         <div class="donor-info"><strong>Anonymous</strong><span>5 days ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱1,000</strong></div></li>
+                        <div class="donor-amount"><span>Donated:</span><strong>₱1,500</strong></div></li>
                     <li class="donor-card"><div class="avatar"></div>
                         <div class="donor-info"><strong>Ana Reyes</strong><span>Cebu City · 1 week ago</span></div>
-                        <div class="donor-amount"><span>Donated:</span><strong>₱500</strong></div></li>
+                        <div class="donor-amount"><span>Donated:</span><strong>₱100</strong></div></li>
                         </ul>
                     </div>
                 </section>
-
+ 
                 <aside class="donate-card">
                     <div class="raised-row">
-                        <div class="donut" id="d-donut" style="--pct: 75;"><span id="d-pct">75%</span></div>
-                        <div><h2 id="d-raised">₱8,000</h2><p>raised of <span id="d-goal">₱11,000</span> needed</p></div>
+                        <div class="donut" style="--pct: 75;"><span>80%</span></div>
+                        <div><h2>₱8,000</h2><p>raised of ₱11,000 needed</p></div>
                     </div>
-
-                    <label for="donate-toggle" class="btn-pill btn-primary">Donate Now</label>
-                    <button class="btn-pill btn-secondary" onclick="navigator.clipboard.writeText(location.href); this.textContent='Link copied!'">Share</button>
-
-                    <h3 class="recent-title"><span class="avatar sm"></span>Recent Donors</h3>
+ 
+                    <label for="donate-books" class="btn-pill btn-primary">Donate Now</label>
+                    <input type="button" value="Share" class="btn-pill btn-secondary">
+ 
+                    <h3 class="recent-title"></span>Recent Donors</h3>
                     <ul class="recent-list">
-                    <li><div class="avatar sm"></div><span>Maria Santos</span><strong>₱5,000</strong></li>
+                    <li><div class="avatar sm"></div><span>Maria Santos</span><strong>₱4,000</strong></li>
                     <li><div class="avatar sm"></div><span>Juan Dela Cruz</span><strong>₱1,500</strong></li>
-                    <li><div class="avatar sm"></div><span>Anonymous</span><strong>₱1,000</strong></li>
+                    <li><div class="avatar sm"></div><span>Anonymous</span><strong>₱1,500</strong></li>
                     </ul>
                 </aside>
             </div>
         </div>
-
+ 
         <div class="donate-modal">
-            <label for="donate-toggle" class="modal-backdrop"></label>
-
-            <form class="modal-box" id="donate-form">
-                <label for="donate-toggle" class="modal-close">&times;</label>
-
+            <label for="donate-books" class="modal-backdrop"></label>
+ 
+            <form class="modal-box donate-form" action="#donation-thanks">
+                <label for="donate-books" class="modal-close">&times;</label>
+ 
                 <div class="form-body">
                     <h2>Make a Donation</h2>
                     <p class="modal-sub">Send your donation first, then confirm it below.</p>
-
+ 
                     <p class="modal-label">1. Which app did you use?</p>
                     <div class="pill-options">
-                        <label><input type="radio" name="method" value="GCash" id="m-gcash" checked><span>GCash</span></label>
-                        <label><input type="radio" name="method" value="Maya" id="m-maya"><span>Maya</span></label>
-                        <label><input type="radio" name="method" value="Bank Transfer" id="m-bank"><span>Bank</span></label>
-                        <label><input type="radio" name="method" value="Other" id="m-other"><span>Other</span></label>
+                        <label><input type="radio" name="method" value="GCash" class="m-gcash" checked><span>GCash</span></label>
+                        <label><input type="radio" name="method" value="Maya" class="m-maya"><span>Maya</span></label>
+                        <label><input type="radio" name="method" value="Bank Transfer" class="m-bank"><span>Bank</span></label>
+                        <label><input type="radio" name="method" value="Other" class="m-other"><span>Other</span></label>
                     </div>
-
+ 
                     <div class="send-box">
                         <div class="qr">QR</div>
                         <div>
@@ -765,7 +748,7 @@
                             <p class="send for-other">Contact us for other ways to give</p>
                         </div>
                     </div>
-
+ 
                     <p class="modal-label">2. Amount you sent</p>
                     <div class="pill-options">
                         <label><input type="radio" name="amount" value="100"><span>₱100</span></label>
@@ -774,26 +757,276 @@
                         <label><input type="radio" name="amount" value="5000"><span>₱5,000</span></label>
                     </div>
                     <input class="plain-input" type="number" name="custom" min="1" placeholder="Other amount (₱) — leave blank to use the one above">
-
+ 
                     <label class="field"><span>3. Reference number</span>
                         <input type="text" name="ref" required minlength="6" placeholder="e.g. 1234 567 890123" autocomplete="off"></label>
-
+ 
                     <div class="field-row">
                         <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Juan Dela Cruz"></label>
                         <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com"></label>
                     </div>
-
+ 
                     <label class="field"><span>Message (optional)</span><textarea name="message" rows="2" placeholder="Words of encouragement for the student"></textarea></label>
                     <label class="check"><input type="checkbox" name="anonymous"> Donate anonymously</label>
-
+ 
                     <button type="submit" class="btn-pill btn-primary">Confirm donation</button>
                 </div>
-
-                <div class="ok-msg thanks">
-                    <div class="check-circle">&#10003;</div>
-                    <h2>Thank you!</h2>
-                    <p>We received your donation details. Our team will verify your reference number shortly.</p>
-                    <label for="donate-toggle" class="btn-pill btn-primary">Done</label>
+            </form>
+        </div>
+    </main>
+ 
+    <main id="campaign-supplies" class="page">
+        <input type="checkbox" id="donate-supplies" class="donate-toggle" hidden>
+ 
+        <div class="wrap">
+            <h1 class="detail-title">Paper and Pencil Drive</h1>
+            <div class="detail-meta"><span>👤 Cabuyao Learners Council</span><span>📍 Cabuyao, Laguna</span><span>🏷️ School Supplies</span></div>
+            <div class="detail-layout">
+ 
+                <section class="detail-main">
+                    <div class="detail-tabs">
+                        <label class="tab-btn"><input type="radio" name="ct-supplies" class="ct-story" checked>Story</label>
+                        <label class="tab-btn"><input type="radio" name="ct-supplies" class="ct-update">Update</label>
+                        <label class="tab-btn"><input type="radio" name="ct-supplies" class="ct-donors">Donors</label>
+                    </div>
+ 
+                    <div class="tab-panel p-story">
+                        <img class="story-img" src="assets/school-supplies.jpg" alt="">
+                        <div class="story-text">
+                            <p>Help learners from the province of Cabuyao, Laguna by giving them essential school supplies.</p>
+                            <p>Your donation will buy notebooks, paper, pencils and other basics for the school year.</p>
+                            <p>Thank you for helping every learner come to class ready.</p>
+                        </div>
+                        <div class="organizer-card">
+                            <img class="avatar lg" src="assets/organizer.jpg" alt="">
+                            <div><strong>Cabuyao Learners Council</strong><span>Campaign organizer</span></div>
+                        </div>
+                    </div>
+ 
+                    <div class="tab-panel p-update">
+                        <ul class="timeline">
+                    <li class="timeline-item"><div class="timeline-date">October 3, 2026</div>
+                        <div class="timeline-body"><h3>Donation Announcement to Students</h3><p>We are excited to announce that we have received a generous donation to support our students in need and we've told this to our learners.</p></div></li>
+                    <li class="timeline-item"><div class="timeline-date">August 25, 2026</div>
+                        <div class="timeline-body"><h3>Paper and Pencil Donation</h3><p>We are grateful for the recent donation to support our students' learning needs.</p></div></li>
+                    </ul>
+                    </div>
+ 
+                    <div class="tab-panel p-donors">
+                        <ul class="donor-list">
+                    <li class="donor-card"><div class="avatar"></div>
+                        <div class="donor-info"><strong>Mycha Ogania</strong><span>Quezon City · 2 days ago</span></div>
+                        <div class="donor-amount"><span>Donated:</span><strong>₱7,000</strong></div></li>
+                    <li class="donor-card"><div class="avatar"></div>
+                        <div class="donor-info"><strong>Hailey Lumanglas</strong><span>Antipolo · 3 days ago</span></div>
+                        <div class="donor-amount"><span>Donated:</span><strong>₱3,000</strong></div></li>
+                    <li class="donor-card"><div class="avatar"></div>
+                        <div class="donor-info"><strong>Anonymous</strong><span>5 days ago</span></div>
+                        <div class="donor-amount"><span>Donated:</span><strong>₱2,000</strong></div></li>
+                        </ul>
+                    </div>
+                </section>
+ 
+                <aside class="donate-card">
+                    <div class="raised-row">
+                        <div class="donut" style="--pct: 60;"><span>60%</span></div>
+                        <div><h2>₱12,000</h2><p>raised of ₱20,000 needed</p></div>
+                    </div>
+ 
+                    <label for="donate-supplies" class="btn-pill btn-primary">Donate Now</label>
+                    <input type="button" value="Share" class="btn-pill btn-secondary">
+ 
+                    <h3 class="recent-title"></span>Recent Donors</h3>
+                    <ul class="recent-list">
+                    <li><div class="avatar sm"></div><span>Mycha Ogania</span><strong>₱7,000</strong></li>
+                    <li><div class="avatar sm"></div><span>Hailey Lumanglas</span><strong>₱3,000</strong></li>
+                    <li><div class="avatar sm"></div><span>Anonymous</span><strong>₱2,000</strong></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+ 
+        <div class="donate-modal">
+            <label for="donate-supplies" class="modal-backdrop"></label>
+ 
+            <form class="modal-box donate-form" action="#donation-thanks">
+                <label for="donate-supplies" class="modal-close">&times;</label>
+ 
+                <div class="form-body">
+                    <h2>Make a Donation</h2>
+                    <p class="modal-sub">Send your donation first, then confirm it below.</p>
+ 
+                    <p class="modal-label">1. Which app did you use?</p>
+                    <div class="pill-options">
+                        <label><input type="radio" name="method" value="GCash" class="m-gcash" checked><span>GCash</span></label>
+                        <label><input type="radio" name="method" value="Maya" class="m-maya"><span>Maya</span></label>
+                        <label><input type="radio" name="method" value="Bank Transfer" class="m-bank"><span>Bank</span></label>
+                        <label><input type="radio" name="method" value="Other" class="m-other"><span>Other</span></label>
+                    </div>
+ 
+                    <div class="send-box">
+                        <div class="qr">QR</div>
+                        <div>
+                            <strong>Send your donation to:</strong>
+                            <p class="send for-gcash">Agapay Foundation<br>0900 000 0000</p>
+                            <p class="send for-maya">Agapay Foundation<br>0900 000 0000</p>
+                            <p class="send for-bank">Agapay Foundation<br>Bank name · 0000 0000 00</p>
+                            <p class="send for-other">Contact us for other ways to give</p>
+                        </div>
+                    </div>
+ 
+                    <p class="modal-label">2. Amount you sent</p>
+                    <div class="pill-options">
+                        <label><input type="radio" name="amount" value="100"><span>₱100</span></label>
+                        <label><input type="radio" name="amount" value="500" checked><span>₱500</span></label>
+                        <label><input type="radio" name="amount" value="1000"><span>₱1,000</span></label>
+                        <label><input type="radio" name="amount" value="5000"><span>₱5,000</span></label>
+                    </div>
+                    <input class="plain-input" type="number" name="custom" min="1" placeholder="Other amount (₱) — leave blank to use the one above">
+ 
+                    <label class="field"><span>3. Reference number</span>
+                        <input type="text" name="ref" required minlength="6" placeholder="e.g. 1234 567 890123" autocomplete="off"></label>
+ 
+                    <div class="field-row">
+                        <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Juan Dela Cruz"></label>
+                        <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com"></label>
+                    </div>
+ 
+                    <label class="field"><span>Message (optional)</span><textarea name="message" rows="2" placeholder="Words of encouragement for the student"></textarea></label>
+                    <label class="check"><input type="checkbox" name="anonymous"> Donate anonymously</label>
+ 
+                    <button type="submit" class="btn-pill btn-primary">Confirm donation</button>
+                </div>
+            </form>
+        </div>
+    </main>
+ 
+    <main id="campaign-library" class="page">
+        <input type="checkbox" id="donate-library" class="donate-toggle" hidden>
+ 
+        <div class="wrap">
+            <h1 class="detail-title">Library Building Project</h1>
+            <div class="detail-meta"><span>👤 Malate Community School</span><span>📍 Malate, Manila</span><span>🏷️ Facilities</span></div>
+            <div class="detail-layout">
+ 
+                <section class="detail-main">
+                    <div class="detail-tabs">
+                        <label class="tab-btn"><input type="radio" name="ct-library" class="ct-story" checked>Story</label>
+                        <label class="tab-btn"><input type="radio" name="ct-library" class="ct-update">Update</label>
+                        <label class="tab-btn"><input type="radio" name="ct-library" class="ct-donors">Donors</label>
+                    </div>
+ 
+                    <div class="tab-panel p-story">
+                        <img class="story-img" src="assets/library.jpg" alt="">
+                        <div class="story-text">
+                            <p>Help build a new library that gives students in Malate, Manila a better place to learn.</p>
+                            <p>Your donation will go to construction, shelves, tables and chairs for the new reading space.</p>
+                            <p>Thank you for helping us open the doors of this library.</p>
+                        </div>
+                        <div class="organizer-card">
+                            <img class="avatar lg" src="assets/organizer.jpg" alt="">
+                            <div><strong>Malate Community School</strong><span>Campaign organizer</span></div>
+                        </div>
+                    </div>
+ 
+                    <div class="tab-panel p-update">
+                        <ul class="timeline">
+                    <li class="timeline-item"><div class="timeline-date">September 4, 2026</div>
+                        <div class="timeline-body"><h3>Shelves Installed</h3><p>The shelves for the new library have been installed and are ready for use.</p></div></li>
+                    <li class="timeline-item"><div class="timeline-date">April 10, 2026</div>
+                        <div class="timeline-body"><h3>Campaign passed 50% of the goal</h3><p>We are thrilled to announce that our campaign has passed 50% of its goal, thanks to the support of our amazing donors.</p></div></li>
+                    <li class="timeline-item"><div class="timeline-date">March 1, 2026</div>
+                        <div class="timeline-body"><h3>We have bought the materials</h3><p>The necessary materials for the new library have been purchased and are on their way.</p></div></li>
+                        </ul>
+                    </div>
+ 
+                    <div class="tab-panel p-donors">
+                        <ul class="donor-list">
+                    <li class="donor-card"><div class="avatar"></div>
+                        <div class="donor-info"><strong>Ariyhanna Macawile</strong><span>Quezon City · 2 days ago</span></div>
+                        <div class="donor-amount"><span>Donated:</span><strong>₱25,000</strong></div></li>
+                    <li class="donor-card"><div class="avatar"></div>
+                        <div class="donor-info"><strong>Ian Diaz</strong><span>Antipolo · 3 days ago</span></div>
+                        <div class="donor-amount"><span>Donated:</span><strong>₱5,500</strong></div></li>
+                    <li class="donor-card"><div class="avatar"></div>
+                        <div class="donor-info"><strong>Elijah Refuncion</strong><span>5 days ago</span></div>
+                        <div class="donor-amount"><span>Donated:</span><strong>₱5,000</strong></div></li>
+                    <li class="donor-card"><div class="avatar"></div>
+                        <div class="donor-info"><strong>Ana Reyes</strong><span>Cebu City · 1 week ago</span></div>
+                        <div class="donor-amount"><span>Donated:</span><strong>₱5,000</strong></div></li>
+                        </ul>
+                    </div>
+                </section>
+ 
+                <aside class="donate-card">
+                    <div class="raised-row">
+                        <div class="donut" style="--pct: 80;"><span>80%</span></div>
+                        <div><h2>₱40,000</h2><p>raised of ₱50,000 needed</p></div>
+                    </div>
+ 
+                    <label for="donate-library" class="btn-pill btn-primary">Donate Now</label>
+                    <input type="button" value="Share" class="btn-pill btn-secondary">
+ 
+                    <h3 class="recent-title"></span>Recent Donors</h3>
+                    <ul class="recent-list">
+                    <li><div class="avatar sm"></div><span>Ariyhanna Macawile</span><strong>₱25,000</strong></li>
+                    <li><div class="avatar sm"></div><span>Ian Diaz</span><strong>₱5,500</strong></li>
+                    <li><div class="avatar sm"></div><span>Elijah Refuncion</span><strong>₱5,000</strong></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+ 
+        <div class="donate-modal">
+            <label for="donate-library" class="modal-backdrop"></label>
+ 
+            <form class="modal-box donate-form" action="#donation-thanks">
+                <label for="donate-library" class="modal-close">&times;</label>
+ 
+                <div class="form-body">
+                    <h2>Make a Donation</h2>
+                    <p class="modal-sub">Send your donation first, then confirm it below.</p>
+ 
+                    <p class="modal-label">1. Which app did you use?</p>
+                    <div class="pill-options">
+                        <label><input type="radio" name="method" value="GCash" class="m-gcash" checked><span>GCash</span></label>
+                        <label><input type="radio" name="method" value="Maya" class="m-maya"><span>Maya</span></label>
+                        <label><input type="radio" name="method" value="Bank Transfer" class="m-bank"><span>Bank</span></label>
+                        <label><input type="radio" name="method" value="Other" class="m-other"><span>Other</span></label>
+                    </div>
+ 
+                    <div class="send-box">
+                        <div class="qr">QR</div>
+                        <div>
+                            <strong>Send your donation to:</strong>
+                            <p class="send for-gcash">Agapay Foundation<br>0900 000 0000</p>
+                            <p class="send for-maya">Agapay Foundation<br>0900 000 0000</p>
+                            <p class="send for-bank">Agapay Foundation<br>Bank name · 0000 0000 00</p>
+                            <p class="send for-other">Contact us for other ways to give</p>
+                        </div>
+                    </div>
+ 
+                    <p class="modal-label">2. Amount you sent</p>
+                    <div class="pill-options">
+                        <label><input type="radio" name="amount" value="100"><span>₱100</span></label>
+                        <label><input type="radio" name="amount" value="500" checked><span>₱500</span></label>
+                        <label><input type="radio" name="amount" value="1000"><span>₱1,000</span></label>
+                        <label><input type="radio" name="amount" value="5000"><span>₱5,000</span></label>
+                    </div>
+                    <input class="plain-input" type="number" name="custom" min="1" placeholder="Other amount (₱) — leave blank to use the one above">
+ 
+                    <label class="field"><span>3. Reference number</span>
+                        <input type="text" name="ref" required minlength="6" placeholder="e.g. 1234 567 890123" autocomplete="off"></label>
+ 
+                    <div class="field-row">
+                        <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Juan Dela Cruz"></label>
+                        <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com"></label>
+                    </div>
+ 
+                    <label class="field"><span>Message (optional)</span><textarea name="message" rows="2" placeholder="Words of encouragement for the student"></textarea></label>
+                    <label class="check"><input type="checkbox" name="anonymous"> Donate anonymously</label>
+ 
+                    <button type="submit" class="btn-pill btn-primary">Confirm donation</button>
                 </div>
             </form>
         </div>
@@ -1220,43 +1453,6 @@
     </footer>
 
     <script>
-        const peso = n => '₱' + Number(n).toLocaleString('en-PH');
-        const $ = id => document.getElementById(id);
-
-        function showCampaign(card) {
-            const raised = Number(card.dataset.raised), goal = Number(card.dataset.goal);
-            const pct = Math.min(100, Math.round(raised / goal * 100));
-            const img = card.querySelector('.card-img'), avatar = $('d-avatar');
-
-            $('d-title').textContent   = card.querySelector('.card-title').textContent;
-            $('d-name').textContent    = card.dataset.name;
-            $('d-city').textContent    = card.dataset.city;
-            $('d-purpose').textContent = card.dataset.category;
-            $('d-org').textContent     = card.dataset.name;
-            $('d-story').innerHTML     = card.querySelector('.story-data').innerHTML;
-            $('d-raised').textContent  = peso(raised);
-            $('d-goal').textContent    = peso(goal);
-            $('d-pct').textContent     = pct + '%';
-            $('d-donut').style.setProperty('--pct', pct);
-
-            img.getAttribute('src') ? $('d-img').setAttribute('src', img.getAttribute('src')) : $('d-img').removeAttribute('src');
-            card.dataset.avatar ? avatar.setAttribute('src', card.dataset.avatar) : avatar.removeAttribute('src');
-        }
-
-        document.querySelectorAll('.campaign-card').forEach(card =>
-            card.querySelectorAll('a').forEach(a => a.addEventListener('click', () => showCampaign(card))));
-        showCampaign(document.querySelector('.campaign-card'));
-
-        document.querySelectorAll('form').forEach(f => f.onsubmit = e => { e.preventDefault(); f.classList.add('done'); });
-
-        document.getElementById('donate-toggle').onchange = () => {
-            const f = document.getElementById('donate-form');
-            f.reset();
-            f.classList.remove('done');
-        };
-    </script>
-
-    <script>
         /* ---------- Log In / Sign Up helpers ---------- */
 
         // Show or hide the text of a password box
@@ -1293,7 +1489,7 @@
         const ACCOUNTS_KEY = 'agapay_accounts';   // accounts made through Sign Up (localStorage)
         const SESSION_KEY = 'agapay_session';     // email of the logged-in user (sessionStorage, ends when the tab closes)
 
-        function getAccounts() {
+        function getAccounts() {  
             try {
                 return JSON.parse(localStorage.getItem(ACCOUNTS_KEY)) || [];
             } catch (error) {

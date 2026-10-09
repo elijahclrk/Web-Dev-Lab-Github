@@ -564,9 +564,9 @@ label > input[type="radio"] { display: none; }                 /* radios are sty
 .tab-btn { flex: 1; padding: 12px 8px; margin-bottom: -2px; text-align: center; font-family: inherit; font-size: 15px; font-weight: 500; color: var(--blue); border-bottom: 4px solid transparent; background-clip: padding-box; }   
 .tab-btn:has(input:checked) { color: var(--blue-dark); border-bottom-color: var(--blue-dark); }
 
-.detail-main:has(#ct-story:checked) #p-story,
-.detail-main:has(#ct-update:checked) #p-update,
-.detail-main:has(#ct-donors:checked) #p-donors,
+.detail-main:has(.ct-story:checked) .p-story,
+.detail-main:has(.ct-update:checked) .p-update,
+.detail-main:has(.ct-donors:checked) .p-donors,
 .profile-layout:has(#pf-info:checked) #panel-info,
 .profile-layout:has(#pf-donations:checked) #panel-donations,
 .profile-layout:has(#pf-volunteer:checked) #panel-volunteer,
@@ -610,7 +610,7 @@ label > input[type="radio"] { display: none; }                 /* radios are sty
 .recent-list strong { color: var(--blue); }
 
 .donate-modal { display: none; position: fixed; inset: 0; z-index: 200; place-items: center; padding: 16px; overflow-y: auto; background: rgba(36, 72, 122, 0.55); }
-#donate-toggle:checked ~ .donate-modal { display: grid; }
+.donate-toggle:checked ~ .donate-modal { display: grid; }
 .modal-backdrop { position: fixed; inset: 0; }
 .modal-box { position: relative; width: min(520px, 100%); padding: 32px 32px 20px; box-sizing: border-box; background: #fff; border-radius: 18px; box-shadow: 0 24px 60px rgba(36, 72, 122, 0.35); animation: fadeIn 0.25s ease; }
 .modal-close { position: absolute; top: 14px; right: 14px; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--bg); color: var(--blue); font-size: 24px; cursor: pointer; }
@@ -629,14 +629,14 @@ label > input[type="radio"] { display: none; }                 /* radios are sty
 .send-box strong { display: block; margin-bottom: 4px; font-size: 14px; color: var(--blue-dark); }
 .qr { display: grid; place-items: center; width: 84px; height: 84px; flex-shrink: 0; font-weight: 700; color: #b9d3f0; background: #fff; border-radius: 10px; }
 .send { display: none; margin: 0; font-weight: 700; line-height: 1.4; color: var(--blue); }
-.form-body:has(#m-gcash:checked) .for-gcash,
-.form-body:has(#m-maya:checked) .for-maya,
-.form-body:has(#m-bank:checked) .for-bank,
-.form-body:has(#m-other:checked) .for-other { display: block; }
+.form-body:has(.m-gcash:checked) .for-gcash,
+.form-body:has(.m-maya:checked) .for-maya,
+.form-body:has(.m-bank:checked) .for-bank,
+.form-body:has(.m-other:checked) .for-other { display: block; }
 
-#donate-form.done .form-body { display: none; }               /* after submit: hide the form, show the thank-you */
 .thanks { text-align: center; padding-bottom: 12px; }
 .thanks p { margin: 8px 0 24px; line-height: 1.5; color: #44566c; font-weight: 400; }
+.thanks h2 { margin: 0 0 4px; font-size: 26px; color: var(--blue-dark); }
 .check-circle { display: grid; place-items: center; width: 72px; height: 72px; margin: 0 auto 16px; border-radius: 50%; color: #fff; font-size: 36px; background: linear-gradient(135deg, #315b91 0%, #4a7ac0 100%); }
 
 /* Profile */
