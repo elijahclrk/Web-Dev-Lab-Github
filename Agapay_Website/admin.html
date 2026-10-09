@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#eaf4ff">
+    <title>Admin workspace | Agapay</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-page">
+    <header class="admin-topbar">
+        <a class="admin-brand" href="index.html#news" aria-label="Agapay site">
+            <img src="assets/agapay logo.png" alt="">
+            <span>Agapay</span>
+            <span class="brand-divider" aria-hidden="true"></span>
+            <span class="brand-area">Admin</span>
+        </a>
+        <div class="topbar-actions">
+            <a class="site-link" href="index.html#news">View site <span aria-hidden="true">&#8599;</span></a>
+            <div class="admin-avatar" aria-label="Administrator account">AD</div>
+        </div>
+    </header>
+
+    <div class="admin-shell">
+        <aside class="admin-sidebar">
+            <p class="sidebar-label">WORKSPACE</p>
+            <nav class="admin-nav" aria-label="Admin sections">
+                <a href="#overview" class="admin-nav-link"><span aria-hidden="true">&#9634;</span> Overview</a>
+                <a href="#volunteers" class="admin-nav-link"><span aria-hidden="true">&#9823;</span> Volunteers</a>
+                <a href="#donations" class="admin-nav-link"><span aria-hidden="true">&#9826;</span> Donations</a>
+                <a href="#partners" class="admin-nav-link"><span aria-hidden="true">&#9825;</span> Partners</a>
+                <a href="#content" class="admin-nav-link"><span aria-hidden="true">&#9776;</span> Content</a>
+                <a href="#reports" class="admin-nav-link"><span aria-hidden="true">&#9636;</span> Reports</a>
+            </nav>
+            <div class="sidebar-help">
+                <span class="help-mark" aria-hidden="true">?</span>
+                <p><strong>Static admin draft</strong><br>Sample data only; actions are not connected.</p>
+            </div>
+        </aside>
+
+        <main class="admin-main">
+            <section class="admin-view" id="overview" aria-labelledby="overview-title">
+                <div class="page-heading">
+                    <div><p class="eyebrow">FRIDAY, OCTOBER 9, 2026</p><h1 id="overview-title">Good morning, Admin</h1><p class="heading-copy">Here’s what’s happening across Agapay today.</p></div>
+                </div>
+                <div class="metric-grid">
+                    <article class="metric"><div class="metric-top"><span>Registered volunteers</span><span class="metric-icon blue" aria-hidden="true">&#9823;</span></div><strong>5</strong><small>Sample records</small></article>
+                    <article class="metric"><div class="metric-top"><span>Active partners</span><span class="metric-icon green" aria-hidden="true">&#9825;</span></div><strong>3</strong><small>Organizations in network</small></article>
+                    <article class="metric"><div class="metric-top"><span>Pending donations</span><span class="metric-icon amber" aria-hidden="true">&#9826;</span></div><strong>2</strong><small>Sample records to review</small></article>
+                    <article class="metric"><div class="metric-top"><span>Donations received</span><span class="metric-icon coral" aria-hidden="true">&#8369;</span></div><strong>₱2,000</strong><small>Verified sample contributions</small></article>
+                </div>
+                <div class="overview-grid">
+                    <section class="panel activity-panel">
+                        <div class="panel-heading"><div><p class="eyebrow">NEEDS ATTENTION</p><h2>Donation reviews</h2></div><a class="quiet-link" href="#donations">View all <span aria-hidden="true">&#8594;</span></a></div>
+                        <div class="table-scroll"><table><thead><tr><th>Donor</th><th>Campaign</th><th>Amount</th></tr></thead><tbody><tr><td>Miguel Reyes</td><td>Back-to-School Kits</td><td>₱1,500</td></tr><tr><td>Anonymous</td><td>Books for Future Engineers</td><td>₱2,500</td></tr></tbody></table></div>
+                    </section>
+                    <section class="panel partner-summary-panel">
+                        <div class="panel-heading"><div><p class="eyebrow">COMMUNITY NETWORK</p><h2>Partner organizations</h2></div><a class="quiet-link" href="#partners">Manage <span aria-hidden="true">&#8594;</span></a></div>
+                        <div class="partner-summary-list"><div class="partner-summary-item"><span class="partner-marker" aria-hidden="true"></span><strong>Quezon City Public Library</strong><span>Community reading</span></div><div class="partner-summary-item"><span class="partner-marker" aria-hidden="true"></span><strong>Reading Partners PH</strong><span>Volunteer tutors</span></div><div class="partner-summary-item"><span class="partner-marker" aria-hidden="true"></span><strong>Bayanihan Learning Center</strong><span>Learning spaces</span></div></div>
+                    </section>
+                </div>
+                <section class="panel quick-panel">
+                    <div class="panel-heading"><div><p class="eyebrow">QUICK ACCESS</p><h2>Manage your community</h2></div></div>
+                    <div class="quick-links">
+                        <a href="#volunteers"><span class="quick-icon blue">&#9823;</span><span><strong>Manage volunteers</strong><small>Volunteer directory</small></span><span class="quick-arrow">&#8594;</span></a>
+                        <a href="#donations"><span class="quick-icon coral">&#9826;</span><span><strong>Manage donations</strong><small>Contribution records</small></span><span class="quick-arrow">&#8594;</span></a>
+                        <a href="#partners"><span class="quick-icon green">&#9825;</span><span><strong>Manage partners</strong><small>Organization directory</small></span><span class="quick-arrow">&#8594;</span></a>
+                        <a href="#content"><span class="quick-icon amber">&#9776;</span><span><strong>Manage content</strong><small>Stories and announcements</small></span><span class="quick-arrow">&#8594;</span></a>
+                        <a href="#reports"><span class="quick-icon blue">&#9636;</span><span><strong>View reports</strong><small>Report summaries</small></span><span class="quick-arrow">&#8594;</span></a>
+                    </div>
+                </section>
+            </section>
+
+            <section class="admin-view" id="volunteers" aria-labelledby="volunteers-title">
+                <div class="page-heading"><div><p class="eyebrow">COMMUNITY</p><h1 id="volunteers-title">Volunteers</h1><p class="heading-copy">Agapay volunteer directory sample.</p></div><span class="record-count">5 members</span></div>
+                <section class="panel">
+                    <div class="table-scroll"><table><thead><tr><th>Volunteer</th><th>Location</th><th>Joined</th><th>Events</th><th>Status</th></tr></thead><tbody><tr><td><strong>Maria Santos</strong><span class="table-secondary">maria.santos@email.com</span></td><td>Quezon City</td><td>Oct 02, 2026</td><td>4</td><td><select class="status-select status-active" aria-label="Status for Maria Santos"><option value="Active" selected>Active</option><option value="Pending">Pending</option></select></td></tr><tr><td><strong>Miguel Reyes</strong><span class="table-secondary">miguel.reyes@email.com</span></td><td>Manila</td><td>Sep 28, 2026</td><td>2</td><td><select class="status-select status-pending" aria-label="Status for Miguel Reyes"><option value="Active">Active</option><option value="Pending" selected>Pending</option></select></td></tr><tr><td><strong>Angela Cruz</strong><span class="table-secondary">angela.cruz@email.com</span></td><td>Pasig City</td><td>Sep 24, 2026</td><td>7</td><td><select class="status-select status-active" aria-label="Status for Angela Cruz"><option value="Active" selected>Active</option><option value="Pending">Pending</option></select></td></tr><tr><td><strong>Paolo Garcia</strong><span class="table-secondary">paolo.garcia@email.com</span></td><td>Taguig City</td><td>Sep 19, 2026</td><td>1</td><td><select class="status-select status-active" aria-label="Status for Paolo Garcia"><option value="Active" selected>Active</option><option value="Pending">Pending</option></select></td></tr><tr><td><strong>Sofia Mendoza</strong><span class="table-secondary">sofia.mendoza@email.com</span></td><td>Caloocan</td><td>Sep 16, 2026</td><td>3</td><td><select class="status-select status-pending" aria-label="Status for Sofia Mendoza"><option value="Active">Active</option><option value="Pending" selected>Pending</option></select></td></tr></tbody></table></div>
+                </section>
+            </section>
+
+            <section class="admin-view" id="donations" aria-labelledby="donations-title">
+                <div class="page-heading"><div><p class="eyebrow">TRANSPARENCY</p><h1 id="donations-title">Donations</h1><p class="heading-copy">Contribution records sample.</p></div><span class="record-count">4 records</span></div>
+                <section class="panel">
+                    <div class="panel-heading panel-heading-simple">
+                        <div><p class="eyebrow">CONTRIBUTIONS</p><h2>Donation records</h2></div>
+                        <span class="secure-note"><span aria-hidden="true">&#9679;</span> Sample records</span>
+                    </div>
+                    <div class="table-scroll">
+                        <table>
+                            <thead><tr><th>Donor</th><th>Campaign</th><th>Date</th><th>Method</th><th>Reference</th><th>Amount</th><th>Status</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Miguel Reyes</strong><span class="table-secondary">miguel.reyes@email.com</span></td><td>Back-to-School Kits</td><td>Oct 08, 2026</td><td>GCash</td><td>GC-836104</td><td>₱1,500</td><td><select class="status-select status-pending" aria-label="Status for Miguel Reyes donation"><option value="Pending" selected>Pending</option><option value="Verified">Verified</option></select></td></tr>
+                                <tr><td><strong>Anonymous</strong><span class="table-secondary">Hidden donor</span></td><td>Books for Future Engineers</td><td>Oct 07, 2026</td><td>Maya</td><td>MY-210593</td><td>₱2,500</td><td><select class="status-select status-pending" aria-label="Status for anonymous donation"><option value="Pending" selected>Pending</option><option value="Verified">Verified</option></select></td></tr>
+                                <tr><td><strong>Angela Cruz</strong><span class="table-secondary">angela.cruz@email.com</span></td><td>Community Reading Corners</td><td>Oct 05, 2026</td><td>Bank transfer</td><td>BDO-443821</td><td>₱800</td><td><select class="status-select status-published" aria-label="Status for Angela Cruz donation"><option value="Pending">Pending</option><option value="Verified" selected>Verified</option></select></td></tr>
+                                <tr><td><strong>Paolo Garcia</strong><span class="table-secondary">paolo.garcia@email.com</span></td><td>Back-to-School Kits</td><td>Oct 02, 2026</td><td>GCash</td><td>GC-825417</td><td>₱1,200</td><td><select class="status-select status-published" aria-label="Status for Paolo Garcia donation"><option value="Pending">Pending</option><option value="Verified" selected>Verified</option></select></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </section>
+
+            <section class="admin-view" id="partners" aria-labelledby="partners-title">
+                <div class="page-heading"><div><p class="eyebrow">COMMUNITY NETWORK</p><h1 id="partners-title">Manage partners</h1><p class="heading-copy">Partner organizations sample.</p></div><span class="record-count">4 partners</span></div>
+                <section class="panel"><div class="panel-heading panel-heading-simple"><div><p class="eyebrow">ORGANIZATIONS</p><h2>Partner directory</h2></div><span class="record-count">4 partners</span></div><div class="table-scroll"><table><thead><tr><th>Organization</th><th>Contact</th><th>Focus area</th><th>Since</th><th>Status</th></tr></thead><tbody><tr><td><strong>Quezon City Public Library</strong></td><td>library@quezoncity.gov.ph</td><td>Community reading</td><td>Jan 2025</td><td><span class="status-pill status-active">Active</span></td></tr><tr><td><strong>Reading Partners PH</strong></td><td>hello@readingpartners.ph</td><td>Volunteer tutors</td><td>Mar 2025</td><td><span class="status-pill status-active">Active</span></td></tr><tr><td><strong>Bayanihan Learning Center</strong></td><td>partners@bayanihan.org</td><td>Learning spaces</td><td>Aug 2025</td><td><span class="status-pill status-active">Active</span></td></tr><tr><td><strong>Books for Every Child</strong></td><td>team@booksforeverychild.org</td><td>Book donations</td><td>Feb 2026</td><td><span class="status-pill status-paused">Paused</span></td></tr></tbody></table></div></section>
+            </section>
+
+            <section class="admin-view" id="content" aria-labelledby="content-title">
+                <div class="page-heading"><div><p class="eyebrow">PUBLISHING</p><h1 id="content-title">Website content</h1><p class="heading-copy">Expiry dates are shown for every item. Automatic status updates require JavaScript.</p></div><a class="secondary-button" href="index.html#news">Open public site <span aria-hidden="true">&#8599;</span></a></div>
+                <section class="panel"><div class="panel-heading panel-heading-simple"><div><p class="eyebrow">NEWS &amp; STORIES</p><h2>Published content</h2></div><span class="record-count">4 posts</span></div><div class="table-scroll"><table><thead><tr><th>Title</th><th>Type</th><th>Published</th><th>Expires</th><th>Status</th></tr></thead><tbody><tr><td><strong>Bawat Bata, Bawat Kwento Reading Drive</strong></td><td>Announcement</td><td>Oct 06, 2026</td><td><input class="expiry-field" type="date" value="2026-10-31" aria-label="Expiry date for Bawat Bata, Bawat Kwento Reading Drive"></td><td><select class="status-select status-published" aria-label="Status for Bawat Bata, Bawat Kwento Reading Drive"><option value="Published" selected>Published</option><option value="Draft">Draft</option></select></td></tr><tr><td><strong>150,000 Children Reached Nationwide</strong></td><td>Milestone</td><td>Sep 28, 2026</td><td><input class="expiry-field" type="date" value="2026-12-31" aria-label="Expiry date for 150,000 Children Reached Nationwide"></td><td><select class="status-select status-published" aria-label="Status for 150,000 Children Reached Nationwide"><option value="Published" selected>Published</option><option value="Draft">Draft</option></select></td></tr><tr><td><strong>Volunteer Orientation: Quezon City</strong></td><td>Event</td><td>Draft</td><td><input class="expiry-field" type="date" value="2026-10-25" aria-label="Expiry date for Volunteer Orientation: Quezon City"></td><td><select class="status-select status-draft" aria-label="Status for Volunteer Orientation: Quezon City"><option value="Published">Published</option><option value="Draft" selected>Draft</option></select></td></tr><tr><td><strong>A New Reading Corner in Pasay</strong></td><td>Success story</td><td>Sep 12, 2026</td><td><input class="expiry-field" type="date" value="2026-10-30" aria-label="Expiry date for A New Reading Corner in Pasay"></td><td><select class="status-select status-published" aria-label="Status for A New Reading Corner in Pasay"><option value="Published" selected>Published</option><option value="Draft">Draft</option></select></td></tr></tbody></table></div></section>
+            </section>
+
+            <section class="admin-view" id="reports" aria-labelledby="reports-title">
+                <div class="page-heading"><div><p class="eyebrow">OPERATIONS</p><h1 id="reports-title">Reports</h1><p class="heading-copy">Report sections for future export integration.</p></div><span class="record-count">Static preview</span></div>
+                <section class="report-grid" aria-label="Available reports">
+                    <article class="panel report-card"><span class="report-icon blue" aria-hidden="true">&#9823;</span><div><p class="eyebrow">COMMUNITY</p><h2>Volunteer directory</h2><p>Member names, locations, event participation, and status.</p></div><a class="secondary-button" href="#volunteers">View sample list <span aria-hidden="true">&#8594;</span></a></article>
+                    <article class="panel report-card"><span class="report-icon coral" aria-hidden="true">&#9826;</span><div><p class="eyebrow">TRANSPARENCY</p><h2>Donation report</h2><p>Campaign contributions, payment references, and verification status.</p></div><a class="secondary-button" href="#donations">View sample list <span aria-hidden="true">&#8594;</span></a></article>
+                    <article class="panel report-card"><span class="report-icon green" aria-hidden="true">&#9825;</span><div><p class="eyebrow">PARTNERSHIPS</p><h2>Partner directory</h2><p>Organization contacts, focus areas, and partnership status.</p></div><a class="secondary-button" href="#partners">View sample list <span aria-hidden="true">&#8594;</span></a></article>
+                    <article class="panel report-card"><span class="report-icon amber" aria-hidden="true">&#9776;</span><div><p class="eyebrow">PUBLISHING</p><h2>Content inventory</h2><p>Website stories, content types, and publication status.</p></div><a class="secondary-button" href="#content">View sample list <span aria-hidden="true">&#8594;</span></a></article>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
