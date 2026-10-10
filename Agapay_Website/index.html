@@ -29,13 +29,12 @@
                     <li><a href="#donation" class="nav-link nav-donate">Donation</a></li>
 
                     <li class="nav-item has-dropdown">
-                        <a href="#volunteer" class="nav-link">
+                        <a href="#volunteer-opportunities" class="nav-link">
                             Volunteer
                             <svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
                         </a>
                         <ul class="dropdown">
                             <li><a href="#volunteer-opportunities">Volunteer Opportunities</a></li>
-                            <li><a href="#event-registration">Event Registration</a></li>
                             <li><a href="#volunteer-history">Volunteer History</a></li>
                         </ul>
                     </li>
@@ -178,109 +177,619 @@
         </section>
     </main>
 
-    <main id="volunteer-opportunities" class="page volunteer-page">
-        <div class="filter-bar volunteer-filter-bar">
-            <div class="filter-inner">
-                <div class="search-group">
-                    <label class="volunteer-search search-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
-                        <input type="search" placeholder="Search opportunities" aria-label="Search volunteer opportunities">
-                    </label>
-                    <button class="filter-btn" aria-label="Filter opportunities">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 5h18l-7 8v6l-4 2v-8L3 5z"></path></svg>
-                    </button>
-                </div>
-
-                <div class="volunteer-categories category-tabs" aria-label="Opportunity categories">
-                    <button class="selected" type="button" data-category="all" aria-pressed="true">All</button>
-                    <button type="button" data-category="College" aria-pressed="false">College</button>
-                    <button type="button" data-category="High School" aria-pressed="false">High School</button>
-                    <button type="button" data-category="Elementary" aria-pressed="false">Elementary</button>
-                    <button type="button" data-category="Event Organizer" aria-pressed="false">Event Organizer</button>
-                </div>
-            </div>
-        </div>
-
+        <main id="volunteer-opportunities" class="page volunteer-page">
         <section class="volunteer-content" aria-label="Volunteer opportunities">
             <div class="section-head volunteer-section-head">
                 <h1>Discover Volunteer Opportunities</h1>
-                <p>Make a difference. Make education accessible for every Filipino student.</p>
+                <p>Make a difference: Empower Every Filipino Child Through Literacy</p>
             </div>
 
-            <div class="volunteer-list-heading"><h2>Available Opportunities</h2><span id="opportunity-count" aria-live="polite">6 opportunities</span></div>
             <div class="volunteer-grid">
-                <article class="opportunity-card" data-category="College">
-                    <img src="assets/books.jpg" alt="Books for a reading session">
-                    <div class="opportunity-card-body"><span class="opportunity-tag">College · Quezon City</span><h3>Reading Buddy</h3><p>Read with elementary learners and help them practice English in a friendly setting.</p><div class="opportunity-meta"><span>Weekends</span><span>2 hrs / week</span></div><a href="#event-registration">View opportunity <span aria-hidden="true">&#8594;</span></a></div>
+                <article class="opportunity-card">
+                    <a href="#volunteer-reading-buddy" aria-label="Reading Buddy">
+                        <img src="assets/books.jpg" alt="Books for a reading session">
+                    </a>
+                    <div class="opportunity-card-body">
+                        <span class="opportunity-tag">Quezon City</span>
+                        <h3><a href="#volunteer-reading-buddy">Reading Buddy</a></h3>
+                        <p>Read with elementary learners and help them practice English in a friendly setting.</p>
+                        <div class="opportunity-meta"><span>Weekends</span><span>2 hrs / week</span></div>
+                        <a href="#volunteer-reading-buddy">View opportunity &#8594;</a>
+                    </div>
                 </article>
-                <article class="opportunity-card" data-category="College">
-                    <img src="assets/A4.jpg" alt="A learner practicing writing during a learning session">
-                    <div class="opportunity-card-body"><span class="opportunity-tag">College · Manila</span><h3>Learning Session Assistant</h3><p>Support mentors with small-group activities, learning materials, and attendance.</p><div class="opportunity-meta"><span>Oct 25, 2026</span><span>Half day</span></div><a href="#event-registration">View opportunity <span aria-hidden="true">&#8594;</span></a></div>
+
+                <article class="opportunity-card">
+                    <a href="#volunteer-learning-session" aria-label="Learning Session Assistant">
+                        <img src="assets/A4.jpg" alt="A learner practicing writing during a learning session">
+                    </a>
+                    <div class="opportunity-card-body">
+                        <span class="opportunity-tag">Manila</span>
+                        <h3><a href="#volunteer-learning-session">Learning Session Assistant</a></h3>
+                        <p>Support mentors with small-group activities, learning materials, and attendance.</p>
+                        <div class="opportunity-meta"><span>Oct 25, 2026</span><span>Half day</span></div>
+                        <a href="#volunteer-learning-session">View opportunity &#8594;</a>
+                    </div>
                 </article>
-                <article class="opportunity-card" data-category="High School">
-                    <img src="assets/school-supplies.jpg" alt="School supplies prepared for distribution">
-                    <div class="opportunity-card-body"><span class="opportunity-tag">High School · Pasig</span><h3>School Supply Drive</h3><p>Help sort and prepare books and school supplies for local students.</p><div class="opportunity-meta"><span>Nov 08, 2026</span><span>4 hrs</span></div><a href="#event-registration">View opportunity <span aria-hidden="true">&#8594;</span></a></div>
+
+                <article class="opportunity-card">
+                    <a href="#volunteer-school-supply" aria-label="School Supply Drive">
+                        <img src="assets/school-supplies.jpg" alt="School supplies prepared for distribution">
+                    </a>
+                    <div class="opportunity-card-body">
+                        <span class="opportunity-tag">Pasig</span>
+                        <h3><a href="#volunteer-school-supply">School Supply Drive</a></h3>
+                        <p>Help sort and prepare books and school supplies for local students.</p>
+                        <div class="opportunity-meta"><span>Nov 08, 2026</span><span>4 hrs</span></div>
+                        <a href="#volunteer-school-supply">View opportunity &#8594;</a>
+                    </div>
                 </article>
-                <article class="opportunity-card" data-category="Event Organizer">
-                    <img src="assets/library.jpg" alt="Community library space">
-                    <div class="opportunity-card-body"><span class="opportunity-tag">Event Organizer · Manila</span><h3>Library Build Day</h3><p>Work with the community to prepare a welcoming space for young readers.</p><div class="opportunity-meta"><span>Oct 25, 2026</span><span>Full day</span></div><a href="#event-registration">View opportunity <span aria-hidden="true">&#8594;</span></a></div>
+
+                <article class="opportunity-card">
+                    <a href="#volunteer-library-build" aria-label="Library Build Day">
+                        <img src="assets/library.jpg" alt="Community library space">
+                    </a>
+                    <div class="opportunity-card-body">
+                        <span class="opportunity-tag">Manila</span>
+                        <h3><a href="#volunteer-library-build">Library Build Day</a></h3>
+                        <p>Work with the community to prepare a welcoming space for young readers.</p>
+                        <div class="opportunity-meta"><span>Oct 25, 2026</span><span>Full day</span></div>
+                        <a href="#volunteer-library-build">View opportunity &#8594;</a>
+                    </div>
                 </article>
-                <article class="opportunity-card" data-category="College">
-                    <img src="assets/A3.jpg" alt="Community members joining hands during volunteer orientation">
-                    <div class="opportunity-card-body"><span class="opportunity-tag">College · Quezon City</span><h3>Volunteer Orientation</h3><p>Welcome new volunteers and help them learn about Agapay's programs.</p><div class="opportunity-meta"><span>Nov 21, 2026</span><span>3 hrs</span></div><a href="#event-registration">View opportunity <span aria-hidden="true">&#8594;</span></a></div>
+
+                <article class="opportunity-card">
+                    <a href="#volunteer-orientation" aria-label="Volunteer Orientation">
+                        <img src="assets/A3.jpg" alt="Community members joining hands during volunteer orientation">
+                    </a>
+                    <div class="opportunity-card-body">
+                        <span class="opportunity-tag">Quezon City</span>
+                        <h3><a href="#volunteer-orientation">Volunteer Orientation</a></h3>
+                        <p>Welcome new volunteers and help them learn about Agapay's programs.</p>
+                        <div class="opportunity-meta"><span>Nov 21, 2026</span><span>3 hrs</span></div>
+                        <a href="#volunteer-orientation">View opportunity &#8594;</a>
+                    </div>
                 </article>
-                <article class="opportunity-card" data-category="Elementary">
-                    <img src="assets/A1.jpg" alt="Illustrated storybooks for a storytelling session">
-                    <div class="opportunity-card-body"><span class="opportunity-tag">Elementary · Caloocan</span><h3>Storytelling Volunteer</h3><p>Bring stories to life and encourage children to enjoy reading together.</p><div class="opportunity-meta"><span>Weekends</span><span>2 hrs / week</span></div><a href="#event-registration">View opportunity <span aria-hidden="true">&#8594;</span></a></div>
+
+                <article class="opportunity-card">
+                    <a href="#volunteer-storytelling" aria-label="Storytelling Volunteer">
+                        <img src="assets/A1.jpg" alt="Illustrated storybooks for a storytelling session">
+                    </a>
+                    <div class="opportunity-card-body">
+                        <span class="opportunity-tag">Caloocan</span>
+                        <h3><a href="#volunteer-storytelling">Storytelling Volunteer</a></h3>
+                        <p>Bring stories to life and encourage children to enjoy reading together.</p>
+                        <div class="opportunity-meta"><span>Weekends</span><span>2 hrs / week</span></div>
+                        <a href="#volunteer-storytelling">View opportunity &#8594;</a>
+                    </div>
                 </article>
             </div>
-            <p class="opportunity-empty" hidden>No opportunities match your search.</p>
-            <div class="volunteer-more"><button type="button" disabled>All opportunities shown</button></div>
+            <div class="show-more-wrap">
+                <button class="show-more">Show more</button>
+            </div>
             <div class="volunteer-bottom-grid">
-                <section><h2>Who Can Volunteer?</h2><p>Anyone who cares about helping students learn can volunteer. Opportunities are available for high school and college students, working adults, and community members.</p><p>Some roles may require a short orientation or specific experience; check each opportunity for details.</p></section>
-                <section><h2>Benefits</h2><p>Make a meaningful impact in your community while building communication, teamwork, and mentoring skills.</p><p>You'll meet people who share your passion for literacy and receive confirmation of your volunteer hours.</p></section>
+                <section><h2>Who Can Volunteer?</h2><p>Anyone passionate about education can join—students, professionals, and community members. Whether you can teach, mentor, or organize, there is a place for you at Agapay. No prior experience is required, just a willingness to help.</p></section>
+                <section><h2>Benefits</h2><p>Volunteering with Agapay allows you to make a real impact on children's literacy while developing your own skills in teaching, leadership, and community building. You will also gain valuable experience, meet like-minded people, and receive a certificate of appreciation for your service.</p></section>
             </div>
         </section>
     </main>
 
-    <main id="event-registration" class="page volunteer-page">
-        <section class="registration-content">
-            <a class="volunteer-back-link" href="#volunteer-opportunities">&#8592; Back to opportunities</a>
-            <div class="registration-heading"><p class="volunteer-eyebrow">JOIN THE AGAPAY COMMUNITY</p><h1>Volunteer Registration</h1><p>Choose an opportunity and tell us a little about yourself. Our team will follow up with the event details.</p></div>
-            <div class="registration-layout">
-                <section class="registration-form-panel" aria-labelledby="registration-form-title">
-                    <h2 id="registration-form-title">Your Details</h2>
-                    <p class="form-demo-note">Sample registration form. Submissions are not connected to a database yet.</p>
-                    <form action="#event-registration" method="post">
-                        <label>Full name<input type="text" name="volunteer-name" autocomplete="name" placeholder="Juan Dela Cruz" required></label>
-                        <div class="registration-field-row">
-                            <label>Email address<input type="email" name="volunteer-email" autocomplete="email" placeholder="you@email.com" required></label>
-                            <label>Contact number<input type="tel" name="volunteer-phone" autocomplete="tel" placeholder="09XX XXX XXXX" required></label>
-                        </div>
-                        <label>Choose an opportunity
-                            <select name="opportunity" required>
-                                <option value="" selected disabled>Select an opportunity</option>
-                                <option>Reading Buddy — Quezon City</option>
-                                <option>Learning Session Assistant — Manila</option>
-                                <option>School Supply Drive — Pasig</option>
-                                <option>Library Build Day — Manila</option>
-                                <option>Volunteer Orientation — Quezon City</option>
-                                <option>Storytelling Volunteer — Caloocan</option>
-                            </select>
-                        </label>
-                        <label>Why would you like to volunteer?<textarea name="motivation" rows="4" placeholder="Tell us about your interest (optional)"></textarea></label>
-                        <button type="submit">Submit registration</button>
-                    </form>
+    <main id="volunteer-reading-buddy" class="page volunteer-page">
+        <input type="checkbox" id="register-reading-buddy" class="register-toggle" hidden>
+        <div class="wrap">
+            <a class="volunteer-back" href="#volunteer-opportunities">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                Back
+            </a>
+            <h1 class="detail-title">Reading Buddy</h1>
+            <div class="detail-layout">
+                <section class="detail-main">
+                    <img class="story-img" src="assets/books.jpg" alt="Books for a reading session">
+                    <div class="story-text">
+                        <p>Read with elementary learners and help them practice English in a friendly, encouraging setting. This role is perfect for volunteers who love working with children.</p>
+                        <p>You will be paired with 2–3 learners per session. Each session focuses on guided reading, storytelling, and simple comprehension activities designed by our education team.</p>
+                        <p>Training and reading materials are provided. All you need to bring is patience, warmth, and a genuine love for helping children learn.</p>
+                    </div>
+                    <div class="organizer-card">
+                        <img class="avatar lg" src="assets/Agapay Logo.png" alt="Agapay logo">
+                        <div><strong>Agapay Volunteer Program</strong><span>Program organizer</span></div>
+                    </div>
                 </section>
-                <aside class="registration-sidebar">
-                    <div class="registration-event-image"><img src="assets/A3.jpg" alt="Community members joining hands to support students"></div>
-                    <h2>Volunteer with Agapay</h2>
-                    <p>Be part of a community helping Filipino students build confidence in reading and writing.</p>
-                    <a class="registration-share-link" href="#volunteer-opportunities">Browse opportunities</a>
-                    <div class="registration-participants"><h3>What to expect</h3><p><span>01</span> Choose an opportunity</p><p><span>02</span> Submit your details</p><p><span>03</span> Our team will contact you</p></div>
+                <aside class="donate-card">
+                    <div class="volunteer-side-meta">
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-7.5-8-13a8 8 0 0 1 16 0c0 5.5-8 13-8 13z"/><circle cx="12" cy="9" r="3"/></svg>
+                            </span>
+                            <span>Quezon City</span>
+                        </div>
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+                            </span>
+                            <span>Weekends · 2 hrs / week</span>
+                        </div>
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                            </span>
+                            <span>Reading Mentor</span>
+                        </div>
+                    </div>
+
+                    <label for="register-reading-buddy" class="btn-pill btn-primary">Register Now</label>
+                    <input type="button" value="Share" class="btn-pill btn-secondary">
+
+                    <div class="volunteer-divider"></div>
+
+                    <h3 class="recent-title">Participants</h3>
+                    <ul class="recent-list">
+                        <li><img class="avatar sm" src="assets/participants.jpg" alt=""><span>Maria Santos</span></li>
+                        <li><img class="avatar sm" src="assets/participants.jpg" alt=""><span>Miguel Reyes</span></li>
+                        <li><img class="avatar sm" src="assets/participants.jpg" alt=""><span>Angela Cruz</span></li>
+                    </ul>
                 </aside>
             </div>
-        </section>
+        </div>
+        <div class="donate-modal">
+            <label for="register-reading-buddy" class="modal-backdrop"></label>
+            <form class="modal-box" action="#volunteer-history">
+                <label for="register-reading-buddy" class="modal-close">&times;</label>
+                <div class="form-body">
+                    <h2>Register for Reading Buddy</h2>
+                    <p class="modal-sub">Fill out the form and our team will reach out with next steps.</p>
+                    <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Juan Dela Cruz"></label>
+                    <div class="field-row">
+                        <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com"></label>
+                        <label class="field"><span>Contact number</span><input type="tel" name="phone" required placeholder="09XX XXX XXXX"></label>
+                    </div>
+                    <label class="field"><span>Preferred schedule</span><input type="text" name="schedule" value="Weekends" readonly></label>
+                    <label class="field"><span>Why do you want to join? (optional)</span><textarea name="reason" rows="2" placeholder="Tell us a little about your interest"></textarea></label>
+                    <label class="check"><input type="checkbox" required> I agree to the Agapay volunteer guidelines.</label>
+                    <button type="submit" class="btn-pill btn-primary">Submit registration</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <main id="volunteer-learning-session" class="page volunteer-page">
+        <input type="checkbox" id="register-learning-session" class="register-toggle" hidden>
+        <div class="wrap">
+            <a class="volunteer-back" href="#volunteer-opportunities">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                Back
+            </a>
+            <h1 class="detail-title">Learning Session Assistant</h1>
+            <div class="detail-layout">
+                <section class="detail-main">
+                    <img class="story-img" src="assets/A4.jpg" alt="A learner practicing writing during a learning session">
+                    <div class="story-text">
+                        <p>Support Agapay mentors during a one-day learning session. You'll help with small-group activities, distribute learning materials, take attendance, and keep the session running smoothly.</p>
+                        <p>No formal teaching experience needed — just a helpful attitude and a willingness to learn. Our team will brief you before the session starts.</p>
+                    </div>
+                    <div class="organizer-card">
+                        <img class="avatar lg" src="assets/Agapay Logo.png" alt="Agapay logo">
+                        <div><strong>Agapay Volunteer Program</strong><span>Program organizer</span></div>
+                    </div>
+                </section>
+                <aside class="donate-card">
+                    <div class="volunteer-side-meta">
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-7.5-8-13a8 8 0 0 1 16 0c0 5.5-8 13-8 13z"/><circle cx="12" cy="9" r="3"/></svg>
+                            </span>
+                            <span>Manila</span>
+                        </div>
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+                            </span>
+                            <span>Oct 25, 2026 · Half day</span>
+                        </div>
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                            </span>
+                            <span>Session Assistant</span>
+                        </div>
+                    </div>
+
+                    <label for="register-learning-session" class="btn-pill btn-primary">Register Now</label>
+                    <input type="button" value="Share" class="btn-pill btn-secondary">
+
+                    <div class="volunteer-divider"></div>
+
+                    <h3 class="recent-title">Participants</h3>
+                    <ul class="recent-list">
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Paolo Garcia</span></li>
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Sofia Mendoza</span></li>
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Juan Dela Cruz</span></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="donate-modal">
+            <label for="register-learning-session" class="modal-backdrop"></label>
+            <form class="modal-box" action="#volunteer-history">
+                <label for="register-learning-session" class="modal-close">&times;</label>
+                <div class="form-body">
+                    <h2>Register for Learning Session Assistant</h2>
+                    <p class="modal-sub">Fill out the form and our team will reach out with next steps.</p>
+                    <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Juan Dela Cruz"></label>
+                    <div class="field-row">
+                        <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com"></label>
+                        <label class="field"><span>Contact number</span><input type="tel" name="phone" required placeholder="09XX XXX XXXX"></label>
+                    </div>
+                    <label class="field"><span>Preferred schedule</span><input type="text" name="schedule" value="Oct 25, 2026 · Half day" readonly></label>
+                    <label class="field"><span>Why do you want to join? (optional)</span><textarea name="reason" rows="2" placeholder="Tell us a little about your interest"></textarea></label>
+                    <label class="check"><input type="checkbox" required> I agree to the Agapay volunteer guidelines.</label>
+                    <button type="submit" class="btn-pill btn-primary">Submit registration</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <main id="volunteer-school-supply" class="page volunteer-page">
+        <input type="checkbox" id="register-school-supply" class="register-toggle" hidden>
+        <div class="wrap">
+            <a class="volunteer-back" href="#volunteer-opportunities">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                Back
+            </a>
+            <h1 class="detail-title">School Supply Drive</h1>
+            <div class="detail-layout">
+                <section class="detail-main">
+                    <img class="story-img" src="assets/school-supplies.jpg" alt="School supplies prepared for distribution">
+                    <div class="story-text">
+                        <p>Help sort, pack, and prepare books and school supplies for distribution to local students. This is a fun, hands-on opportunity perfect for students and community groups.</p>
+                        <p>You'll work alongside other volunteers in a friendly, fast-paced environment. All materials and instructions are provided.</p>
+                    </div>
+                    <div class="organizer-card">
+                        <img class="avatar lg" src="assets/Agapay Logo.png" alt="Agapay logo">
+                        <div><strong>Agapay Volunteer Program</strong><span>Program organizer</span></div>
+                    </div>
+                </section>
+                <aside class="donate-card">
+                    <div class="volunteer-side-meta">
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-7.5-8-13a8 8 0 0 1 16 0c0 5.5-8 13-8 13z"/><circle cx="12" cy="9" r="3"/></svg>
+                            </span>
+                            <span>Pasig</span>
+                        </div>
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+                            </span>
+                            <span>Nov 08, 2026 · 4 hrs</span>
+                        </div>
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                            </span>
+                            <span>Sorting Volunteer</span>
+                        </div>
+                    </div>
+
+                    <label for="register-school-supply" class="btn-pill btn-primary">Register Now</label>
+                    <input type="button" value="Share" class="btn-pill btn-secondary">
+
+                    <div class="volunteer-divider"></div>
+
+                    <h3 class="recent-title">Participants</h3>
+                    <ul class="recent-list">
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Angela Cruz</span></li>
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Maria Santos</span></li>
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Anonymous</span></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="donate-modal">
+            <label for="register-school-supply" class="modal-backdrop"></label>
+            <form class="modal-box" action="#volunteer-history">
+                <label for="register-school-supply" class="modal-close">&times;</label>
+                <div class="form-body">
+                    <h2>Register for School Supply Drive</h2>
+                    <p class="modal-sub">Fill out the form and our team will reach out with next steps.</p>
+                    <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Juan Dela Cruz"></label>
+                    <div class="field-row">
+                        <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com"></label>
+                        <label class="field"><span>Contact number</span><input type="tel" name="phone" required placeholder="09XX XXX XXXX"></label>
+                    </div>
+                    <label class="field"><span>Preferred schedule</span><input type="text" name="schedule" value="Nov 08, 2026 · 4 hrs" readonly></label>
+                    <label class="field"><span>Why do you want to join? (optional)</span><textarea name="reason" rows="2" placeholder="Tell us a little about your interest"></textarea></label>
+                    <label class="check"><input type="checkbox" required> I agree to the Agapay volunteer guidelines.</label>
+                    <button type="submit" class="btn-pill btn-primary">Submit registration</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <main id="volunteer-library-build" class="page volunteer-page">
+        <input type="checkbox" id="register-library-build" class="register-toggle" hidden>
+        <div class="wrap">
+            <a class="volunteer-back" href="#volunteer-opportunities">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                Back
+            </a>
+            <h1 class="detail-title">Library Build Day</h1>
+            <div class="detail-layout">
+                <section class="detail-main">
+                    <img class="story-img" src="assets/library.jpg" alt="Community library space">
+                    <div class="story-text">
+                        <p>Work with the community to prepare a welcoming space where children can discover the joy of reading. Tasks include setting up shelves, arranging books, and preparing a cozy reading corner.</p>
+                        <p>This is a full-day event. Volunteers work in teams with a brief orientation and lunch provided on-site.</p>
+                    </div>
+                    <div class="organizer-card">
+                        <img class="avatar lg" src="assets/Agapay Logo.png" alt="Agapay logo">
+                        <div><strong>Agapay Volunteer Program</strong><span>Program organizer</span></div>
+                    </div>
+                </section>
+                <aside class="donate-card">
+                    <div class="volunteer-side-meta">
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-7.5-8-13a8 8 0 0 1 16 0c0 5.5-8 13-8 13z"/><circle cx="12" cy="9" r="3"/></svg>
+                            </span>
+                            <span>Manila</span>
+                        </div>
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+                            </span>
+                            <span>Oct 25, 2026 · Full day</span>
+                        </div>
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                            </span>
+                            <span>Event Helper</span>
+                        </div>
+                    </div>
+
+                    <label for="register-library-build" class="btn-pill btn-primary">Register Now</label>
+                    <input type="button" value="Share" class="btn-pill btn-secondary">
+
+                    <div class="volunteer-divider"></div>
+
+                    <h3 class="recent-title">Participants</h3>
+                    <ul class="recent-list">
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Juan Dela Cruz</span></li>
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Angela Cruz</span></li>
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Paolo Garcia</span></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="donate-modal">
+            <label for="register-library-build" class="modal-backdrop"></label>
+            <form class="modal-box" action="#volunteer-history">
+                <label for="register-library-build" class="modal-close">&times;</label>
+                <div class="form-body">
+                    <h2>Register for Library Build Day</h2>
+                    <p class="modal-sub">Fill out the form and our team will reach out with next steps.</p>
+                    <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Juan Dela Cruz"></label>
+                    <div class="field-row">
+                        <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com"></label>
+                        <label class="field"><span>Contact number</span><input type="tel" name="phone" required placeholder="09XX XXX XXXX"></label>
+                    </div>
+                    <label class="field"><span>Preferred schedule</span><input type="text" name="schedule" value="Oct 25, 2026 · Full day" readonly></label>
+                    <label class="field"><span>Why do you want to join? (optional)</span><textarea name="reason" rows="2" placeholder="Tell us a little about your interest"></textarea></label>
+                    <label class="check"><input type="checkbox" required> I agree to the Agapay volunteer guidelines.</label>
+                    <button type="submit" class="btn-pill btn-primary">Submit registration</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <main id="volunteer-orientation" class="page volunteer-page">
+        <input type="checkbox" id="register-orientation" class="register-toggle" hidden>
+        <div class="wrap">
+            <a class="volunteer-back" href="#volunteer-opportunities">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                Back
+            </a>
+            <h1 class="detail-title">Volunteer Orientation</h1>
+            <div class="detail-layout">
+                <section class="detail-main">
+                    <img class="story-img" src="assets/A3.jpg" alt="Community members joining hands during volunteer orientation">
+                    <div class="story-text">
+                        <p>Welcome new volunteers and help them learn about Agapay's programs. You'll assist with check-in, distribute orientation kits, and guide small group discussions.</p>
+                        <p>This is a great first-time volunteer role — friendly, structured, and a wonderful way to meet the Agapay community.</p>
+                    </div>
+                    <div class="organizer-card">
+                        <img class="avatar lg" src="assets/Agapay Logo.png" alt="Agapay logo">
+                        <div><strong>Agapay Volunteer Program</strong><span>Program organizer</span></div>
+                    </div>
+                </section>
+                <aside class="donate-card">
+                    <div class="volunteer-side-meta">
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-7.5-8-13a8 8 0 0 1 16 0c0 5.5-8 13-8 13z"/><circle cx="12" cy="9" r="3"/></svg>
+                            </span>
+                            <span>Quezon City</span>
+                        </div>
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+                            </span>
+                            <span>Nov 21, 2026 · 3 hrs</span>
+                        </div>
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                            </span>
+                            <span>Orientation Assistant</span>
+                        </div>
+                    </div>
+
+                    <label for="register-orientation" class="btn-pill btn-primary">Register Now</label>
+                    <input type="button" value="Share" class="btn-pill btn-secondary">
+
+                    <div class="volunteer-divider"></div>
+
+                    <h3 class="recent-title">Participants</h3>
+                    <ul class="recent-list">
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Sofia Mendoza</span></li>
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Miguel Reyes</span></li>
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Anonymous</span></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="donate-modal">
+            <label for="register-orientation" class="modal-backdrop"></label>
+            <form class="modal-box" action="#volunteer-history">
+                <label for="register-orientation" class="modal-close">&times;</label>
+                <div class="form-body">
+                    <h2>Register for Volunteer Orientation</h2>
+                    <p class="modal-sub">Fill out the form and our team will reach out with next steps.</p>
+                    <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Juan Dela Cruz"></label>
+                    <div class="field-row">
+                        <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com"></label>
+                        <label class="field"><span>Contact number</span><input type="tel" name="phone" required placeholder="09XX XXX XXXX"></label>
+                    </div>
+                    <label class="field"><span>Preferred schedule</span><input type="text" name="schedule" value="Nov 21, 2026 · 3 hrs" readonly></label>
+                    <label class="field"><span>Why do you want to join? (optional)</span><textarea name="reason" rows="2" placeholder="Tell us a little about your interest"></textarea></label>
+                    <label class="check"><input type="checkbox" required> I agree to the Agapay volunteer guidelines.</label>
+                    <button type="submit" class="btn-pill btn-primary">Submit registration</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <main id="volunteer-storytelling" class="page volunteer-page">
+        <input type="checkbox" id="register-storytelling" class="register-toggle" hidden>
+        <div class="wrap">
+            <a class="volunteer-back" href="#volunteer-opportunities">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                Back
+            </a>
+            <h1 class="detail-title">Storytelling Volunteer</h1>
+            <div class="detail-layout">
+                <section class="detail-main">
+                    <img class="story-img" src="assets/A1.jpg" alt="Illustrated storybooks for a storytelling session">
+                    <div class="story-text">
+                        <p>Bring stories to life and encourage children to enjoy reading together. You'll read aloud, act out simple scenes, and lead short discussions after each story.</p>
+                        <p>Perfect for volunteers who are expressive, patient, and love working with younger children. Training and a curated storybook collection are provided.</p>
+                    </div>
+                    <div class="organizer-card">
+                        <img class="avatar lg" src="assets/Agapay Logo.png" alt="Agapay logo">
+                        <div><strong>Agapay Volunteer Program</strong><span>Program organizer</span></div>
+                    </div>
+                </section>
+                <aside class="donate-card">
+                    <div class="volunteer-side-meta">
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-7.5-8-13a8 8 0 0 1 16 0c0 5.5-8 13-8 13z"/><circle cx="12" cy="9" r="3"/></svg>
+                            </span>
+                            <span>Caloocan</span>
+                        </div>
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+                            </span>
+                            <span>Weekends · 2 hrs / week</span>
+                        </div>
+                        <div class="volunteer-side-row">
+                            <span class="volunteer-side-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                            </span>
+                            <span>Storyteller</span>
+                        </div>
+                    </div>
+
+                    <label for="register-storytelling" class="btn-pill btn-primary">Register Now</label>
+                    <input type="button" value="Share" class="btn-pill btn-secondary">
+
+                    <div class="volunteer-divider"></div>
+
+                    <h3 class="recent-title">Participants</h3>
+                    <ul class="recent-list">
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Angela Cruz</span></li>
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Juan Dela Cruz</span></li>
+                        <li><img class="avatar sm" src="assets/organizer.jpg" alt=""><span>Maria Santos</span></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="donate-modal">
+            <label for="register-storytelling" class="modal-backdrop"></label>
+            <form class="modal-box" action="#volunteer-history">
+                <label for="register-storytelling" class="modal-close">&times;</label>
+                <div class="form-body">
+                    <h2>Register for Storytelling Volunteer</h2>
+                    <p class="modal-sub">Fill out the form and our team will reach out with next steps.</p>
+                    <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Juan Dela Cruz"></label>
+                    <div class="field-row">
+                        <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com"></label>
+                        <label class="field"><span>Contact number</span><input type="tel" name="phone" required placeholder="09XX XXX XXXX"></label>
+                    </div>
+                    <label class="field"><span>Preferred schedule</span><input type="text" name="schedule" value="Weekends · 2 hrs / week" readonly></label>
+                    <label class="field"><span>Why do you want to join? (optional)</span><textarea name="reason" rows="2" placeholder="Tell us a little about your interest"></textarea></label>
+                    <label class="check"><input type="checkbox" required> I agree to the Agapay volunteer guidelines.</label>
+                    <button type="submit" class="btn-pill btn-primary">Submit registration</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <main id="volunteer-history" class="page volunteer-page">
+        <div class="wrap">
+            <a class="volunteer-back" href="#volunteer-opportunities">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                Back
+            </a>
+            <div class="profile-banner">
+                <div class="profile-initials">JD</div>
+                <div class="profile-banner-text">
+                    <h1>Juan Dela Cruz</h1>
+                    <p>juan@email.com</p>
+                    <span class="member-since">Volunteer since September 2022</span>
+                </div>
+                <div class="profile-stats">
+                    <div><strong>4</strong><span>Events joined</span></div>
+                    <div><strong>13</strong><span>Volunteer hours</span></div>
+                    <div><strong>2</strong><span>Upcoming</span></div>
+                </div>
+            </div>
+
+            <section>
+                <h2 class="panel-title">Upcoming Events</h2>
+                <div class="table-wrap">
+                    <table class="donation-table">
+                        <thead>
+                            <tr><th>Date</th><th>Event</th><th>Role</th><th>Location</th><th>Status</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Oct 25, 2026</td><td>Library Build Day</td><td>Event Helper</td><td>Manila</td><td><span class="status pending">Upcoming</span></td></tr>
+                            <tr><td>Nov 08, 2026</td><td>School Supply Drive</td><td>Volunteer</td><td>Pasig</td><td><span class="status pending">Upcoming</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Upcoming events appear here once your registration is confirmed.</p>
+            </section>
+
+            <section>
+                <h2 class="panel-title">Completed Events</h2>
+                <div class="table-wrap">
+                    <table class="donation-table">
+                        <thead>
+                            <tr><th>Date</th><th>Event</th><th>Role</th><th>Hours</th><th>Status</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Oct 3, 2026</td><td>Book Sorting Day</td><td>Volunteer</td><td>4</td><td><span class="status verified">Completed</span></td></tr>
+                            <tr><td>Sep 20, 2026</td><td>Tutoring Session</td><td>Tutor</td><td>3</td><td><span class="status verified">Completed</span></td></tr>
+                            <tr><td>Sep 5, 2026</td><td>Community Reading Day</td><td>Reading Buddy</td><td>4</td><td><span class="status verified">Completed</span></td></tr>
+                            <tr><td>Aug 18, 2026</td><td>Volunteer Orientation</td><td>Participant</td><td>2</td><td><span class="status verified">Completed</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Hours are added once the event organizer confirms your attendance.</p>
+            </section>
+        </div>
     </main>
 
     <!-- ========== News & Updates ========== -->
@@ -1637,45 +2146,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const opportunityPage = document.querySelector("#volunteer-opportunities");
-        const categoryButtons = opportunityPage.querySelectorAll(".volunteer-categories button");
-        const opportunityCards = opportunityPage.querySelectorAll(".opportunity-card");
-        const opportunitySearch = opportunityPage.querySelector(".volunteer-search input");
-        const opportunityCount = opportunityPage.querySelector("#opportunity-count");
-        const opportunityEmpty = opportunityPage.querySelector(".opportunity-empty");
-
-        function filterOpportunities() {
-            const selectedCategory = opportunityPage.querySelector(".volunteer-categories button.selected").dataset.category;
-            const searchTerm = opportunitySearch.value.trim().toLowerCase();
-            let visibleCount = 0;
-
-            opportunityCards.forEach((card) => {
-                const matchesCategory = selectedCategory === "all" || card.dataset.category === selectedCategory;
-                const matchesSearch = card.textContent.toLowerCase().includes(searchTerm);
-                const isVisible = matchesCategory && matchesSearch;
-
-                card.hidden = !isVisible;
-                if (isVisible) visibleCount += 1;
-            });
-
-            opportunityCount.textContent = `${visibleCount} ${visibleCount === 1 ? "opportunity" : "opportunities"}`;
-            opportunityEmpty.hidden = visibleCount !== 0;
-        }
-
-        categoryButtons.forEach((button) => {
-            button.addEventListener("click", () => {
-                categoryButtons.forEach((categoryButton) => {
-                    const isSelected = categoryButton === button;
-                    categoryButton.classList.toggle("selected", isSelected);
-                    categoryButton.setAttribute("aria-pressed", String(isSelected));
-                });
-                filterOpportunities();
-            });
-        });
-
-        opportunitySearch.addEventListener("input", filterOpportunities);
-    </script>
 </body>
 </html>
