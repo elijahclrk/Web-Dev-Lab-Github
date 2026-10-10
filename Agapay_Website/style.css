@@ -828,11 +828,12 @@ body:has(.awareness-page-inline:target) #donation:not(:target) { display: none; 
 .info-page, .info-page *, .info-page *::before, .info-page *::after { box-sizing: border-box; }
 .info-page { color: var(--text); line-height: 1.6; }
 .info-page h2, .info-page h3 { color: var(--blue-dark); }
+.info-page .mentor-title { text-align: center; color: var(--blue-dark) }
 .info-page img { max-width: 100%; }
 .info-page section { margin-bottom: 3rem; scroll-margin-top: 90px; }
 .info-page ul { list-style: disc; margin: 0; padding-left: 1.25rem; }
 .info-page ol { list-style: none; margin: 0; padding: 0; }
-.page-content { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 3rem 1.5rem; }
+.page-content { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 2rem 1.5rem; }
 
 .info-page .hero {
     display: flex; align-items: center; justify-content: center; height: 500px;
@@ -849,15 +850,17 @@ body:has(.awareness-page-inline:target) #donation:not(:target) { display: none; 
 .info-page .stats strong { display: block; font-size: 2.5rem; color: var(--blue-dark); }
 .info-page .sponsors { text-align: center; }
 .info-page .sponsors div { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
-.info-page .sponsors img { border-radius: 50%; max-width: 100px; }
+.info-page .sponsors img { border-radius: 50%; border: 1px solid var(--blue-dark); max-width: 100px; box-shadow: 0 4px 14px rgba(49, 91, 145, 0.592); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.info-page .sponsors img:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(49, 91, 145, 0.481); }
 
-.info-page .intro { margin: 0 0 1.5rem; color: var(--muted); }
+.info-page .intro { text-align: center; margin: 0 0 1.5rem; color: var(--muted); }
 .info-page button { padding: 0.7rem 1.5rem; font: inherit; font-weight: bold; color: #fff; background: var(--blue-dark); border: 0; border-radius: 6px; cursor: pointer; }
 .info-page button:hover { background: var(--text); }
 .info-page button:focus-visible { outline: 3px solid var(--blue-light); outline-offset: 2px; }
 
 .info-page .mentors { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1.5rem; }
-.info-page .mentor { display: flex; flex-direction: column; align-items: center; padding: 1.5rem 1rem; border-radius: 16px; background: var(--bg); text-align: center; box-shadow: 0 4px 14px rgba(49, 91, 145, 0.12); }
+.info-page .mentor { display: flex; flex-direction: column; align-items: center; padding: 1.5rem 1rem; border-radius: 16px; background: var(--bg); text-align: center; box-shadow: 0 4px 14px rgba(49, 91, 145, 0.12); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.info-page .mentor:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(49, 91, 145, 0.28); }
 .info-page .mentor img { width: 96px; height: 96px; margin-bottom: 1rem; border-radius: 50%; }
 .info-page .mentor h3 { margin: 0 0 0.5rem; font-size: 1.125rem; }
 .info-page .mentor p { margin: 0; }
