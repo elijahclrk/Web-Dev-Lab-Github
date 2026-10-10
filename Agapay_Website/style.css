@@ -743,7 +743,6 @@ body:has(.awareness-page-inline:target) #donation:not(:target) { display: none; 
     .awareness-img-wrap { height: 170px; }
 }
 
-/* Info pages (About / Mentorship) */
 .info-page, .info-page *, .info-page *::before, .info-page *::after { box-sizing: border-box; }
 .info-page { color: var(--text); line-height: 1.6; }
 .info-page h2, .info-page h3 { color: var(--blue-dark); }
@@ -783,7 +782,7 @@ body:has(.awareness-page-inline:target) #donation:not(:target) { display: none; 
 
 .info-page .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; }
 .info-page form { display: grid; gap: 1rem; padding: 1.5rem; background: var(--bg); border-radius: 16px; box-shadow: 0 4px 14px rgba(49, 91, 145, 0.12); }
-.info-page form button { justify-self: start; }
+.info-page form button { justify-self: start; border-radius: 10px; }
 .info-page label { display: grid; gap: 0.25rem; font-weight: bold; }
 .info-page label:focus-within { color: var(--blue); }
 .info-page input, .info-page select, .info-page textarea { font: inherit; padding: 0.6rem 0.75rem; border: 1px solid var(--blue-dark); border-radius: 12px; color: var(--text); font-weight: normal; }
