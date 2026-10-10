@@ -22,8 +22,8 @@ button, input, select { font: inherit; }
 .site-link { color: var(--admin-blue); font-size: 13px; font-weight: 700; text-decoration: none; }
 .site-link:hover { text-decoration: underline; }
 .admin-avatar { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; color: #315b91; background: #eaf4ff; font-size: 11px; font-weight: 700; }
-.admin-shell { min-height: calc(100vh - 68px); display: grid; grid-template-columns: 230px minmax(0, 1fr); }
-.admin-sidebar { position: sticky; top: 0; height: calc(100vh - 68px); padding: 28px 16px 18px; display: flex; flex-direction: column; border-right: 1px solid var(--admin-line); background: #fff; }
+.admin-shell { min-height: 100vh; display: grid; grid-template-columns: 230px minmax(0, 1fr); }
+.admin-sidebar { position: sticky; top: 0; height: 100vh; padding: 28px 16px 18px; display: flex; flex-direction: column; border-right: 1px solid var(--admin-line); background: #fff; }
 .sidebar-label, .eyebrow { margin: 0; color: #8794a4; font-size: 10px; font-weight: 700; letter-spacing: 1px; }
 .sidebar-label { padding: 0 12px 13px; }
 .admin-nav { display: grid; gap: 4px; }

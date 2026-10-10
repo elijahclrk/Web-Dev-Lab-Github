@@ -515,7 +515,7 @@ body:has(:target) #donation:not(:target) { display: none; }
 .mission-vision-grid p { margin: 0; color: #687b96; font-size: 14px; line-height: 1.55; }
 .home-section { padding: 38px 0; }
 .home-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
-.home-section-heading h2, .home-faq h2, .home-partners h2 { margin: 0; color: #1a2b4d; font-size: 23px; }
+.home-section-heading h2, .home-faq h2 { margin: 0; color: #1a2b4d; font-size: 23px; }
 .home-section-heading > a, .home-card-content > a { color: var(--blue); font-size: 12px; font-weight: 700; text-decoration: none; white-space: nowrap; }
 .home-section-heading > a:hover, .home-card-content > a:hover { text-decoration: underline; }
 .home-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
@@ -534,12 +534,6 @@ body:has(:target) #donation:not(:target) { display: none; }
 .home-faq details { margin-top: 8px; border: 1px solid #e0e8f1; border-radius: 5px; background: #fff; }
 .home-faq summary { padding: 12px 14px; color: #35465b; font-size: 13px; font-weight: 700; cursor: pointer; }
 .home-faq details p { margin: 0; padding: 0 14px 13px; color: #687b96; font-size: 12px; line-height: 1.5; }
-.home-partners { padding: 30px 0 34px; background: #eaf4ff; text-align: center; }
-.home-partners h2 { margin-bottom: 20px; font-size: 19px; }
-.home-partner-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 740px; margin: 0 auto; }
-.home-partner-list > div { display: flex; flex-direction: column; align-items: center; gap: 7px; }
-.home-partner-list span { width: 52px; height: 52px; display: grid; place-items: center; border: 1px solid #c7d9ec; border-radius: 50%; color: var(--blue); background: #fff; font-size: 12px; font-weight: 700; }
-.home-partner-list p { margin: 0; color: #566a82; font-size: 11px; }
 
 @media (max-width: 720px) {
     .home-section-inner, .home-hero-inner { width: min(100% - 32px, var(--max-width)); }
@@ -554,7 +548,6 @@ body:has(:target) #donation:not(:target) { display: none; }
     .home-section-heading { align-items: flex-start; flex-direction: column; gap: 8px; }
     .home-section-heading h2, .home-faq h2 { font-size: 20px; }
     .mission-vision-grid { grid-template-columns: 1fr; gap: 12px; }
-    .home-partner-list { grid-template-columns: repeat(2, 1fr); row-gap: 18px; }
 }
 
 label > input[type="radio"] { display: none; }
@@ -1117,3 +1110,25 @@ body .volunteer-page .wrap > h1.detail-title {
 body .volunteer-page .detail-layout {
     margin-top: 0 !important;
 }
+
+.admin-frame { display: block; width: 100%; height: calc(100vh - 80px); border: 0; }
+
+/* --- Admin page: shown only while logged in ---
+   Clicking a <label> inside a link ticks the checkbox but the browser does NOT follow
+   the link, so the address does not change. These rules therefore decide what to show
+   from the login state itself, not from the address. */
+
+/* logged out: the admin page is never shown */
+body:not(:has(#session:checked)) #admin { display: none; }
+
+/* logged out on a members-only address -> show the Log In page */
+body:not(:has(#session:checked)):has(#admin:target) #login,
+body:not(:has(#session:checked)):has(#profile:target) #login { display: flex; }
+
+/* logged in while still on the Log In page -> go straight to the admin page */
+body:has(#session:checked):has(#login:target) #login { display: none; }
+body:has(#session:checked):has(#login:target) #admin { display: flex; }
+
+/* no footer on the admin page */
+body:has(#session:checked):has(#admin:target) .site-footer,
+body:has(#session:checked):has(#login:target) .site-footer { display: none; }

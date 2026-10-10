@@ -27,17 +27,8 @@
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About Us</a></li>
                     <li><a href="#donation" class="nav-link nav-donate">Donation</a></li>
-
-                    <li class="nav-item has-dropdown">
-                        <a href="#volunteer-opportunities" class="nav-link">
-                            Volunteer
-                            <svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
-                        </a>
-                        <ul class="dropdown">
-                            <li><a href="#volunteer-opportunities">Volunteer Opportunities</a></li>
-                            <li><a href="#volunteer-history">Volunteer History</a></li>
-                        </ul>
-                    </li>
+                    
+                    <li><a href="#volunteer-opportunities" class="nav-link">Volunteer</a></li>
 
                     <li class="nav-item has-dropdown">
                         <a href="#mentorship" class="nav-link">
@@ -64,8 +55,6 @@
                             <li><a href="#awareness-campaigns">Awareness Campaigns</a></li>
                         </ul>
                     </li>
-
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
 
@@ -79,6 +68,7 @@
                     <li class="guest-only"><a href="#login">Log In</a></li>
                     <li class="guest-only"><a href="#signup">Sign Up</a></li>
                     <li class="member-only"><a href="#profile">My Profile</a></li>
+                    <li class="member-only"><a href="#admin">Admin</a></li>
                     <li class="member-only"><a href="#login"><label for="session">Log Out</label></a></li>
                 </ul>
             </div>
@@ -163,21 +153,10 @@
                 <details><summary>Are there volunteer opportunities near me?</summary><p>Our events take place in different communities. Check the event details for each location and date.</p></details>
             </div>
         </section>
-
-        <section class="home-partners" aria-labelledby="home-partners-title">
-            <div class="home-section-inner">
-                <h2 id="home-partners-title">Our Partners &amp; Sponsors</h2>
-                <div class="home-partner-list">
-                    <div><span aria-hidden="true">QC</span><p>Quezon City Public Library</p></div>
-                    <div><span aria-hidden="true">RP</span><p>Reading Partners PH</p></div>
-                    <div><span aria-hidden="true">BL</span><p>Bayanihan Learning Center</p></div>
-                    <div><span aria-hidden="true">BF</span><p>Books for Every Child</p></div>
-                </div>
-            </div>
-        </section>
     </main>
 
-        <main id="volunteer-opportunities" class="page volunteer-page">
+    <main id="volunteer-opportunities" class="page volunteer-page">
+
         <section class="volunteer-content" aria-label="Volunteer opportunities">
             <div class="section-head volunteer-section-head">
                 <h1>Discover Volunteer Opportunities</h1>
@@ -1272,9 +1251,6 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
                         <input type="search" placeholder="Search campaigns" aria-label="Search campaigns">
                     </label>
-                    <button class="filter-btn" aria-label="Filter campaigns">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 5h18l-7 8v6l-4 2v-8L3 5z"/></svg>
-                    </button>
                 </div>
 
                 <ul class="category-tabs">
@@ -2048,13 +2024,13 @@
                 </div>
             </label>
 
-            <a href="#profile" class="btn-pill btn-primary login-submit">
+            <a href="#admin" class="btn-pill btn-primary login-submit">
                 <label for="session">Log In</label>
             </a>
             <p class="login-hint">Type the demo password to unlock the button.</p>
 
             <p class="auth-switch">Don't have an account? <a href="#signup">Sign Up</a></p>
-            <p class="auth-test-note"><strong>Test account</strong> (for demo only)<br>Email: juan@email.com &nbsp;|&nbsp; Password: Juan12345</p>
+            <p class="auth-test-note"><strong>Admin Test account</strong> (for demo only)<br>Email: juan@email.com &nbsp;|&nbsp; Password: Juan12345</p>
         </div>
     </main>
 
@@ -2120,6 +2096,11 @@
         </div>
     </main>
 
+    <!-- Admin Test Account Modal -->    
+    <main id="admin" class="page">
+    <iframe src="admin.html" title="Admin workspace" class="admin-frame"></iframe>
+    </main>
+     
     <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-inner">
