@@ -85,6 +85,7 @@ td strong { color: #2e3d51; font-size: 11px; }
 .status-select:has(option:checked[value="Active"]), .status-select:has(option:checked[value="Published"]) { color: #397355; background: #e8f3ec; }
 .status-select:has(option:checked[value="Verified"]) { color: #397355; background: #e8f3ec; }
 .status-select:has(option:checked[value="Pending"]) { color: #987025; background: #fbf3df; }
+.status-select:has(option:checked[value="Paused"]) { color: #68778a; background: #eef1f5; }
 .status-select:has(option:checked[value="Draft"]) { color: #68778a; background: #eef1f5; }
 .expiry-field { width: 132px; height: 30px; padding: 0 6px; border: 1px solid #dce4ed; border-radius: 4px; color: #53647a; background: #fff; font-size: 10px; }
 .partner-summary-list { display: grid; }
