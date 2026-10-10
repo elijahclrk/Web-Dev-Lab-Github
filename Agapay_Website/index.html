@@ -156,7 +156,6 @@
     </main>
 
     <main id="volunteer-opportunities" class="page volunteer-page">
-
         <section class="volunteer-content" aria-label="Volunteer opportunities">
             <div class="section-head volunteer-section-head">
                 <h1>Discover Volunteer Opportunities</h1>
@@ -311,7 +310,7 @@
         </div>
         <div class="donate-modal">
             <label for="register-reading-buddy" class="modal-backdrop"></label>
-            <form class="modal-box" action="#volunteer-history">
+            <<form class="modal-box" action="#volunteer-opportunities">
                 <label for="register-reading-buddy" class="modal-close">&times;</label>
                 <div class="form-body">
                     <h2>Register for Reading Buddy</h2>
@@ -388,7 +387,7 @@
         </div>
         <div class="donate-modal">
             <label for="register-learning-session" class="modal-backdrop"></label>
-            <form class="modal-box" action="#volunteer-history">
+            <form class="modal-box" action="#volunteer-opportunities">
                 <label for="register-learning-session" class="modal-close">&times;</label>
                 <div class="form-body">
                     <h2>Register for Learning Session Assistant</h2>
@@ -465,7 +464,7 @@
         </div>
         <div class="donate-modal">
             <label for="register-school-supply" class="modal-backdrop"></label>
-            <form class="modal-box" action="#volunteer-history">
+            <form class="modal-box" action="#volunteer-opportunities">
                 <label for="register-school-supply" class="modal-close">&times;</label>
                 <div class="form-body">
                     <h2>Register for School Supply Drive</h2>
@@ -542,7 +541,7 @@
         </div>
         <div class="donate-modal">
             <label for="register-library-build" class="modal-backdrop"></label>
-            <form class="modal-box" action="#volunteer-history">
+            <form class="modal-box" action="#volunteer-opportunities">
                 <label for="register-library-build" class="modal-close">&times;</label>
                 <div class="form-body">
                     <h2>Register for Library Build Day</h2>
@@ -619,7 +618,7 @@
         </div>
         <div class="donate-modal">
             <label for="register-orientation" class="modal-backdrop"></label>
-            <form class="modal-box" action="#volunteer-history">
+            <form class="modal-box" action="#volunteer-opportunities">
                 <label for="register-orientation" class="modal-close">&times;</label>
                 <div class="form-body">
                     <h2>Register for Volunteer Orientation</h2>
@@ -696,7 +695,7 @@
         </div>
         <div class="donate-modal">
             <label for="register-storytelling" class="modal-backdrop"></label>
-            <form class="modal-box" action="#volunteer-history">
+            <form class="modal-box" action="#volunteer-opportunities">
                 <label for="register-storytelling" class="modal-close">&times;</label>
                 <div class="form-body">
                     <h2>Register for Storytelling Volunteer</h2>
@@ -715,64 +714,15 @@
         </div>
     </main>
 
-    <main id="volunteer-history" class="page volunteer-page">
-        <div class="wrap">
-            <a class="volunteer-back" href="#volunteer-opportunities">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-                Back
-            </a>
-            <div class="profile-banner">
-                <div class="profile-initials">JD</div>
-                <div class="profile-banner-text">
-                    <h1>Juan Dela Cruz</h1>
-                    <p>juan@email.com</p>
-                    <span class="member-since">Volunteer since September 2022</span>
-                </div>
-                <div class="profile-stats">
-                    <div><strong>4</strong><span>Events joined</span></div>
-                    <div><strong>13</strong><span>Volunteer hours</span></div>
-                    <div><strong>2</strong><span>Upcoming</span></div>
-                </div>
-            </div>
-
-            <section>
-                <h2 class="panel-title">Upcoming Events</h2>
-                <div class="table-wrap">
-                    <table class="donation-table">
-                        <thead>
-                            <tr><th>Date</th><th>Event</th><th>Role</th><th>Location</th><th>Status</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Oct 25, 2026</td><td>Library Build Day</td><td>Event Helper</td><td>Manila</td><td><span class="status pending">Upcoming</span></td></tr>
-                            <tr><td>Nov 08, 2026</td><td>School Supply Drive</td><td>Volunteer</td><td>Pasig</td><td><span class="status pending">Upcoming</span></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="table-note">Upcoming events appear here once your registration is confirmed.</p>
-            </section>
-
-            <section>
-                <h2 class="panel-title">Completed Events</h2>
-                <div class="table-wrap">
-                    <table class="donation-table">
-                        <thead>
-                            <tr><th>Date</th><th>Event</th><th>Role</th><th>Hours</th><th>Status</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Oct 3, 2026</td><td>Book Sorting Day</td><td>Volunteer</td><td>4</td><td><span class="status verified">Completed</span></td></tr>
-                            <tr><td>Sep 20, 2026</td><td>Tutoring Session</td><td>Tutor</td><td>3</td><td><span class="status verified">Completed</span></td></tr>
-                            <tr><td>Sep 5, 2026</td><td>Community Reading Day</td><td>Reading Buddy</td><td>4</td><td><span class="status verified">Completed</span></td></tr>
-                            <tr><td>Aug 18, 2026</td><td>Volunteer Orientation</td><td>Participant</td><td>2</td><td><span class="status verified">Completed</span></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="table-note">Hours are added once the event organizer confirms your attendance.</p>
-            </section>
-        </div>
-    </main>
-
     <!-- ========== News & Updates ========== -->
     <main id="news" class="page awareness-page-inline">
+            <nav class="mobile-subnav" aria-label="Awareness sections">
+                <a href="#news">News &amp; Updates</a>
+                <a href="#blog">Blog / Articles</a>
+                <a href="#success-stories">Success Stories</a>
+                <a href="#educational-resources">Educational Resources</a>
+                <a href="#awareness-campaigns">Awareness Campaigns</a>
+            </nav>
         <section class="awareness-page">
             <div class="awareness-hero">
                 <h1 class="awareness-title">News &amp; Updates</h1>
@@ -867,6 +817,13 @@
 
     <!-- ========== Blog / Articles ========== -->
     <main id="blog" class="page awareness-page-inline">
+            <nav class="mobile-subnav" aria-label="Awareness sections">
+                <a href="#news">News &amp; Updates</a>
+                <a href="#blog">Blog / Articles</a>
+                <a href="#success-stories">Success Stories</a>
+                <a href="#educational-resources">Educational Resources</a>
+                <a href="#awareness-campaigns">Awareness Campaigns</a>
+            </nav>
         <section class="awareness-page">
             <div class="awareness-hero">
                 <h1 class="awareness-title">Blog / Articles</h1>
@@ -961,6 +918,13 @@
 
     <!-- ========== Success Stories ========== -->
     <main id="success-stories" class="page awareness-page-inline">
+            <nav class="mobile-subnav" aria-label="Awareness sections">
+                <a href="#news">News &amp; Updates</a>
+                <a href="#blog">Blog / Articles</a>
+                <a href="#success-stories">Success Stories</a>
+                <a href="#educational-resources">Educational Resources</a>
+                <a href="#awareness-campaigns">Awareness Campaigns</a>
+            </nav>
         <section class="awareness-page">
             <div class="awareness-hero">
                 <h1 class="awareness-title">Success Stories</h1>
@@ -1055,6 +1019,13 @@
 
     <!-- ========== Educational Resources ========== -->
     <main id="educational-resources" class="page awareness-page-inline">
+            <nav class="mobile-subnav" aria-label="Awareness sections">
+                <a href="#news">News &amp; Updates</a>
+                <a href="#blog">Blog / Articles</a>
+                <a href="#success-stories">Success Stories</a>
+                <a href="#educational-resources">Educational Resources</a>
+                <a href="#awareness-campaigns">Awareness Campaigns</a>
+            </nav>
         <section class="awareness-page">
             <div class="awareness-hero">
                 <h1 class="awareness-title">Educational Resources</h1>
@@ -1149,6 +1120,13 @@
 
     <!-- ========== Awareness Campaigns ========== -->
     <main id="awareness-campaigns" class="page awareness-page-inline">
+            <nav class="mobile-subnav" aria-label="Awareness sections">
+                <a href="#news">News &amp; Updates</a>
+                <a href="#blog">Blog / Articles</a>
+                <a href="#success-stories">Success Stories</a>
+                <a href="#educational-resources">Educational Resources</a>
+                <a href="#awareness-campaigns">Awareness Campaigns</a>
+            </nav>
         <section class="awareness-page">
             <div class="awareness-hero">
                 <h1 class="awareness-title">Awareness Campaigns</h1>
@@ -1787,6 +1765,11 @@
     </main>
 
     <main id="mentorship" class="page info-page">
+            <nav class="mobile-subnav" aria-label="Mentorship sections">
+                <a href="#mentor-profiles">Mentor Profiles</a>
+                <a href="#mentor-application">Mentor Application</a>
+                <a href="#student-requests">Help Request</a>
+            </nav>
         <div class="page-content">
             <section id="mentor-profiles">
                 <h1 class="mentor-title">Our Mentors</h1>

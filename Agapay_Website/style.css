@@ -297,7 +297,6 @@
     body .nav-list { flex-direction: column; align-items: stretch; gap: 2px; padding: 0; }
     body .nav-item { width: 100%; }
     body .nav-link { display: flex; justify-content: space-between; font-size: 15px; padding: 12px 14px; border-radius: 8px; width: 100%; box-sizing: border-box; }
-    body .dropdown { position: static; transform: none; opacity: 1; visibility: visible; pointer-events: auto; box-shadow: none; background: #f3f8ff; padding: 4px 8px 8px 20px; margin: 0 0 6px 0; min-width: 0; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
     body .dropdown::before, body .dropdown::after { display: none; }
     body .nav-item.has-dropdown:hover .dropdown, body .nav-item.has-dropdown:focus-within .dropdown { max-height: 400px; }
     body .dropdown li a { font-size: 14px; padding: 10px 12px; }
@@ -480,9 +479,6 @@ body:has(:target) #donation:not(:target) { display: none; }
 .volunteer-page .volunteer-back-link:hover { text-decoration: underline; }
 
 .register-toggle:checked ~ .donate-modal { display: grid; }
-
-#volunteer-history section { margin-bottom: 36px; }
-#volunteer-history .profile-banner { margin-bottom: 32px; }
 
 @media (max-width: 1000px) {
     .volunteer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -782,7 +778,7 @@ label > input[type="radio"] { display: none; }
     display: none;
     flex: 1;
     flex-direction: column;
-    background: #EAF4FF;
+    background: #ffffff;
     scroll-margin-top: 90px;
 }
 .awareness-page-inline:target { display: flex; }
@@ -790,7 +786,7 @@ body:has(.awareness-page-inline:target) #donation:not(:target) { display: none; 
 
 .awareness-page {
     padding: 32px 32px 80px;
-    background-color: #EAF4FF;
+    background-color: #ffffff;
     min-height: calc(100vh - 90px);
     box-sizing: border-box;
     width: 100%;
@@ -1122,3 +1118,83 @@ body:has(#session:checked):has(#login:target) #login { display: none; }
 body:has(#session:checked):has(#login:target) #admin { display: flex; }
 body:has(#session:checked):has(#admin:target) .site-footer,
 body:has(#session:checked):has(#login:target) .site-footer { display: none; }
+
+@media (max-width: 900px) {
+    body .site-header { padding: 10px 16px; }
+    body .header-inner { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    body .logo-link { order: 1; }
+    body .account-area { order: 2; margin-left: auto; }
+    body .hamburger { order: 3; display: flex; }
+
+    body .main-nav {
+        position: absolute; top: calc(100% + 8px); right: 0; left: auto; width: 240px;
+        max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; pointer-events: none;
+        transform: translateY(-6px); padding: 0; z-index: 60; background: #fff;
+        border-radius: 14px; box-shadow: 0 12px 32px rgba(49,91,145,.22);
+        transition: max-height .3s ease, opacity .22s ease, transform .22s ease, visibility .22s;
+    }
+    body .nav-toggle:checked ~ .header-inner .main-nav {
+        max-height: 460px; opacity: 1; visibility: visible; pointer-events: auto; transform: none; padding: 10px;
+    }
+    body .nav-list { flex-direction: column; align-items: stretch; gap: 2px; padding: 0; }
+    body .nav-item { width: 100%; position: relative; }
+    body .nav-link {
+        display: flex; justify-content: flex-start; width: 100%; box-sizing: border-box;
+        padding: 11px 14px; border-radius: 8px; font-size: 15px; font-weight: 500;
+        color: #315b91; background: transparent;
+    }
+    body .nav-link:hover { background: #EAF4FF; color: #24487a; }
+    body .nav-item.has-dropdown .dropdown,
+    body .nav-item.has-dropdown .caret { display: none !important; }
+
+    body .account-dropdown {
+        position: absolute; top: calc(100% + 8px); right: 0; left: auto; min-width: 180px;
+        max-height: 0; overflow: hidden; padding: 0; z-index: 60;
+        background: #fff; border-radius: 12px; box-shadow: 0 10px 30px rgba(49,91,145,.18);
+    }
+    body .account-area:hover .account-dropdown,
+    body .account-area:focus-within .account-dropdown { max-height: 260px; padding: 8px; }
+}
+
+.mobile-subnav { display: none; }
+
+@media (max-width: 900px) {
+    .mobile-subnav {
+        display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+        padding: 16px 24px; box-sizing: border-box;
+        background: #EAF4FF; border-bottom: 1px solid rgba(49,91,145,.12);
+    }
+    .mobile-subnav a {
+        display: inline-block; padding: 9px 20px; font-size: 14px; font-weight: 600;
+        color: var(--blue); background: #fff; border: 1px solid #cfe0f5; border-radius: 999px;
+        text-decoration: none; white-space: nowrap; box-shadow: 0 2px 6px rgba(49,91,145,.08);
+        transition: color .25s, background-color .25s, border-color .25s, box-shadow .25s, transform .25s;
+    }
+    .mobile-subnav a:hover, .mobile-subnav a:focus-visible {
+        color: #fff; background: linear-gradient(135deg,#315b91,#4a7ac0);
+        border-color: transparent; box-shadow: 0 6px 14px rgba(49,91,145,.30);
+        transform: translateY(-2px); outline: none;
+    }
+    .mobile-subnav a:active { transform: none; box-shadow: 0 3px 8px rgba(49,91,145,.22); }
+
+    body:has(#volunteer-opportunities:target) .mobile-subnav a[href="#volunteer-opportunities"],
+    body:has(#mentor-profiles:target)         .mobile-subnav a[href="#mentor-profiles"],
+    body:has(#mentor-application:target)      .mobile-subnav a[href="#mentor-application"],
+    body:has(#student-requests:target)        .mobile-subnav a[href="#student-requests"],
+    body:has(#news:target)                    .mobile-subnav a[href="#news"],
+    body:has(#blog:target)                    .mobile-subnav a[href="#blog"],
+    body:has(#success-stories:target)         .mobile-subnav a[href="#success-stories"],
+    body:has(#educational-resources:target)   .mobile-subnav a[href="#educational-resources"],
+    body:has(#awareness-campaigns:target)     .mobile-subnav a[href="#awareness-campaigns"] {
+        color: #fff; background: linear-gradient(135deg,#315b91,#4a7ac0);
+        border-color: transparent; box-shadow: 0 4px 10px rgba(49,91,145,.28);
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-subnav { padding: 12px 16px; gap: 8px; }
+    .mobile-subnav a { font-size: 13px; padding: 8px 16px; }
+}
+
+.awareness-page-inline,
+.awareness-page { background-color: #ffffff; }
