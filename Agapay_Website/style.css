@@ -1112,8 +1112,6 @@ body .volunteer-page .detail-layout {
 }
 
 .admin-frame { display: block; width: 100%; height: calc(100vh - 80px); border: 0; }
-
-
 body:not(:has(#session:checked)) #admin { display: none; }
 body:not(:has(#session:checked)):has(#admin:target) #login,
 body:not(:has(#session:checked)):has(#profile:target) #login { display: flex; }
