@@ -1113,22 +1113,11 @@ body .volunteer-page .detail-layout {
 
 .admin-frame { display: block; width: 100%; height: calc(100vh - 80px); border: 0; }
 
-/* --- Admin page: shown only while logged in ---
-   Clicking a <label> inside a link ticks the checkbox but the browser does NOT follow
-   the link, so the address does not change. These rules therefore decide what to show
-   from the login state itself, not from the address. */
 
-/* logged out: the admin page is never shown */
 body:not(:has(#session:checked)) #admin { display: none; }
-
-/* logged out on a members-only address -> show the Log In page */
 body:not(:has(#session:checked)):has(#admin:target) #login,
 body:not(:has(#session:checked)):has(#profile:target) #login { display: flex; }
-
-/* logged in while still on the Log In page -> go straight to the admin page */
 body:has(#session:checked):has(#login:target) #login { display: none; }
 body:has(#session:checked):has(#login:target) #admin { display: flex; }
-
-/* no footer on the admin page */
 body:has(#session:checked):has(#admin:target) .site-footer,
 body:has(#session:checked):has(#login:target) .site-footer { display: none; }
