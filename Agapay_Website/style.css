@@ -330,6 +330,10 @@ body:has(:target) #donation:not(:target) { display: none; }
 
 .volunteer-page, .volunteer-page * { box-sizing: border-box; }
 .volunteer-page { color: var(--text); }
+.volunteer-filter-bar { background: #d6e6f8; border-bottom: 1px solid rgba(49, 91, 145, 0.12); }
+.volunteer-section-head { margin: 0 auto 20px; }
+.volunteer-section-head h1 { margin: 0 0 6px; color: var(--blue-dark); font-size: clamp(28px, 4vw, 36px); }
+.volunteer-section-head p { margin: 0; color: var(--blue); font-style: italic; }
 .volunteer-hero { padding: 38px 24px 32px; background: #f3f8ff; text-align: center; }
 .volunteer-hero-inner { max-width: var(--max-width); margin: 0 auto; }
 .volunteer-eyebrow { margin: 0 0 8px; color: var(--blue); font-size: 11px; font-weight: 700; letter-spacing: 1px; }

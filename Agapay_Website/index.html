@@ -179,17 +179,19 @@
     </main>
 
     <main id="volunteer-opportunities" class="page volunteer-page">
-        <section class="volunteer-hero">
-            <div class="volunteer-hero-inner">
-                <p class="volunteer-eyebrow">MAKE A DIFFERENCE</p>
-                <h1>Discover Volunteer Opportunities</h1>
-                <p>Make a difference. Make education accessible for every Filipino student.</p>
-            </div>
-        </section>
-        <section class="volunteer-content" aria-label="Volunteer opportunities">
-            <div class="volunteer-toolbar">
-                <label class="volunteer-search">⌕ <input type="search" placeholder="Search opportunities" aria-label="Search volunteer opportunities"></label>
-                <div class="volunteer-categories" aria-label="Opportunity categories">
+        <div class="filter-bar volunteer-filter-bar">
+            <div class="filter-inner">
+                <div class="search-group">
+                    <label class="volunteer-search search-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+                        <input type="search" placeholder="Search opportunities" aria-label="Search volunteer opportunities">
+                    </label>
+                    <button class="filter-btn" aria-label="Filter opportunities">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 5h18l-7 8v6l-4 2v-8L3 5z"></path></svg>
+                    </button>
+                </div>
+
+                <div class="volunteer-categories category-tabs" aria-label="Opportunity categories">
                     <button class="selected" type="button" data-category="all" aria-pressed="true">All</button>
                     <button type="button" data-category="College" aria-pressed="false">College</button>
                     <button type="button" data-category="High School" aria-pressed="false">High School</button>
@@ -197,6 +199,14 @@
                     <button type="button" data-category="Event Organizer" aria-pressed="false">Event Organizer</button>
                 </div>
             </div>
+        </div>
+
+        <section class="volunteer-content" aria-label="Volunteer opportunities">
+            <div class="section-head volunteer-section-head">
+                <h1>Discover Volunteer Opportunities</h1>
+                <p>Make a difference. Make education accessible for every Filipino student.</p>
+            </div>
+
             <div class="volunteer-list-heading"><h2>Available Opportunities</h2><span id="opportunity-count" aria-live="polite">6 opportunities</span></div>
             <div class="volunteer-grid">
                 <article class="opportunity-card" data-category="College">
